@@ -1,0 +1,34 @@
+name: Build and Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Install Java ♨️
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Build 🔧
+        run: |
+          mkdir -p build/bundle
+          curl -s 'http://d.defold.com/stable/info.json' | python3 -c "import sys, json; print('https://d.defold.com/archive/' + json.load(sys.stdin)['sha1'] + '/bob/bob.jar')" | wget --progress=dot:mega -i - -O build/bundle/bob.jar
+          java -jar build/bundle/bob.jar --email foo@bar.com --auth 12345 --texture-compression true --bundle-output build/bundle/js-web --build-report-html build/bundle/report.html --platform js-web --archive --variant debug resolve build bundle
+          mv build/bundle/js-web/* build/bundle/public
+          mv build/bundle/report.html build/bundle/public/
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: build/bundle/public
