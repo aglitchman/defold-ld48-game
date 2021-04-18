@@ -1,6 +1,61 @@
 <html>
     <head>
+        <style>
+            #loading {
+                float: left;
+                font-weight: bold;
+                font-family: sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0px;
+                padding-top: 12px;
+            }
+            .link,
+            .button,
+            #loading {
+                margin-right: 12px;
+                margin-left: 12px;
+            }
+        </style>
     </head>
     <body>
+        <div id="app-container" class="canvas-app-container" merge="keep">
+            <div id="canvas-container" class="canvas-app-canvas-container">
+                <canvas
+                    id="canvas"
+                    class="canvas-app-canvas"
+                    tabindex="1"
+                    width="{{display.width}}"
+                    height="{{display.height}}"
+                ></canvas>
+            </div>
+            <div class="buttons-background">
+                {{#html5.show_fullscreen_button}}
+                <div class="button" onclick="Module.toggleFullscreen();">Fullscreen</div>
+                {{/html5.show_fullscreen_button}}
+                <div id="loading">Loading... 0%</div>
+                {{#html5.show_made_with_defold}}
+                <div class="link">
+                    Made with <a href="https://defold.com/" target="_blank">Defold</a> by
+                    <a href="https://twitter.com/aglitchman" target="_blank">@aglitchman</a>
+                </div>
+                {{/html5.show_made_with_defold}}
+            </div>
+        </div>
+        <script id="engine-setup" type="text/javascript">
+            if (typeof Progress !== "undefined") {
+                Progress.addListener(function (percentage) {
+                    if (isNaN(percentage)) return;
+                    var el = document.getElementById("loading");
+                    if (percentage == 100) {
+                        el.innerText = "";
+                    } else {
+                        el.innerText = "Loading... " + percentage.toFixed(0) + "%";
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

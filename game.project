@@ -31,6 +31,8 @@ gravity_y = -100.0
 [html5]
 scale_mode = fit
 engine_arguments = --verify-graphics-calls=false
+splash_image = /ld48/res/web/loader_cover.png
+heap_size = 300
 
 [input]
 game_binding = /builtins/input/all.input_bindingc
