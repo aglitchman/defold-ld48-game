@@ -18,6 +18,10 @@
                 margin-right: 12px;
                 margin-left: 12px;
             }
+            .canvas-app-container {
+                background: #ffffff;
+                filter: none;
+            }
         </style>
     </head>
     <body>
@@ -45,17 +49,36 @@
             </div>
         </div>
         <script id="engine-setup" type="text/javascript">
-            if (typeof Progress !== "undefined") {
-                Progress.addListener(function (percentage) {
-                    if (isNaN(percentage)) return;
+            (function () {
+                var statusText;
+                var setStatus = function (status) {
+                    statusText = status;
                     var el = document.getElementById("loading");
-                    if (percentage == 100) {
-                        el.innerText = "";
-                    } else {
-                        el.innerText = "Loading... " + percentage.toFixed(0) + "%";
-                    }
-                });
-            }
+                    el.innerText = status;
+                };
+
+                if (typeof Progress !== "undefined") {
+                    Progress.addListener(function (percentage) {
+                        if (isNaN(percentage)) return;
+                        var el = document.getElementById("loading");
+                        if (!statusText) {
+                            if (percentage == 100) {
+                                el.innerText = "";
+                            } else {
+                                el.innerText = "Loading... " + percentage.toFixed(0) + "%";
+                            }
+                        }
+                    });
+                }
+
+                extra_params.unsupported_webgl_callback = function () {
+                    setStatus("ERROR: WebGL is not supported by your browser.");
+                };
+
+                extra_params.can_not_download_file_callback = function () {
+                    setStatus("ERROR: Can't download files.");
+                };
+            })();
         </script>
     </body>
 </html>
