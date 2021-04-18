@@ -17,6 +17,7 @@ input_method = HiddenInputField
 title = ld48_game
 version = 1.0.0
 developer = Artsiom Trubchyk
+dependencies = https://github.com/subsoap/defos/archive/v2.5.0.zip
 
 [render]
 clear_color_alpha = 1.0
