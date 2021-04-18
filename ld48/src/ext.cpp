@@ -1,3 +1,5 @@
+#include "camera.h"
+
 #include <dmsdk/sdk.h>
 
 static int Dummy(lua_State* L)
@@ -28,6 +30,7 @@ static void LuaInit(lua_State* L)
 static dmExtension::Result InitializeExt(dmExtension::Params* params)
 {
     LuaInit(params->m_L);
+    Ld48Camera::LuaInit(params->m_L);
     return dmExtension::RESULT_OK;
 }
 

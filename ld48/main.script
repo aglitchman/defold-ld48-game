@@ -1,5 +1,6 @@
 function init(self)
     ld48.dummy()
+    ld48_camera.dummy()
 end
 
 function final(self)
