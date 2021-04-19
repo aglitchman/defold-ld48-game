@@ -18,11 +18,26 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '11'
+          
+      - name: Install Node ✨
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          
+      - name: Setup Cache
+        uses: actions/cache@v2.1.5
+        with:
+          path: |
+            ~/.npm
+            build/bundle/bob.jar
 
       - name: Build 🔧
         run: |
+          npm install -g html-minifier@4.0.0 uglify-js@3.12.8 node-jq@1.12.0 --unsafe-perm
           mkdir -p build/bundle
-          curl -s 'http://d.defold.com/stable/info.json' | python3 -c "import sys, json; print('https://d.defold.com/archive/' + json.load(sys.stdin)['sha1'] + '/bob/bob.jar')" | wget --progress=dot:mega -i - -O build/bundle/bob.jar
+          BOB_SHA1=${DEFOLD_BOB_SHA1:-$(curl -s 'https://d.defold.com/stable/info.json' | jq -r .sha1)}
+          BOB_LOCAL_SHA1=$((java -jar build/bundle/bob.jar --version | cut -d' ' -f6) || true)
+          if [ "${BOB_LOCAL_SHA1}" != "${BOB_SHA1}" ]; then wget --progress=dot:mega -O build/bundle/bob.jar "https://d.defold.com/archive/${BOB_SHA1}/bob/bob.jar"; fi
           java -jar build/bundle/bob.jar --email foo@bar.com --auth 12345 --texture-compression true --bundle-output build/bundle/js-web --build-report-html build/bundle/report.html --platform js-web --archive --variant debug resolve build bundle
           mv build/bundle/js-web/* build/bundle/public
           mv build/bundle/report.html build/bundle/public/
