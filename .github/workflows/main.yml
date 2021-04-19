@@ -30,6 +30,9 @@ jobs:
           path: |
             ~/.npm
             build/bundle/bob.jar
+          key: ${{ runner.os }}-defold-${{ hashFiles('game.project') }}
+          restore-keys: |
+            ${{ runner.os }}-defold-
 
       - name: Build 🔧
         run: |
