@@ -9,6 +9,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      DEFOLD_BOB_SHA1: f1a22801ed92da4ab069d6fd7ddc9618aa9b7e3d
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
