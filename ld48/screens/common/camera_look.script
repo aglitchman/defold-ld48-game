@@ -1,0 +1,100 @@
+local app_render = require("ld48.app.render")
+local lume = require("ld48.app.lume")
+local player_state = require("ld48.screens.common.state")
+
+local function update_sensitivity(self)
+    local sensitivity = lume.lerp(0.05, 0.55, player_state.mouse_sensitivity)
+    self.look_speed = sensitivity * (1280 / app_render.WINDOW_WIDTH)
+end
+
+function init(self)
+    msg.post(".", "acquire_input_focus")
+    print("camera_look - acquire_input_focus")
+
+    player_state.cursor_locked = false
+    ld48.glfw_mouse_unlock()
+
+    if html5 then
+        defos.on_click(function()
+            if not player_state.cursor_locked then
+                defos.set_cursor_locked(true)
+            end
+        end)
+        defos.on_cursor_lock_disabled(function()
+            player_state.cursor_locked = false
+        end)
+    end
+
+    update_sensitivity(self)
+end
+
+function final(self)
+end
+
+function update(self, dt)
+    update_sensitivity(self)
+
+    app_render.update_camera(player_state.yaw, player_state.pitch)
+
+    if html5 then
+        local state = ld48.html5_pointer_locked()
+        if state ~= player_state.cursor_locked then
+            print("html5_pointer_locked, new state - locked = ", state)
+        end
+        player_state.cursor_locked = state
+    end
+end
+
+function on_message(self, message_id, message, sender)
+    -- if message_id == hash("pointer_unlock") then
+    --     if player_state.cursor_locked then
+    --         player_state.cursor_locked = false
+    --         if html5 then
+    --             defos.set_cursor_locked(false)
+    --         else
+    --             ld48.glfw_mouse_unlock()
+    --         end
+    --     end
+    -- end
+end
+
+function on_input(self, action_id, action)
+    local s = player_state
+
+    if not html5 and action_id == hash("key_esc") and action.released then
+        local skip_events = s.cursor_locked
+        s.cursor_locked = false
+        ld48.glfw_mouse_unlock()
+
+        return skip_events
+    elseif not html5 and action_id == hash("touch") and action.released then
+        if not s.cursor_locked then
+            s.cursor_locked = true
+            self.skip_first_dxdy = true
+            ld48.glfw_mouse_lock()
+
+            return true
+        end
+    elseif action_id == nil then
+        if s.cursor_locked then
+            if not self.skip_first_dxdy then
+                -- only for PC
+                s.yaw = s.yaw - (self.look_speed * -action.dx)
+                s.pitch = s.pitch - (self.look_speed * -action.dy)
+            end
+            self.skip_first_dxdy = false
+
+            if s.yaw < 0 then
+                s.yaw = s.yaw + 360
+            end
+            if s.yaw >= 360 then
+                s.yaw = s.yaw - 360
+            end
+
+            s.pitch = math.max(s.pitch, -90)
+            s.pitch = math.min(s.pitch, 90)
+
+            app_render.update_camera(s.yaw, s.pitch)
+        end
+    end
+end

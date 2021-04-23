@@ -1,7 +1,10 @@
 local app_scenemanager = require("ld48.app.scenemanager")
+local player_state = require("ld48.screens.common.state")
 
 function init(self)
     msg.post(".", hash("acquire_input_focus"))
+
+    player_state.reset()
 
     -- go.animate("/test_box", "euler.z", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
     -- go.animate("/test_box", "euler.x", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)

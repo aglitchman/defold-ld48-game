@@ -21,7 +21,7 @@ function update(self)
 
     render.set_viewport(0, 0, render.get_window_width(), render.get_window_height())
 
-    app_render.ASPECT_RATIO = render.get_window_width() / render.get_window_height()
+    app_render.update_window(render.get_window_width(), render.get_window_height())
 
     render.set_view(app_render.camera_view())
     render.set_projection(app_render.camera_perspective())
