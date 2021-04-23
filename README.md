@@ -43,6 +43,8 @@ rm -rf build/bundle && mkdir -p build/bundle && java -jar build/bob.jar --email 
 http-server -c- # npm install http-server -g
 ```
 
+Download [the latest HTML5 bundle in .zip](https://github.com/aglitchman/defold-ld48-game/archive/refs/heads/gh-pages.zip).
+
 ## Credits
 
 Copyright (c) 2021 Artsiom Trubchyk. Licensed under the Apache License, Version 2.0. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
