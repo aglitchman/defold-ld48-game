@@ -1,0 +1,50 @@
+local app_scenemanager = require("ld48.app.scenemanager")
+
+go.property("name", hash(""))
+go.property("hidden", false)
+go.property("fade_out_receiver", hash(""))
+go.property("load_res", false)
+
+function init(self)
+    assert(self.name ~= hash(""), "Set the scene name in app_scene.script")
+    app_scenemanager._add_scene({
+        name = self.name,
+        hidden = self.hidden,
+        load_res = self.load_res,
+        res_proxy = msg.url("#resproxy"),
+        scene_obj = msg.url("."),
+        scene_proxy = msg.url("#collectionproxy"),
+        scene_args = nil
+    })
+
+    msg.post("#", "init")
+end
+
+function update(self, dt)
+    if self.spam_fade_out_complete then
+        msg.post(msg.url(self.name, self.fade_out_receiver, nil), "fade_out_complete")
+    end
+
+    if self.init_seq_test then
+        app_scenemanager._init_seq = app_scenemanager._init_seq - 1
+        if app_scenemanager._init_seq == 0 then
+            msg.post(app_scenemanager.receiver, "init_seq_complete")
+        end
+    end
+end
+
+function on_message(self, message_id, message, sender)
+    if message_id == hash("init") then
+        app_scenemanager._init_seq = app_scenemanager._init_seq + 1
+        self.init_seq_test = true
+
+    elseif message_id == hash("fade_out_complete") then
+        if self.fade_out_receiver ~= hash("") then
+            self.spam_fade_out_complete = true
+        end
+
+    elseif message_id == hash("fade_out_complete_ok") then
+        self.spam_fade_out_complete = false
+
+    end
+end
