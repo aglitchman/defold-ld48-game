@@ -4,6 +4,8 @@ local tween = require("ld48.app.tween")
 local SCALE_MIN = 0.00001
 local SCALE_MAX = 1
 
+local TINT_HIDDEN = vmath.vector4(1, 1, 1, 0)
+
 function init(self)
     gui.set_render_order(15)
 
@@ -31,8 +33,8 @@ function init(self)
     self.reply_to = nil
     self.anim_value = SCALE_MAX
 
-    -- self.loading_accum = math.pi
     self.loading_node = gui.get_node(hash("loading"))
+    gui.set_color(self.loading_node, TINT_HIDDEN)
 end
 
 local function pad_space(s, pad)
@@ -62,14 +64,19 @@ function update(self, dt)
         end
         self.cur_scale = self.anim_value
 
+        local prev_loading = self.loading_enabled
         self.loading_enabled = self.anim_value == SCALE_MAX
         gui.set_enabled(self.loading_node, self.loading_enabled)
-    end
 
-    -- if self.loading_enabled then
-    --     self.loading_accum = self.loading_accum + 0.1
-    --     gui.set_position(self.loading_node, vmath.vector3(1000 + math.sin(self.loading_accum) * 60, 200, 0))
-    -- end
+        if prev_loading ~= self.loading_enabled then
+            if self.loading_enabled then
+                gui.animate(self.loading_node, "color.w", 1, gui.EASING_OUTQUAD, 0.5, 0.2)
+            else
+                gui.cancel_animation(self.loading_node, "color.w")
+                gui.set_color(self.loading_node, TINT_HIDDEN)
+            end
+        end
+    end
 end
 
 function on_message(self, message_id, message, sender)
@@ -99,7 +106,7 @@ function on_message(self, message_id, message, sender)
         else
             self.state = message_id
 
-            local pause = 0.01
+            local pause = 0.01 -- to test "LOADING" node animation set this value to 10.
             self.anim_tween = tween.new(0.7, self, {anim_value = SCALE_MIN}, "outQuad", pause, function()
                 on_fade_out_complete(self)
             end)
