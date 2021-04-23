@@ -31,7 +31,8 @@ clear_color_blue = 0.9
 
 [physics]
 scale = 0.01
-gravity_y = -100.0
+gravity_y = -1000.0
+type = 3D
 
 [html5]
 scale_mode = fit
@@ -44,4 +45,13 @@ game_binding = /builtins/input/all.input_bindingc
 
 [graphics]
 texture_profiles = /ld48/render/custom.texture_profiles
+
+[sprite]
+max_count = 1000
+
+[model]
+max_count = 1000
+
+[mesh]
+max_count = 1000
 
