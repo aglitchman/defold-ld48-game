@@ -38,8 +38,8 @@ Play the latest version online - [**Web build**](https://aglitchman.github.io/de
 Copyright (c) 2021 Artsiom Trubchyk. Licensed under the Apache License, Version 2.0. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
 This project is made with [the Defold game engine](https://www.defold.com/) and includes/uses the following deps:
-- OpenGL Mathematics (GLM), a header only C++ mathematics library: https://github.com/g-truc/glm
-- LearnOpenGL.com Camera class: https://learnopengl.com/code_viewer_gh.php?code=includes/learnopengl/camera.h
+- *NOT USED:* OpenGL Mathematics (GLM), a header only C++ mathematics library: https://github.com/g-truc/glm
+- *NOT USED:* LearnOpenGL.com Camera class: https://learnopengl.com/code_viewer_gh.php?code=includes/learnopengl/camera.h
 - https://github.com/kikito/tween.lua
 - https://github.com/rxi/lume
 - to be filled...
