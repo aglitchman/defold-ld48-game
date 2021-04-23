@@ -7,14 +7,14 @@ publisher = unnamed
 developer = Artsiom Trubchyk
 
 [display]
-width = 960
-height = 640
+width = 2500
+height = 1400
 high_dpi = 1
 samples = 0
 fullscreen = 0
 update_frequency = 0
 vsync = 0
-display_profiles = /builtins/render/default.display_profilesc
+display_profiles = /ld48/render/layouts.display_profilesc
 dynamic_orientation = 0
 display_device_info = 0
 
