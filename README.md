@@ -4,6 +4,23 @@ This project was created from the "empty" project template. **This is a work-in-
 
 Play the latest version online - [**Web build**](https://aglitchman.github.io/defold-ld48-game/).
 
+## Structure
+
+```yaml
+/ld48: main folder
+  # C++ sources
+  /include:
+  /manifests:
+  /res:
+  /src:
+  # Assets
+  /assets:
+  # Lua sources
+  /app: # tools
+  /screens:
+    /todo:
+```
+
 ## Credits
 
 Copyright (c) 2021 Artsiom Trubchyk. Licensed under the Apache License, Version 2.0. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
