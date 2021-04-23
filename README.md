@@ -1,3 +1,5 @@
+![Cover](ld48/res/web/loader_cover.png)
+
 # Ludum Dare 48 Game - Made With Defold
 
 This project was created from the "empty" project template. **This is a work-in-progress template for the future LD48.** It will contain a basic setup for camera, screens, preloader, etc.
