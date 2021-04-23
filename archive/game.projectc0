@@ -52,7 +52,7 @@ default_texture_mag_filter = linear
 max_draw_calls = 1024
 max_characters = 8192
 max_debug_vertices = 10000
-texture_profiles = /builtins/graphics/default.texture_profiles
+texture_profiles = /ld48/render/custom.texture_profiles
 verify_graphics_calls = 1
 memory_size = 512
 
