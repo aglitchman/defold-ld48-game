@@ -113,6 +113,11 @@ static dmExtension::Result InitializeExt(dmExtension::Params* params)
 {
     LuaInit(params->m_L);
     Ld48Camera::LuaInit(params->m_L);
+
+#ifdef EMSCRIPTEN
+    Html5PointerLockInit();
+#endif
+
     return dmExtension::RESULT_OK;
 }
 

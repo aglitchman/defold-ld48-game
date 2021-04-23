@@ -33,6 +33,16 @@ Play the latest version online - [**Web build**](https://aglitchman.github.io/de
 
 1 unit = 1 centimeter (models) = 1 pixels (sprites). `cube_100.dae` is a 100x100x100cm cube.
 
+### Dev Notes
+
+Debug build for HTML5 using `bob.jar`:
+```bash
+BOB_SHA1=$(curl -s 'https://d.defold.com/beta/info.json' | jq -r .sha1)
+wget --progress=dot:mega -O build/bob.jar "https://d.defold.com/archive/${BOB_SHA1}/bob/bob.jar"
+rm -rf build/bundle && mkdir -p build/bundle && java -jar build/bob.jar --email foo@bar.com --auth 12345 --texture-compression true --bundle-output build/bundle/js-web --build-report-html build/bundle/report.html --platform js-web --variant debug --archive distclean resolve build bundle
+http-server -c- # npm install http-server -g
+```
+
 ## Credits
 
 Copyright (c) 2021 Artsiom Trubchyk. Licensed under the Apache License, Version 2.0. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
