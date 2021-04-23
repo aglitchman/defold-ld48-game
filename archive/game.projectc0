@@ -44,7 +44,7 @@ trigger_overlap_capacity = 16
 
 [bootstrap]
 main_collection = /ld48/main.collectionc
-render = /builtins/render/default.renderc
+render = /ld48/render/custom.renderc
 
 [graphics]
 default_texture_min_filter = linear
