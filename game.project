@@ -1,5 +1,6 @@
 [bootstrap]
 main_collection = /ld48/main.collectionc
+render = /ld48/render/custom.renderc
 
 [script]
 shared_state = 1
@@ -20,6 +21,7 @@ version = 1.0.0
 developer = Artsiom Trubchyk
 dependencies#0 = https://github.com/subsoap/defos/archive/v2.5.0.zip
 dependencies#1 = https://github.com/indiesoftby/defold-splitmix64/archive/refs/tags/1.0.1.zip
+dependencies#2 = https://github.com/indiesoftby/defold-sharp-sprite/archive/refs/tags/0.1.2.zip
 
 [render]
 clear_color_alpha = 1.0

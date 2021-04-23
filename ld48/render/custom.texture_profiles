@@ -1,6 +1,10 @@
 path_settings {
+  path: "/ld48/assets/ui.atlas"
+  profile: "RGBA UASTC"
+}
+path_settings {
   path: "**"
-  profile: "RGBA MIPMAP"
+  profile: "RGBA UASTC MIPMAP"
 }
 profiles {
   name: "RGBA"
@@ -26,6 +30,8 @@ profiles {
       compression_type: COMPRESSION_TYPE_DEFAULT
     }
     mipmaps: true
+    max_texture_size: 0
+    premultiply_alpha: true
   }
 }
 profiles {
@@ -38,6 +44,8 @@ profiles {
       compression_type: COMPRESSION_TYPE_DEFAULT
     }
     mipmaps: false
+    max_texture_size: 0
+    premultiply_alpha: true
   }
 }
 profiles {
@@ -48,6 +56,32 @@ profiles {
       format: TEXTURE_FORMAT_RGB
       compression_level: BEST
       compression_type: COMPRESSION_TYPE_DEFAULT
+    }
+    mipmaps: true
+    max_texture_size: 0
+    premultiply_alpha: true
+  }
+}
+profiles {
+  name: "RGBA UASTC"
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGBA
+      compression_level: BEST
+      compression_type: COMPRESSION_TYPE_BASIS_UASTC
+    }
+    mipmaps: false
+  }
+}
+profiles {
+  name: "RGBA UASTC MIPMAP"
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGBA
+      compression_level: BEST
+      compression_type: COMPRESSION_TYPE_BASIS_UASTC
     }
     mipmaps: true
   }

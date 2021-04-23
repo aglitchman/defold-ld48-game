@@ -2,6 +2,17 @@ local app_scenemanager = require("ld48.app.scenemanager")
 
 function init(self)
     msg.post(".", hash("acquire_input_focus"))
+
+    -- go.animate("/test_box", "euler.z", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
+    -- go.animate("/test_box", "euler.x", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
+
+    go.animate("/objs/test_cube", "euler.z", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
+    go.animate("/objs/test_cube", "euler.x", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
+
+    -- msg.post("/objs/test_sprite", "disable")
+    -- msg.post("/objs/test_sprite1", "disable")
+
+    -- print(vmath.matrix4_perspective(fov, aspect, near, far)ld48_camera.perspective())
 end
 
 function final(self)

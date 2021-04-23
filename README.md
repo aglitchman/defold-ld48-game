@@ -29,6 +29,10 @@ Play the latest version online - [**Web build**](https://aglitchman.github.io/de
   /main.script: # Main script of the game.
 ```
 
+### World
+
+1 unit = 1 centimeter (models) = 1 pixels (sprites). `cube_100.dae` is a 100x100x100cm cube.
+
 ## Credits
 
 Copyright (c) 2021 Artsiom Trubchyk. Licensed under the Apache License, Version 2.0. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
