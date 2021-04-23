@@ -9,8 +9,8 @@ function init(self)
 
     self.tiles = {}
 
-    local wh = 126
-    local t_count = math.floor(2000 / wh)
+    local wh = 200 / 2.07
+    local t_count = math.floor(1400 / wh)
 
     self.root_tile = gui.get_node(hash("tile"))
     for y = -1, t_count + 1 do
@@ -100,7 +100,7 @@ function on_message(self, message_id, message, sender)
             self.state = message_id
 
             local pause = 0.01
-            self.anim_tween = tween.new(0.5, self, {anim_value = SCALE_MIN}, "outQuad", pause, function()
+            self.anim_tween = tween.new(0.7, self, {anim_value = SCALE_MIN}, "outQuad", pause, function()
                 on_fade_out_complete(self)
             end)
         end

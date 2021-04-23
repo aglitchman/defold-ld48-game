@@ -5,10 +5,11 @@ main_collection = /ld48/main.collectionc
 shared_state = 1
 
 [display]
-width = 3000
-height = 2000
+width = 2500
+height = 1400
 high_dpi = 1
 vsync = 0
+display_profiles = /ld48/render/layouts.display_profilesc
 
 [android]
 input_method = HiddenInputField

@@ -7,8 +7,8 @@ function M.resize(game_width, game_height)
         local screen_width = displays[current_display_id].bounds.width
         local screen_height = displays[current_display_id].bounds.height
 
-        game_width = game_width or 3000
-        game_height = game_height or 2000
+        game_width = game_width or 2500
+        game_height = game_height or 1400
 
         local factor = 0.5
         if tonumber(sys.get_config("display.high_dpi", 0)) == 1 then

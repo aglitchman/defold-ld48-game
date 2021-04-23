@@ -8,7 +8,14 @@ profiles {
 profiles {
   name: "Portrait"
   qualifiers {
-    width: 720
-    height: 1280
+    width: 1400
+    height: 2500
+  }
+}
+profiles {
+  name: "Transition GUI"
+  qualifiers {
+    width: 1400
+    height: 1400
   }
 }

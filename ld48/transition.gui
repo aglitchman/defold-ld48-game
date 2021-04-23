@@ -29,8 +29,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 128.0
-    y: 128.0
+    x: 200.0
+    y: 200.0
     z: 0.0
     w: 1.0
   }
@@ -61,11 +61,11 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: false
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
-    x: 1000.0
+    x: 700.0
     y: 200.0
     z: 0.0
     w: 1.0
@@ -77,9 +77,9 @@ nodes {
     w: 1.0
   }
   scale {
-    x: 3.0
-    y: 3.0
-    z: 3.0
+    x: 1.0
+    y: 1.0
+    z: 1.0
     w: 1.0
   }
   size {
@@ -121,5 +121,8 @@ layers {
   name: "image"
 }
 material: "/builtins/materials/gui.material"
+layouts {
+  name: "Transition GUI"
+}
 adjust_reference: ADJUST_REFERENCE_PARENT
-max_nodes: 600
+max_nodes: 1000
