@@ -7,18 +7,24 @@ Play the latest version online - [**Web build**](https://aglitchman.github.io/de
 ## Structure
 
 ```yaml
-/ld48: main folder
+/ld48: # Main folder
+
   # C++ sources
   /include:
   /manifests:
   /res:
   /src:
+
   # Assets
   /assets:
+
   # Lua sources
-  /app: # tools
-  /screens:
-    /todo:
+  /app: # Tools
+  /screens: # Screens, i.e. collections used as proxies
+    /testbed:
+
+  /main.collection: # Bootstrap collection. It has links to all game collections and content
+  /main.script: # Main script of the game.
 ```
 
 ## Credits
