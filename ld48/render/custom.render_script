@@ -38,7 +38,6 @@ function update(self)
     render.set_blend_func(render.BLEND_ONE, render.BLEND_ONE_MINUS_SRC_ALPHA)
     -- Opaque models
     render.draw(self.model_pred)
-
     render.disable_state(render.STATE_DEPTH_TEST)
     render.draw(self.model_no_depth_pred)
     render.enable_state(render.STATE_DEPTH_TEST)

@@ -1,6 +1,6 @@
 name: "model"
 tags: "model_no_depth"
-vertex_program: "/builtins/materials/model.vp"
+vertex_program: "/ld48/materials/model.vp"
 fragment_program: "/builtins/materials/model.fp"
 vertex_space: VERTEX_SPACE_LOCAL
 vertex_constants {

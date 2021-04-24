@@ -66,6 +66,6 @@ nodes {
 layers {
   name: "image"
 }
-material: "/sharp_sprite/materials/gui.material"
+material: "/ld48/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
 max_nodes: 512

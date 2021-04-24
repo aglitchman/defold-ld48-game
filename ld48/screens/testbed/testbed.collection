@@ -113,7 +113,7 @@ embedded_instances {
 }
 embedded_instances {
   id: "player_look"
-  children: "weapon"
+  children: "player_weapon"
   data: "components {\n"
   "  id: \"camera_look\"\n"
   "  component: \"/ld48/screens/common/camera_look.script\"\n"
@@ -148,7 +148,7 @@ embedded_instances {
   }
 }
 embedded_instances {
-  id: "weapon"
+  id: "player_weapon"
   children: "count"
   data: "embedded_components {\n"
   "  id: \"model\"\n"
