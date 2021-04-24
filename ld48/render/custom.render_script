@@ -20,6 +20,8 @@ function init(self)
 end
 
 function update(self)
+    app_render.update_holo()
+
     render.set_depth_mask(true)
     render.set_stencil_mask(0xff)
     render.clear({[render.BUFFER_COLOR_BIT] = self.clear_color, [render.BUFFER_DEPTH_BIT] = 1, [render.BUFFER_STENCIL_BIT] = 0})

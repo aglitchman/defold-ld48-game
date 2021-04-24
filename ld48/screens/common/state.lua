@@ -2,7 +2,7 @@ local M = {}
 
 function M.reset()
     -- Variables
-    M.pos = vmath.vector3(0)
+    M.pos = vmath.vector3(0, 70, 0)
     M.yaw = -90
     M.pitch = 0
 

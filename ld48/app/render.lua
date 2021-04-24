@@ -5,8 +5,8 @@ M.window_width = 2500
 M.window_height = 1400
 M.aspect_ratio = M.window_width/M.window_height
 M.FOV = 42.5 -- Unreal Tournament FOV
-M.NEAR = 0.1
-M.FAR = 2000
+M.NEAR = 1
+M.FAR = 5000
 
 -- Helpers
 local IDENTITY_MAT4 = vmath.matrix4()
@@ -20,6 +20,13 @@ M.view_position = vmath.vector3(0, 0, 0)
 M.view_front = vmath.vector3(0, 0, -1)
 M.view_world_up = vmath.vector3(0, 1, 0)
 M.bobbing_mat4 = vmath.matrix4()
+
+-- Visuals
+M.holo_tint = false
+
+function M.update_holo()
+    M.holo_tint = not M.holo_tint
+end
 
 function M.update_camera(yaw, pitch)
     local front = vmath.vector3()

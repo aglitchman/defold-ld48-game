@@ -1,7 +1,7 @@
 name: "testbed"
 collection_instances {
-  id: "objs"
-  collection: "/ld48/screens/testbed/testbed_objs.collection"
+  id: "walls"
+  collection: "/ld48/screens/testbed/testbed_walls.collection"
   position {
     x: 0.0
     y: 0.0
@@ -271,6 +271,26 @@ embedded_instances {
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
+  "    z: 0.01\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"holo\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/ld48/assets/holo.atlas\\\"\\n"
+  "default_animation: \\\"holo_weap_display\\\"\\n"
+  "material: \\\"/ld48/materials/sprite_no_depth.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 5.0\n"
+  "    y: 20.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -283,8 +303,8 @@ embedded_instances {
   ""
   position {
     x: -34.0
-    y: 36.0
-    z: 59.0
+    y: 48.0
+    z: 51.0
   }
   rotation {
     x: 0.0

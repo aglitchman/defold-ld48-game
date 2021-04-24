@@ -33,6 +33,8 @@ clear_color_blue = 0.9
 scale = 0.01
 gravity_y = -1000.0
 type = 3D
+max_collisions = 500
+max_contacts = 1000
 
 [html5]
 scale_mode = fit

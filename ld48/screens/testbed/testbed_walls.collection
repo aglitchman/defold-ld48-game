@@ -1,0 +1,2693 @@
+name: "default"
+instances {
+  id: "grey0"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey1"
+  prototype: "/ld48/screens/testbed/walls/blue.go"
+  position {
+    x: 200.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey2"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 400.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey3"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 600.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey4"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 800.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey5"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -200.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey6"
+  prototype: "/ld48/screens/testbed/walls/magenta.go"
+  position {
+    x: -400.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey7"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -600.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey8"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -800.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey9"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 400.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey10"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -200.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey11"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -400.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey12"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -800.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey13"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 600.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey14"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 200.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey15"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -600.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey16"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 800.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor1"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 0.0
+    y: -200.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor2"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 200.0
+    y: -200.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor3"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -200.0
+    y: -200.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor4"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -600.0
+    y: -200.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor5"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -400.0
+    y: -200.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor6"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 400.0
+    y: -200.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor7"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 600.0
+    y: -200.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor8"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -800.0
+    y: -200.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor9"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 800.0
+    y: -200.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor10"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 400.0
+    y: -200.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor11"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 800.0
+    y: -200.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor12"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 0.0
+    y: -200.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor13"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -600.0
+    y: -200.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor14"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 600.0
+    y: -200.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor15"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -800.0
+    y: -200.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor16"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -400.0
+    y: -200.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor17"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -200.0
+    y: -200.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor18"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 200.0
+    y: -200.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor19"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 0.0
+    y: -200.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor20"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -600.0
+    y: -200.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor21"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 400.0
+    y: -200.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor22"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 600.0
+    y: -200.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor23"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -800.0
+    y: -200.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor24"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 200.0
+    y: -200.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor25"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 800.0
+    y: -200.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor26"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -400.0
+    y: -200.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor27"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -200.0
+    y: -200.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor28"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 0.0
+    y: -200.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor29"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -600.0
+    y: -200.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor30"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 400.0
+    y: -200.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor31"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 600.0
+    y: -200.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor32"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -800.0
+    y: -200.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor33"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 200.0
+    y: -200.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor34"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 800.0
+    y: -200.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor35"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -400.0
+    y: -200.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor36"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -200.0
+    y: -200.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor37"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 600.0
+    y: -200.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor38"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -800.0
+    y: -200.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor39"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 400.0
+    y: -200.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor40"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 200.0
+    y: -200.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor41"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 0.0
+    y: -200.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor42"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -200.0
+    y: -200.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor43"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -600.0
+    y: -200.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor44"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 800.0
+    y: -200.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor45"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -400.0
+    y: -200.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor46"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 600.0
+    y: -200.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor47"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -800.0
+    y: -200.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor48"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 400.0
+    y: -200.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor49"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 200.0
+    y: -200.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor50"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 0.0
+    y: -200.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor51"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -200.0
+    y: -200.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor52"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -600.0
+    y: -200.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor53"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 800.0
+    y: -200.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor54"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -400.0
+    y: -200.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor55"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 600.0
+    y: -200.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor56"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -800.0
+    y: -200.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor57"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 800.0
+    y: -200.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor58"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -600.0
+    y: -200.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor59"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 200.0
+    y: -200.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor60"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 0.0
+    y: -200.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor61"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -200.0
+    y: -200.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor62"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -400.0
+    y: -200.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor63"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 400.0
+    y: -200.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor64"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -200.0
+    y: -200.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor65"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 400.0
+    y: -200.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor66"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 200.0
+    y: -200.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor67"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -400.0
+    y: -200.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor68"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 0.0
+    y: -200.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor69"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -600.0
+    y: -200.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor70"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 600.0
+    y: -200.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor71"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -800.0
+    y: -200.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor72"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 800.0
+    y: -200.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor73"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -400.0
+    y: -200.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor74"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -200.0
+    y: -200.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor75"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 800.0
+    y: -200.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor76"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -800.0
+    y: -200.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor77"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 600.0
+    y: -200.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor78"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: -600.0
+    y: -200.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor79"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 0.0
+    y: -200.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor80"
+  prototype: "/ld48/screens/testbed/walls/green.go"
+  position {
+    x: 200.0
+    y: -200.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor81"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 400.0
+    y: -200.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey17"
+  prototype: "/ld48/screens/testbed/walls/blue.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey18"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey19"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey20"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey21"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey22"
+  prototype: "/ld48/screens/testbed/walls/magenta.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey23"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey24"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey25"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey26"
+  prototype: "/ld48/screens/testbed/walls/blue.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey27"
+  prototype: "/ld48/screens/testbed/walls/blue.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey28"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: 200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey29"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: 600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey30"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: -400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey31"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: -200.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey32"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey33"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: -800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey34"
+  prototype: "/ld48/screens/testbed/walls/blue.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: 400.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey35"
+  prototype: "/ld48/screens/testbed/walls/magenta.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: -600.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey36"
+  prototype: "/ld48/screens/testbed/walls/grey.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey37"
+  prototype: "/ld48/screens/testbed/walls/blue.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: 800.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grey38"
+  prototype: "/ld48/screens/testbed/walls/blue.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 4.0
+    z: 1.0
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "generator"
+  data: "embedded_components {\n"
+  "  id: \"green\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/ld48/screens/testbed/walls/green.go\\\"\\n"
+  "load_dynamically: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"red\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/ld48/screens/testbed/walls/red.go\\\"\\n"
+  "load_dynamically: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"magenta\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/ld48/screens/testbed/walls/magenta.go\\\"\\n"
+  "load_dynamically: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"grey\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/ld48/screens/testbed/walls/grey.go\\\"\\n"
+  "load_dynamically: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"blue\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/ld48/screens/testbed/walls/blue.go\\\"\\n"
+  "load_dynamically: false\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "walls"
+  children: "grey"
+  children: "grey0"
+  children: "grey1"
+  children: "grey10"
+  children: "grey11"
+  children: "grey12"
+  children: "grey13"
+  children: "grey14"
+  children: "grey15"
+  children: "grey16"
+  children: "grey17"
+  children: "grey18"
+  children: "grey19"
+  children: "grey2"
+  children: "grey20"
+  children: "grey21"
+  children: "grey22"
+  children: "grey23"
+  children: "grey24"
+  children: "grey25"
+  children: "grey26"
+  children: "grey27"
+  children: "grey28"
+  children: "grey29"
+  children: "grey3"
+  children: "grey30"
+  children: "grey31"
+  children: "grey32"
+  children: "grey33"
+  children: "grey34"
+  children: "grey35"
+  children: "grey36"
+  children: "grey37"
+  children: "grey38"
+  children: "grey4"
+  children: "grey5"
+  children: "grey6"
+  children: "grey7"
+  children: "grey8"
+  children: "grey9"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "floor"
+  children: "floor1"
+  children: "floor10"
+  children: "floor11"
+  children: "floor12"
+  children: "floor13"
+  children: "floor14"
+  children: "floor15"
+  children: "floor16"
+  children: "floor17"
+  children: "floor18"
+  children: "floor19"
+  children: "floor2"
+  children: "floor20"
+  children: "floor21"
+  children: "floor22"
+  children: "floor23"
+  children: "floor24"
+  children: "floor25"
+  children: "floor26"
+  children: "floor27"
+  children: "floor28"
+  children: "floor29"
+  children: "floor3"
+  children: "floor30"
+  children: "floor31"
+  children: "floor32"
+  children: "floor33"
+  children: "floor34"
+  children: "floor35"
+  children: "floor36"
+  children: "floor37"
+  children: "floor38"
+  children: "floor39"
+  children: "floor4"
+  children: "floor40"
+  children: "floor41"
+  children: "floor42"
+  children: "floor43"
+  children: "floor44"
+  children: "floor45"
+  children: "floor46"
+  children: "floor47"
+  children: "floor48"
+  children: "floor49"
+  children: "floor5"
+  children: "floor50"
+  children: "floor51"
+  children: "floor52"
+  children: "floor53"
+  children: "floor54"
+  children: "floor55"
+  children: "floor56"
+  children: "floor57"
+  children: "floor58"
+  children: "floor59"
+  children: "floor6"
+  children: "floor60"
+  children: "floor61"
+  children: "floor62"
+  children: "floor63"
+  children: "floor64"
+  children: "floor65"
+  children: "floor66"
+  children: "floor67"
+  children: "floor68"
+  children: "floor69"
+  children: "floor7"
+  children: "floor70"
+  children: "floor71"
+  children: "floor72"
+  children: "floor73"
+  children: "floor74"
+  children: "floor75"
+  children: "floor76"
+  children: "floor77"
+  children: "floor78"
+  children: "floor79"
+  children: "floor8"
+  children: "floor80"
+  children: "floor81"
+  children: "floor9"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
