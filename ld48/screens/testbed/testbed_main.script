@@ -12,6 +12,8 @@ function init(self)
     -- go.animate("/test_box", "euler.z", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
     -- go.animate("/test_box", "euler.x", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
 
+    go.animate("/player_weapon", "position.y", go.PLAYBACK_LOOP_PINGPONG, -75, go.EASING_LINEAR, 10)
+    
     -- go.animate("/player_weapon", "euler.x", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
     -- go.animate("/objs/test_cube", "euler.y", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
     -- go.animate("/objs/test_cube", "euler.z", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
@@ -49,7 +51,7 @@ function on_input(self, action_id, action)
         app_scenemanager.load_scene("testbed")
     elseif action_id == hash("key_2") and action.pressed then
         msg.post("@system:", "toggle_profile")
-    elseif action_id == hash("touch") and not action.released then
+    elseif action_id == hash("touch") and action.pressed then
         self.count = self.count - 1
         if self.count < 0 then
             self.count = 99
@@ -59,6 +61,8 @@ function on_input(self, action_id, action)
 
         go.animate(msg.url(nil, obj_id, "model"), "tint", go.PLAYBACK_LOOP_PINGPONG, vmath.vector4(1.5), go.EASING_INQUAD, 3)
         -- table.insert(powerups, obj_id)
+
+        msg.post("/ui#crosshair", "shoot")
     end
 end
 
