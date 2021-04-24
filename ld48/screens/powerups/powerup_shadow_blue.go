@@ -1,11 +1,6 @@
-embedded_components {
-  id: "sprite"
-  type: "sprite"
-  data: "tile_set: \"/ld48/assets/ui.atlas\"\n"
-  "default_animation: \"crosshair_ext\"\n"
-  "material: \"/ld48/materials/sprite_no_write.material\"\n"
-  "blend_mode: BLEND_MODE_ALPHA\n"
-  ""
+components {
+  id: "shadow"
+  component: "/ld48/materials/shadow/shadow.model"
   position {
     x: 0.0
     y: 0.0

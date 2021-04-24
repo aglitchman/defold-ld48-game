@@ -1,0 +1,6 @@
+mesh: "/builtins/assets/meshes/quad.dae"
+material: "/ld48/materials/shadow/shadow.material"
+skeleton: ""
+animations: ""
+default_animation: ""
+name: "unnamed"
