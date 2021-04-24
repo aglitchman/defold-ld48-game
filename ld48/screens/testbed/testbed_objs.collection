@@ -6,7 +6,7 @@ embedded_instances {
   "  id: \"model\"\n"
   "  type: \"model\"\n"
   "  data: \"mesh: \\\"/ld48/assets/greyboxes/cube_100.dae\\\"\\n"
-  "material: \\\"/ld48/materials/model.material\\\"\\n"
+  "material: \\\"/ld48/materials/dirlight/dirlight_model.material\\\"\\n"
   "textures: \\\"/ld48/assets/greyboxes/grey_128.png\\\"\\n"
   "skeleton: \\\"\\\"\\n"
   "animations: \\\"\\\"\\n"
@@ -27,9 +27,9 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 185.0
-    y: 0.0
-    z: 0.0
+    x: 0.0
+    y: -250.0
+    z: -500.0
   }
   rotation {
     x: 0.0

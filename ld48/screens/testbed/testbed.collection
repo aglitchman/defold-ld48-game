@@ -154,7 +154,7 @@ embedded_instances {
   "  id: \"model\"\n"
   "  type: \"model\"\n"
   "  data: \"mesh: \\\"/ld48/assets/greyboxes/cube_100.dae\\\"\\n"
-  "material: \\\"/ld48/materials/model_no_depth.material\\\"\\n"
+  "material: \\\"/ld48/materials/dirlight/dirlight_model_no_depth.material\\\"\\n"
   "textures: \\\"/ld48/assets/greyboxes/red_128.png\\\"\\n"
   "skeleton: \\\"\\\"\\n"
   "animations: \\\"\\\"\\n"
