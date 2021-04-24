@@ -1,4 +1,24 @@
 name: "testbed"
+instances {
+  id: "powerup_shadows"
+  prototype: "/ld48/screens/powerups/powerup_shadows.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 collection_instances {
   id: "walls"
   collection: "/ld48/screens/testbed/testbed_walls.collection"

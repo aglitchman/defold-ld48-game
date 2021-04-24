@@ -1,3 +1,18 @@
+components {
+  id: "shadowcast_test"
+  component: "/ld48/screens/powerups/shadowcast_test.script"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
 embedded_components {
   id: "model"
   type: "model"

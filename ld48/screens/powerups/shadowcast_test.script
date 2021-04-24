@@ -1,0 +1,31 @@
+local RAYCAST_GROUPS = { hash("wall") }
+local CLOSEST = { all = false }
+
+function init(self)
+    self.shadow = factory.create("/powerup_shadows#blue")
+    msg.post(self.shadow, "disable")
+end
+
+function final(self)
+    go.delete(self.shadow)
+end
+
+function update(self, dt)
+    local results = physics.raycast(go.get_position(), go.get_position() + vmath.vector3(0, -100, 0), RAYCAST_GROUPS, CLOSEST)
+    if results ~= nil then
+        for _,result in ipairs(results) do
+            -- { --[[0000027FBDAC0410]]
+            --     normal = vmath.vector3(1.1586089385673e-06, 1.1586089385673e-06, 1),
+            --     fraction = 0.61937010288239,
+            --     position = vmath.vector3(87.545631408691, -90.113975524902, -899.99969482422),
+            --     group = hash: [wall],
+            --     id = hash: [/walls/grey0]
+            -- }
+            msg.post(self.shadow, "enable")
+            go.set_position(result.position + result.normal * 0.1, self.shadow)
+            go.set_rotation(vmath.quat_axis_angle(result.normal, 0) * vmath.quat_rotation_x(math.pi / 2), self.shadow)
+        end
+    else
+        msg.post(self.shadow, "disable")
+    end
+end
