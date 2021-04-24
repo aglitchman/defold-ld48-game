@@ -1,6 +1,6 @@
 local app_scenemanager = require("ld48.app.scenemanager")
 local app_render = require("ld48.app.render")
-local player_state = require("ld48.screens.common.state")
+local player_state = require("ld48.screens.common.player_state")
 
 local powerups = {}
 
