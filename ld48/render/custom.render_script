@@ -1,12 +1,16 @@
 local app_render = require("ld48.app.render")
 
 function init(self)
-    self.tile_pred = render.predicate({"tile"})
     self.gui_pred = render.predicate({"gui"})
-    self.text_pred = render.predicate({"text"})
-    self.particle_pred = render.predicate({"particle"})
+
     self.model_pred = render.predicate({"model"})
     self.model_no_depth_pred = render.predicate({"model_no_depth"})
+
+    self.tile_pred = render.predicate({"tile"})
+    self.tile_no_depth_pred = render.predicate({"tile_no_depth"})
+
+    self.text_pred = render.predicate({"text"})
+    self.particle_pred = render.predicate({"particle"})
 
     self.clear_color = vmath.vector4(0, 0, 0, 0)
     self.clear_color.x = sys.get_config("render.clear_color_red", 0)
@@ -43,6 +47,9 @@ function update(self)
     render.enable_state(render.STATE_BLEND)
     render.disable_state(render.STATE_CULL_FACE)
     render.draw(self.tile_pred)
+    render.disable_state(render.STATE_DEPTH_TEST)
+    render.draw(self.tile_no_depth_pred)
+    render.enable_state(render.STATE_DEPTH_TEST)
     render.draw(self.particle_pred)
     render.draw_debug3d()
 

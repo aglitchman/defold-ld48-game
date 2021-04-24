@@ -9,6 +9,7 @@ M.NEAR = 0.1
 M.FAR = 2000
 
 -- Helpers
+local IDENTITY_MAT4 = vmath.matrix4()
 -- local FRONT = vmath.vector3(0, 0, -1)
 -- local WORLD_UP = vmath.vector3(0, 1, 0)
 
@@ -16,6 +17,7 @@ M.FAR = 2000
 M.POSITION = vmath.vector3(0, 0, 0)
 M.FRONT = vmath.vector3(0, 0, -1)
 M.WORLD_UP = vmath.vector3(0, 1, 0)
+M.BOBBING = vmath.matrix4()
 
 function M.update_camera(yaw, pitch)
     local front = vmath.vector3()
@@ -37,8 +39,8 @@ function M.update_window(w, h)
     M.ASPECT_RATIO = w / h
 end
 
-function M.camera_view()
-    return vmath.matrix4_look_at(M.POSITION, M.POSITION + M.FRONT, M.WORLD_UP);
+function M.camera_view(with_bobbing)
+    return vmath.matrix4_look_at(M.POSITION, M.POSITION + M.FRONT, M.WORLD_UP) * (with_bobbing and M.BOBBING or IDENTITY_MAT4);
 end
 
 function M.camera_perspective()
