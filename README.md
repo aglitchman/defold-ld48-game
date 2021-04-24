@@ -1,12 +1,12 @@
 ![Cover](ld48/res/web/loader_cover.png)
 
-# Ludum Dare 48 Game - Made With Defold
+# WIP - Ludum Dare 48 Game - Made With Defold
 
 This project was created from the "empty" project template. **This is a work-in-progress template for the future LD48.** It will contain a basic setup for camera, screens, preloader, etc.
 
 Play the latest version online - [**Web build**](https://aglitchman.github.io/defold-ld48-game/).
 
-## Structure
+## Structure (WIP)
 
 ```yaml
 /ld48: # Main folder
@@ -31,7 +31,7 @@ Play the latest version online - [**Web build**](https://aglitchman.github.io/de
 
 ### World
 
-1 unit = 1 centimeter (models) = 1 pixels (sprites). `cube_100.dae` is a 100x100x100cm cube.
+1 unit = 1 centimeter (models) = 1 pixels (sprites), and `cube_100.dae` is a 100x100x100cm cube.
 
 ### Dev Notes
 
