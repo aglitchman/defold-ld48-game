@@ -20,6 +20,12 @@ function M.reset()
 
     -- Config
     M.mouse_sensitivity = 0.3
+
+    -- Weapon
+    M.weapon_state = M.weapon_state or {}
+    M.weapon_state.energy = 99
+    M.weapon_state.fire_rate = 4
+    M.weapon_state.power_usage = 1
 end
 
 M.reset()

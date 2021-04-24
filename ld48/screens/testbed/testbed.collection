@@ -168,9 +168,9 @@ embedded_instances {
   data: "embedded_components {\n"
   "  id: \"model\"\n"
   "  type: \"model\"\n"
-  "  data: \"mesh: \\\"/ld48/assets/greyboxes/cube_100.dae\\\"\\n"
+  "  data: \"mesh: \\\"/ld48/assets/weapon/gun.dae\\\"\\n"
   "material: \\\"/ld48/materials/dirlight/dirlight_model_no_depth.material\\\"\\n"
-  "textures: \\\"/ld48/assets/greyboxes/red_128.png\\\"\\n"
+  "textures: \\\"/ld48/assets/greyboxes/green_128.png\\\"\\n"
   "skeleton: \\\"\\\"\\n"
   "animations: \\\"\\\"\\n"
   "default_animation: \\\"\\\"\\n"
@@ -208,8 +208,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 101.0
-    y: -66.0
+    x: 87.0
+    y: -71.0
     z: -200.0
   }
   rotation {
@@ -289,7 +289,7 @@ embedded_instances {
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: 5.0\n"
+  "    x: 0.0\n"
   "    y: 20.0\n"
   "    z: 0.0\n"
   "  }\n"
@@ -302,19 +302,19 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: -34.0
-    y: 48.0
-    z: 51.0
+    x: 0.0
+    y: 32.0
+    z: 31.3
   }
   rotation {
-    x: 0.0
+    x: -0.33791673
     y: 0.0
     z: 0.0
-    w: 1.0
+    w: 0.941176
   }
   scale3 {
-    x: 0.1
-    y: 0.1
-    z: 0.1
+    x: 0.15
+    y: 0.15
+    z: 0.15
   }
 }

@@ -3,7 +3,7 @@ embedded_components {
   type: "model"
   data: "mesh: \"/ld48/assets/greyboxes/cube_20.dae\"\n"
   "material: \"/ld48/materials/dirlight/dirlight_model.material\"\n"
-  "textures: \"/ld48/assets/greyboxes/red_128.png\"\n"
+  "textures: \"/ld48/assets/powerups/powerup_red.png\"\n"
   "skeleton: \"\"\n"
   "animations: \"\"\n"
   "default_animation: \"\"\n"
