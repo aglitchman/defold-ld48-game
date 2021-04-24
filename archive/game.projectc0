@@ -25,8 +25,8 @@ clear_color_blue = 0.9
 clear_color_alpha = 1.0
 
 [physics]
-type = 2D
-gravity_y = -100.0
+type = 3D
+gravity_y = -1000.0
 debug = 0
 debug_alpha = 0.9
 world_count = 4
@@ -80,17 +80,17 @@ game_binding = /builtins/input/all.input_bindingc
 use_accelerometer = 1
 
 [sprite]
-max_count = 128
+max_count = 1000
 subpixels = 1
 
 [spine]
 max_count = 128
 
 [model]
-max_count = 128
+max_count = 1000
 
 [mesh]
-max_count = 128
+max_count = 1000
 
 [gui]
 max_count = 64
