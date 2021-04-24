@@ -232,7 +232,7 @@ embedded_instances {
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "line_break: false\\n"
   "text: \\\"89\\\"\\n"
-  "font: \\\"/ld48/assets/fonts/subtitle.font\\\"\\n"
+  "font: \\\"/ld48/assets/fonts/digits.font\\\"\\n"
   "material: \\\"/ld48/materials/label_no_depth.material\\\"\\n"
   "\"\n"
   "  position {\n"
@@ -260,8 +260,8 @@ embedded_instances {
     w: 1.0
   }
   scale3 {
-    x: 0.2
-    y: 0.2
-    z: 0.2
+    x: 0.1
+    y: 0.1
+    z: 0.1
   }
 }

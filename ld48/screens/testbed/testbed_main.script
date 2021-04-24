@@ -17,8 +17,6 @@ function init(self)
     -- msg.post("/objs/test_sprite", "disable")
     -- msg.post("/objs/test_sprite1", "disable")
 
-    -- print(vmath.matrix4_perspective(fov, aspect, near, far)ld48_camera.perspective())
-
     self.count = 89
     timer.delay(0.1, true, function (self)
         self.count = self.count - 1
@@ -29,9 +27,6 @@ function init(self)
 end
 
 function final(self)
-    -- Add finalization code here
-    -- Learn more: https://defold.com/manuals/script/
-    -- Remove this function if not needed
 end
 
 function update(self, dt)
@@ -39,9 +34,6 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-    -- Add message-handling code here
-    -- Learn more: https://defold.com/manuals/message-passing/
-    -- Remove this function if not needed
 end
 
 function on_input(self, action_id, action)
@@ -51,7 +43,4 @@ function on_input(self, action_id, action)
 end
 
 function on_reload(self)
-    -- Add reload-handling code here
-    -- Learn more: https://defold.com/manuals/hot-reload/
-    -- Remove this function if not needed
 end
