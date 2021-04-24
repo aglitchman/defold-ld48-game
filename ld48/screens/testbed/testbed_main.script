@@ -12,7 +12,7 @@ function init(self)
     -- go.animate("/test_box", "euler.z", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
     -- go.animate("/test_box", "euler.x", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
 
-    go.animate("/player_weapon", "position.y", go.PLAYBACK_LOOP_PINGPONG, -75, go.EASING_INOUTSINE, 10)
+    
     
     -- go.animate("/player_weapon", "euler.x", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
     -- go.animate("/objs/test_cube", "euler.y", go.PLAYBACK_LOOP_PINGPONG, 3600, go.EASING_LINEAR, 100)
