@@ -39,6 +39,11 @@ end
 function on_input(self, action_id, action)
     if action_id == hash("key_1") and action.pressed then
         app_scenemanager.load_scene("testbed")
+    elseif action_id == hash("key_2") and action.pressed then
+        msg.post("@system:", "toggle_profile")
+    elseif action_id == hash("touch") and action.pressed then
+        --local obj_id = factory.create("/player_weapon#powerups_blue", go.get_world_position("/player_weapon"), vmath.quat_rotation_x(math.random()*10))
+        --msg.post(obj_id, "apply_force", {force = vmath.vector3(0, 0, -10000), position = go.get_world_position(obj_id)})
     end
 end
 

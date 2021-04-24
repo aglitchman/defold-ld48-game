@@ -1,0 +1,81 @@
+local app_render = require("ld48.app.render")
+local player_state = require("ld48.screens.common.state")
+
+local function update_view_bobbing(s, dt)
+    local v = -(s.dist_walked + (s.dist_walked - s.prev_dist_walked) * dt) / 200 * math.pi
+
+    local m = vmath.matrix4()
+    m = m * vmath.matrix4_translation(vmath.vector3(math.sin(v) * 3, math.abs(math.cos(v)) * 3, 0))
+
+    app_render.bobbing_mat4 = m
+end
+
+local function handle_movement(dt)
+    local s = player_state
+    local prev_pos = vmath.vector3(s.pos)
+
+    local sz = 0
+    local sx = 0
+    if s.key_state.forward then
+        sz = sz + 1
+    end
+    if s.key_state.backward then
+        sz = sz - 1
+    end
+    if s.key_state.step_left then
+        sx = sx + 1
+    end
+    if s.key_state.step_right then
+        sx = sx - 1
+    end
+
+    local rq = vmath.quat_rotation_y(math.rad(-(90 + player_state.yaw)))
+    local v = vmath.rotate(rq, app_render.FORWARD * sz + app_render.RIGHT * sx)
+    if vmath.length(v) ~= 0 then
+        v = vmath.normalize(v)
+    end
+
+    s.pos = s.pos + v * 300 * dt
+    app_render.view_position = s.pos
+    go.set_position(s.pos)
+
+    -- For bobbing
+    local pd = prev_pos - s.pos
+    s.prev_dist_walked = s.dist_walked
+    s.dist_walked = s.dist_walked + math.sqrt(pd.x * pd.x + pd.z * pd.z)
+    update_view_bobbing(s, dt)
+end
+
+function init(self)
+    -- msg.post(".", "acquire_input_focus")
+end
+
+function final(self)
+
+end
+
+function update(self, dt)
+    handle_movement(dt)
+end
+
+function on_message(self, message_id, message, sender)
+
+end
+
+function on_input(self, action_id, action)
+    local s = player_state
+
+    if action_id == hash("key_w") then
+        s.key_state.forward = not action.released
+    elseif action_id == hash("key_s") then
+        s.key_state.backward = not action.released
+    elseif action_id == hash("key_a") then
+        s.key_state.step_left = not action.released
+    elseif action_id == hash("key_d") then
+        s.key_state.step_right = not action.released
+    end
+end
+
+function on_reload(self)
+
+end

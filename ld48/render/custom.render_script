@@ -28,7 +28,7 @@ function update(self)
 
     app_render.update_window(render.get_window_width(), render.get_window_height())
 
-    render.set_view(app_render.camera_view())
+    render.set_view(app_render.camera_view(true))
     render.set_projection(app_render.camera_perspective())
     render.set_depth_mask(true)
     render.enable_state(render.STATE_DEPTH_TEST)
