@@ -1,4 +1,4 @@
-font: "/ld48/assets/fonts/Teko/Teko-SemiBold-Digits.ttf"
+font: "/ld48/assets/fonts/Teko/Teko-SemiBold-Digits-Mono.ttf"
 material: "/ld48/materials/font.material"
 size: 288
 antialias: 1

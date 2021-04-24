@@ -2,7 +2,7 @@ local app_render = require("ld48.app.render")
 local player_state = require("ld48.screens.common.state")
 
 local function update_view_bobbing(s, dt)
-    local v = -(s.dist_walked + (s.dist_walked - s.prev_dist_walked) * dt) / 200 * math.pi
+    local v = -(s.dist_walked + (s.dist_walked - s.prev_dist_walked) * dt) / 100 * math.pi
 
     local m = vmath.matrix4()
     m = m * vmath.matrix4_translation(vmath.vector3(math.sin(v) * 3, math.abs(math.cos(v)) * 3, 0))

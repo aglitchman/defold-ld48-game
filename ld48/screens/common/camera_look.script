@@ -99,8 +99,8 @@ function on_input(self, action_id, action)
                 s.yaw = s.yaw - 360
             end
 
-            s.pitch = math.max(s.pitch, -90)
-            s.pitch = math.min(s.pitch, 90)
+            s.pitch = math.max(s.pitch, -89)
+            s.pitch = math.min(s.pitch, 89)
 
             set_eulers(self)
         end

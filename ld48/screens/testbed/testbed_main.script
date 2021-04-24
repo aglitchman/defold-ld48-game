@@ -17,20 +17,20 @@ function init(self)
     -- msg.post("/objs/test_sprite", "disable")
     -- msg.post("/objs/test_sprite1", "disable")
 
-    self.count = 89
-    timer.delay(0.1, true, function (self)
-        self.count = self.count - 1
-        if self.count < 0 then
-            self.count = 99
-        end
-    end)
+    -- self.count = 89
+    -- timer.delay(0.1, true, function (self)
+    --     self.count = self.count - 1
+    --     if self.count < 0 then
+    --         self.count = 99
+    --     end
+    -- end)
 end
 
 function final(self)
 end
 
 function update(self, dt)
-    label.set_text("/count#label", tostring(self.count))
+    -- label.set_text("/count#label", tostring(self.count))
 end
 
 function on_message(self, message_id, message, sender)
