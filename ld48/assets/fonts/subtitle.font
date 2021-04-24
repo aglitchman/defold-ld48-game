@@ -1,6 +1,6 @@
-font: "/ld48/assets/fonts/Kufam/static/Kufam-SemiBold.ttf"
-material: "/builtins/fonts/font.material"
-size: 64
+font: "/ld48/assets/fonts/Teko/Teko-SemiBold.ttf"
+material: "/builtins/fonts/font-df.material"
+size: 48
 antialias: 1
 alpha: 1.0
 outline_alpha: 0.0
@@ -10,7 +10,7 @@ shadow_blur: 0
 shadow_x: 0.0
 shadow_y: 0.0
 extra_characters: ""
-output_format: TYPE_BITMAP
+output_format: TYPE_DISTANCE_FIELD
 all_chars: false
 cache_width: 0
 cache_height: 0
