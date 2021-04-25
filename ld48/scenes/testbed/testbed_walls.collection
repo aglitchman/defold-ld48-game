@@ -4,7 +4,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -15,7 +15,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -24,7 +24,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: 200.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -35,7 +35,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -44,7 +44,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 400.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -55,7 +55,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -64,7 +64,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -75,7 +75,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -84,7 +84,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -95,7 +95,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -104,7 +104,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -115,7 +115,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -124,7 +124,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/magenta.go"
   position {
     x: -400.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -135,7 +135,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -144,7 +144,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -155,7 +155,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -164,7 +164,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -175,7 +175,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -184,7 +184,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -195,7 +195,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -204,7 +204,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -215,7 +215,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -224,7 +224,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -235,7 +235,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -244,7 +244,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -400.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -255,7 +255,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -264,7 +264,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -275,7 +275,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -284,7 +284,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -295,7 +295,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -304,7 +304,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -315,7 +315,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -324,7 +324,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -335,7 +335,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -344,7 +344,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -355,7 +355,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -364,7 +364,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 0.0
-    y: -200.0
+    y: -100.0
     z: 0.0
   }
   rotation {
@@ -384,7 +384,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
-    y: -200.0
+    y: -100.0
     z: 0.0
   }
   rotation {
@@ -404,7 +404,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
-    y: -200.0
+    y: -100.0
     z: 0.0
   }
   rotation {
@@ -424,7 +424,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
-    y: -200.0
+    y: -100.0
     z: 0.0
   }
   rotation {
@@ -444,7 +444,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -400.0
-    y: -200.0
+    y: -100.0
     z: 0.0
   }
   rotation {
@@ -464,7 +464,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
-    y: -200.0
+    y: -100.0
     z: 0.0
   }
   rotation {
@@ -484,7 +484,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
-    y: -200.0
+    y: -100.0
     z: 0.0
   }
   rotation {
@@ -504,7 +504,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -800.0
-    y: -200.0
+    y: -100.0
     z: 0.0
   }
   rotation {
@@ -524,7 +524,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 800.0
-    y: -200.0
+    y: -100.0
     z: 0.0
   }
   rotation {
@@ -544,7 +544,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
-    y: -200.0
+    y: -100.0
     z: 400.0
   }
   rotation {
@@ -564,7 +564,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 800.0
-    y: -200.0
+    y: -100.0
     z: 400.0
   }
   rotation {
@@ -584,7 +584,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 0.0
-    y: -200.0
+    y: -100.0
     z: 400.0
   }
   rotation {
@@ -604,7 +604,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
-    y: -200.0
+    y: -100.0
     z: 400.0
   }
   rotation {
@@ -624,7 +624,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
-    y: -200.0
+    y: -100.0
     z: 400.0
   }
   rotation {
@@ -644,7 +644,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -800.0
-    y: -200.0
+    y: -100.0
     z: 400.0
   }
   rotation {
@@ -664,7 +664,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -400.0
-    y: -200.0
+    y: -100.0
     z: 400.0
   }
   rotation {
@@ -684,7 +684,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
-    y: -200.0
+    y: -100.0
     z: 400.0
   }
   rotation {
@@ -704,7 +704,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
-    y: -200.0
+    y: -100.0
     z: 400.0
   }
   rotation {
@@ -724,7 +724,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 0.0
-    y: -200.0
+    y: -100.0
     z: -400.0
   }
   rotation {
@@ -744,7 +744,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
-    y: -200.0
+    y: -100.0
     z: -400.0
   }
   rotation {
@@ -764,7 +764,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
-    y: -200.0
+    y: -100.0
     z: -400.0
   }
   rotation {
@@ -784,7 +784,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
-    y: -200.0
+    y: -100.0
     z: -400.0
   }
   rotation {
@@ -804,7 +804,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -800.0
-    y: -200.0
+    y: -100.0
     z: -400.0
   }
   rotation {
@@ -824,7 +824,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
-    y: -200.0
+    y: -100.0
     z: -400.0
   }
   rotation {
@@ -844,7 +844,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 800.0
-    y: -200.0
+    y: -100.0
     z: -400.0
   }
   rotation {
@@ -864,7 +864,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -400.0
-    y: -200.0
+    y: -100.0
     z: -400.0
   }
   rotation {
@@ -884,7 +884,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
-    y: -200.0
+    y: -100.0
     z: -400.0
   }
   rotation {
@@ -904,7 +904,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 0.0
-    y: -200.0
+    y: -100.0
     z: 800.0
   }
   rotation {
@@ -924,7 +924,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
-    y: -200.0
+    y: -100.0
     z: 800.0
   }
   rotation {
@@ -944,7 +944,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
-    y: -200.0
+    y: -100.0
     z: 800.0
   }
   rotation {
@@ -964,7 +964,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
-    y: -200.0
+    y: -100.0
     z: 800.0
   }
   rotation {
@@ -984,7 +984,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -800.0
-    y: -200.0
+    y: -100.0
     z: 800.0
   }
   rotation {
@@ -1004,7 +1004,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
-    y: -200.0
+    y: -100.0
     z: 800.0
   }
   rotation {
@@ -1024,7 +1024,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 800.0
-    y: -200.0
+    y: -100.0
     z: 800.0
   }
   rotation {
@@ -1044,7 +1044,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -400.0
-    y: -200.0
+    y: -100.0
     z: 800.0
   }
   rotation {
@@ -1064,7 +1064,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
-    y: -200.0
+    y: -100.0
     z: 800.0
   }
   rotation {
@@ -1084,7 +1084,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
-    y: -200.0
+    y: -100.0
     z: -800.0
   }
   rotation {
@@ -1104,7 +1104,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -800.0
-    y: -200.0
+    y: -100.0
     z: -800.0
   }
   rotation {
@@ -1124,7 +1124,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
-    y: -200.0
+    y: -100.0
     z: -800.0
   }
   rotation {
@@ -1144,7 +1144,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
-    y: -200.0
+    y: -100.0
     z: -800.0
   }
   rotation {
@@ -1164,7 +1164,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 0.0
-    y: -200.0
+    y: -100.0
     z: -800.0
   }
   rotation {
@@ -1184,7 +1184,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
-    y: -200.0
+    y: -100.0
     z: -800.0
   }
   rotation {
@@ -1204,7 +1204,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
-    y: -200.0
+    y: -100.0
     z: -800.0
   }
   rotation {
@@ -1224,7 +1224,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 800.0
-    y: -200.0
+    y: -100.0
     z: -800.0
   }
   rotation {
@@ -1244,7 +1244,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -400.0
-    y: -200.0
+    y: -100.0
     z: -800.0
   }
   rotation {
@@ -1264,7 +1264,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 600.0
-    y: -200.0
+    y: -100.0
     z: 200.0
   }
   rotation {
@@ -1284,7 +1284,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
-    y: -200.0
+    y: -100.0
     z: 200.0
   }
   rotation {
@@ -1304,7 +1304,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 400.0
-    y: -200.0
+    y: -100.0
     z: 200.0
   }
   rotation {
@@ -1324,7 +1324,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 200.0
-    y: -200.0
+    y: -100.0
     z: 200.0
   }
   rotation {
@@ -1344,7 +1344,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
-    y: -200.0
+    y: -100.0
     z: 200.0
   }
   rotation {
@@ -1364,7 +1364,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -200.0
-    y: -200.0
+    y: -100.0
     z: 200.0
   }
   rotation {
@@ -1384,7 +1384,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -600.0
-    y: -200.0
+    y: -100.0
     z: 200.0
   }
   rotation {
@@ -1404,7 +1404,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
-    y: -200.0
+    y: -100.0
     z: 200.0
   }
   rotation {
@@ -1424,7 +1424,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -400.0
-    y: -200.0
+    y: -100.0
     z: 200.0
   }
   rotation {
@@ -1444,7 +1444,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 600.0
-    y: -200.0
+    y: -100.0
     z: -200.0
   }
   rotation {
@@ -1464,7 +1464,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
-    y: -200.0
+    y: -100.0
     z: -200.0
   }
   rotation {
@@ -1484,7 +1484,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
-    y: -200.0
+    y: -100.0
     z: -200.0
   }
   rotation {
@@ -1504,7 +1504,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -600.0
-    y: -200.0
+    y: -100.0
     z: -200.0
   }
   rotation {
@@ -1524,7 +1524,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 200.0
-    y: -200.0
+    y: -100.0
     z: -200.0
   }
   rotation {
@@ -1544,7 +1544,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
-    y: -200.0
+    y: -100.0
     z: -200.0
   }
   rotation {
@@ -1564,7 +1564,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -200.0
-    y: -200.0
+    y: -100.0
     z: -200.0
   }
   rotation {
@@ -1584,7 +1584,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -400.0
-    y: -200.0
+    y: -100.0
     z: -200.0
   }
   rotation {
@@ -1604,7 +1604,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 400.0
-    y: -200.0
+    y: -100.0
     z: -200.0
   }
   rotation {
@@ -1624,7 +1624,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -200.0
-    y: -200.0
+    y: -100.0
     z: -600.0
   }
   rotation {
@@ -1644,7 +1644,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 400.0
-    y: -200.0
+    y: -100.0
     z: -600.0
   }
   rotation {
@@ -1664,7 +1664,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 200.0
-    y: -200.0
+    y: -100.0
     z: -600.0
   }
   rotation {
@@ -1684,7 +1684,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -400.0
-    y: -200.0
+    y: -100.0
     z: -600.0
   }
   rotation {
@@ -1704,7 +1704,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
-    y: -200.0
+    y: -100.0
     z: -600.0
   }
   rotation {
@@ -1724,7 +1724,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -600.0
-    y: -200.0
+    y: -100.0
     z: -600.0
   }
   rotation {
@@ -1744,7 +1744,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 600.0
-    y: -200.0
+    y: -100.0
     z: -600.0
   }
   rotation {
@@ -1764,7 +1764,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
-    y: -200.0
+    y: -100.0
     z: -600.0
   }
   rotation {
@@ -1784,7 +1784,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
-    y: -200.0
+    y: -100.0
     z: -600.0
   }
   rotation {
@@ -1804,7 +1804,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -400.0
-    y: -200.0
+    y: -100.0
     z: 600.0
   }
   rotation {
@@ -1824,7 +1824,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -200.0
-    y: -200.0
+    y: -100.0
     z: 600.0
   }
   rotation {
@@ -1844,7 +1844,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
-    y: -200.0
+    y: -100.0
     z: 600.0
   }
   rotation {
@@ -1864,7 +1864,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
-    y: -200.0
+    y: -100.0
     z: 600.0
   }
   rotation {
@@ -1884,7 +1884,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 600.0
-    y: -200.0
+    y: -100.0
     z: 600.0
   }
   rotation {
@@ -1904,7 +1904,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -600.0
-    y: -200.0
+    y: -100.0
     z: 600.0
   }
   rotation {
@@ -1924,7 +1924,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
-    y: -200.0
+    y: -100.0
     z: 600.0
   }
   rotation {
@@ -1944,7 +1944,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 200.0
-    y: -200.0
+    y: -100.0
     z: 600.0
   }
   rotation {
@@ -1964,7 +1964,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 400.0
-    y: -200.0
+    y: -100.0
     z: 600.0
   }
   rotation {
@@ -1984,7 +1984,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: 400.0
   }
   rotation {
@@ -1995,7 +1995,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2004,7 +2004,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: -800.0
   }
   rotation {
@@ -2015,7 +2015,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2024,7 +2024,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: 200.0
   }
   rotation {
@@ -2035,7 +2035,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2044,7 +2044,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: 600.0
   }
   rotation {
@@ -2055,7 +2055,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2064,7 +2064,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -2075,7 +2075,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2084,7 +2084,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/magenta.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: -600.0
   }
   rotation {
@@ -2095,7 +2095,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2104,7 +2104,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: -400.0
   }
   rotation {
@@ -2115,7 +2115,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2124,7 +2124,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: -200.0
   }
   rotation {
@@ -2135,7 +2135,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2144,7 +2144,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: 0.0
   }
   rotation {
@@ -2155,7 +2155,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2164,7 +2164,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: 800.0
   }
   rotation {
@@ -2175,7 +2175,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2184,7 +2184,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: 1000.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -2195,7 +2195,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2204,7 +2204,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: 200.0
   }
   rotation {
@@ -2215,7 +2215,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2224,7 +2224,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: 600.0
   }
   rotation {
@@ -2235,7 +2235,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2244,7 +2244,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: -400.0
   }
   rotation {
@@ -2255,7 +2255,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2264,7 +2264,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: -200.0
   }
   rotation {
@@ -2275,7 +2275,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2284,7 +2284,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: -1000.0
   }
   rotation {
@@ -2295,7 +2295,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2304,7 +2304,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: -800.0
   }
   rotation {
@@ -2315,7 +2315,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2324,7 +2324,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: 400.0
   }
   rotation {
@@ -2335,7 +2335,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2344,7 +2344,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/magenta.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: -600.0
   }
   rotation {
@@ -2355,7 +2355,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2364,7 +2364,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: 0.0
   }
   rotation {
@@ -2375,7 +2375,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2384,7 +2384,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: 800.0
   }
   rotation {
@@ -2395,7 +2395,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }
@@ -2404,7 +2404,7 @@ instances {
   prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: -1000.0
-    y: 0.0
+    y: 100.0
     z: 1000.0
   }
   rotation {
@@ -2415,7 +2415,7 @@ instances {
   }
   scale3 {
     x: 1.0
-    y: 4.0
+    y: 1.0
     z: 1.0
   }
 }

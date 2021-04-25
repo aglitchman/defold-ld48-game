@@ -40,7 +40,9 @@ function update(self)
     render.enable_state(render.STATE_CULL_FACE)
     render.set_blend_func(render.BLEND_ONE, render.BLEND_ONE_MINUS_SRC_ALPHA)
     -- Opaque models
-    render.draw(self.model_pred)
+    -- local constants = render.constant_buffer()
+    -- constants.ambient_color = vmath.vector4(0.5, 0.5, 0.5, 0.1)
+    render.draw(self.model_pred, constants)
     render.disable_state(render.STATE_DEPTH_TEST)
     
     render.enable_state(render.STATE_DEPTH_TEST)
