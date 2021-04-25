@@ -21,20 +21,18 @@ local function follow_player(self)
 end
 
 function init(self)
-    --go.animate(".", "euler.y", go.PLAYBACK_LOOP_FORWARD, 3600, go.EASING_LINEAR, 30)
-
+    -- go.animate(".", "euler.y", go.PLAYBACK_LOOP_FORWARD, 3600, go.EASING_LINEAR, 30)
     -- go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, go.get_position().y + 20, go.EASING_INOUTSINE, 10)
-
     -- timer.delay(10, true, follow_player)
     -- go.set(".", "euler.y", random_euler_y(self))
 
     for i = 1, 20 do
         local obj_id = powerups.spawn_blue(
             vmath.vector3(math.random(-100, 100), math.random(-100, 100), math.random(-100, 100)), 
-            vmath.quat_rotation_x(math.random()*10))
+            vmath.quat_rotation_x(math.random()*10),
+            true)
         go.set_parent(obj_id, ".", false)
     end
-    
 end
 
 function final(self)
@@ -45,10 +43,10 @@ end
 
 function on_message(self, message_id, message, sender)
     -- Handle collision
-    if message_id == hash("contact_point_response") then
-        local newpos = go.get_position() + message.normal * message.distance
-        go.set_position(newpos)
-    end
+    -- if message_id == hash("contact_point_response") then
+    --     local newpos = go.get_position() + message.normal * message.distance
+    --     go.set_position(newpos)
+    -- end
 end
 
 function on_input(self, action_id, action)

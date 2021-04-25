@@ -19,7 +19,7 @@ components {
   }
   properties {
     id: "radius"
-    value: "30.0"
+    value: "50.0"
     type: PROPERTY_TYPE_NUMBER
   }
 }
@@ -56,7 +56,6 @@ embedded_components {
   "restitution: 0.5\n"
   "group: \"pickup_blue\"\n"
   "mask: \"pickup_blue\"\n"
-  "mask: \"pickup_red\"\n"
   "mask: \"floor\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
@@ -96,7 +95,7 @@ embedded_components {
   }
 }
 embedded_components {
-  id: "shoot_colobj"
+  id: "target_colobj"
   type: "collisionobject"
   data: "collision_shape: \"\"\n"
   "type: COLLISION_OBJECT_TYPE_KINEMATIC\n"

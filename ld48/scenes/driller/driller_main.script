@@ -3,6 +3,7 @@ local app_render = require("ld48.app.render")
 local lume = require("ld48.app.lume")
 local player_state = require("ld48.scenes.common.player_state")
 local flow = require("ludobits.m.flow")
+local powerups = require("ld48.scenes.powerups.powerups_helper")
 
 local function add_ammo(self)
     local s = player_state
@@ -98,6 +99,7 @@ function init(self)
         for i = 1, 10 do
             local a = math.random() * math.pi * 2
             local r = math.random(4500, 7000)
+            -- local r = -1000
             factory.create("/enemies#harvester", vmath.vector3(math.cos(a) * r, 232, math.sin(a) * r))
         end
 
@@ -160,6 +162,9 @@ function on_input(self, action_id, action)
         if results ~= nil then
             for _,result in ipairs(results) do
                 spawn_fx_contact(self, result.position, result.normal)
+                if result.group == hash("target_blue") then
+                    powerups.free_from_harvester(result.id)
+                end
                 -- msg.post("/raycast_tester", "enable")
                 -- go.set_position(result.position + result.normal * 0.05, "/raycast_tester")
             end
