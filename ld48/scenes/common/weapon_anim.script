@@ -1,8 +1,8 @@
 local player_state = require("ld48.scenes.common.player_state")
 
 function init(self)
-    local pos = go.get_position()
-    go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, pos.y - 4, go.EASING_INOUTSINE, 10)
+    self.def_local_pos = go.get_position()
+    go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, self.def_local_pos.y - 4, go.EASING_INOUTSINE, 10)
 
     self.last_pos = go.get_world_position()
     self.ey = 0
@@ -48,4 +48,23 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
+    if message_id == hash("shoot") then
+        local ey = self.ey
+        if ey > 0 then
+            ey = ey - math.max(0.5, math.abs(ey / 2))
+            if ey < 0 then
+                ey = 0
+            end
+        else
+            ey = ey + math.max(0.5, math.abs(ey / 2))
+            if ey > 0 then
+                ey = 0
+            end
+        end
+        self.ey = ey
+
+        go.cancel_animations(".", "position.z")
+        go.set(".", "position.z", self.def_local_pos.z + 20)
+        go.animate(".", "position.z", go.PLAYBACK_ONCE_FORWARD, self.def_local_pos.z, go.EASING_OUTQUAD, 0.5)
+    end
 end
