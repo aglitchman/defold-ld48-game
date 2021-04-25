@@ -10,6 +10,10 @@ images {
   image: "/ld48/assets/ui/holo_display.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
+images {
+  image: "/ld48/assets/ui/blue_count.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 margin: 0
 extrude_borders: 0
 inner_padding: 2
