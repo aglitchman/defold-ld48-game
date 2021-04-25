@@ -3,6 +3,7 @@ local app_render = require("ld48.app.render")
 go.property("color", vmath.vector3(1, 1, 1))
 go.property("component", hash("holo"))
 go.property("property", hash("tint"))
+go.property("static", false)
 
 function init(self)
     self.url = msg.url(nil, nil, self.component)
@@ -12,7 +13,12 @@ function final(self)
 end
 
 function update(self, dt)
-    local tint = vmath.vector4(self.color.x, self.color.y, self.color.z, app_render.holo_tint and 0.55 or 0.75)
+    local alpha = (app_render.holo_tint or self.static) and 0.55 or 0.75
+    local dist = vmath.length(app_render.view_position - go.get_position())
+    if dist > 500 then
+        alpha = math.max(0, alpha - ((dist - 500) / 300))
+    end
+    local tint = vmath.vector4(self.color.x, self.color.y, self.color.z, alpha)
     go.set(self.url, self.property, tint)
     -- go.set("#label", "color.w", app_render.holo_tint and 0.5 or 0.75)
 end
