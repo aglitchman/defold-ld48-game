@@ -23,6 +23,7 @@ M.bobbing_mat4 = vmath.matrix4()
 
 -- Visuals
 M.holo_tint = false
+M.ambient_color = vmath.vector4(1, 0.5, 0, 0.5)
 
 function M.reset()
     M.view_position = vmath.vector3(0, 0, 0)

@@ -4,7 +4,9 @@ function init(self)
     self.gui_pred = render.predicate({"gui"})
 
     self.model_pred = render.predicate({"model"})
+
     self.model_no_depth_pred = render.predicate({"model_no_depth"})
+    self.model_global_ambient_pred = render.predicate({"model_global_ambient"})
 
     self.tile_pred = render.predicate({"tile"})
     self.tile_no_write_pred = render.predicate({"tile_no_write"})
@@ -23,6 +25,9 @@ end
 function update(self)
     app_render.update_holo()
 
+    local global_consts = render.constant_buffer()
+    global_consts.ambient_color = app_render.ambient_color
+
     render.set_depth_mask(true)
     render.set_stencil_mask(0xff)
     render.clear({[render.BUFFER_COLOR_BIT] = self.clear_color, [render.BUFFER_DEPTH_BIT] = 1, [render.BUFFER_STENCIL_BIT] = 0})
@@ -40,11 +45,10 @@ function update(self)
     render.enable_state(render.STATE_CULL_FACE)
     render.set_blend_func(render.BLEND_ONE, render.BLEND_ONE_MINUS_SRC_ALPHA)
     -- Opaque models
-    -- local constants = render.constant_buffer()
-    -- constants.ambient_color = vmath.vector4(0.5, 0.5, 0.5, 0.1)
-    render.draw(self.model_pred, constants)
+    render.draw(self.model_pred)
+    render.draw(self.model_global_ambient_pred, global_consts)
     render.disable_state(render.STATE_DEPTH_TEST)
-    
+
     render.enable_state(render.STATE_DEPTH_TEST)
 
     -- Alpha-blended sprites
@@ -60,7 +64,7 @@ function update(self)
     render.disable_state(render.STATE_DEPTH_TEST)
     render.disable_state(render.STATE_BLEND)
     render.enable_state(render.STATE_CULL_FACE)
-    render.draw(self.model_no_depth_pred)
+    render.draw(self.model_no_depth_pred, global_consts)
     render.enable_state(render.STATE_BLEND)
     render.disable_state(render.STATE_CULL_FACE)
     render.draw(self.tile_no_depth_pred)

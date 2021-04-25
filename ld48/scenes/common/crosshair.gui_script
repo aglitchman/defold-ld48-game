@@ -8,6 +8,7 @@ end
 
 function init(self)
     self.ext = gui.get_node("crosshair_ext")
+    self.blue_count_text = gui.get_node("blue_count_text")
 end
 
 function final(self)
@@ -16,7 +17,9 @@ end
 function update(self, dt)
     local s = player_state
     local ws = s.weapon_state
+    local is = s.inv_state
 
+    -- Crosshair
     local lower_size = 78
     local upper_size = 300
     local lower_alpha = 1
@@ -28,19 +31,11 @@ function update(self, dt)
     v = lower_alpha + (upper_alpha - lower_alpha) * (ws.aim_penalty / ws.aim_penalty_upper)
     gui_set_alpha(self.ext, v)
 
-    -- gui.set_size(self.ext, vmath.vector3(300, 300, 0))
-    -- gui.animate(self.ext, gui.PROP_SIZE, vmath.vector3(78, 78, 0), gui.EASING_OUTQUAD, 0.4)
-
-    -- gui.set_color(self.ext, vmath.vector4(1, 1, 1, 0.3))
-    -- gui.animate(self.ext, gui.PROP_COLOR, vmath.vector4(1, 1, 1, 1), gui.EASING_OUTQUAD, 0.4)
+    -- Blue res count
+    gui.set_text(self.blue_count_text, string.format("%03d", is.blue))
 end
 
 function on_message(self, message_id, message, sender)
     if message_id == hash("shoot") then
-        -- gui.set_size(self.ext, vmath.vector3(300, 300, 0))
-        -- gui.animate(self.ext, gui.PROP_SIZE, vmath.vector3(78, 78, 0), gui.EASING_OUTQUAD, 0.4)
-
-        -- gui.set_color(self.ext, vmath.vector4(1, 1, 1, 0.3))
-        -- gui.animate(self.ext, gui.PROP_COLOR, vmath.vector4(1, 1, 1, 1), gui.EASING_OUTQUAD, 0.4)
     end
 end
