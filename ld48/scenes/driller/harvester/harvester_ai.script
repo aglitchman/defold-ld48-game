@@ -1,0 +1,51 @@
+local player_state = require("ld48.scenes.common.player_state")
+local powerups = require("ld48.scenes.powerups.powerups_helper")
+
+local function euler_y_to_player(self)
+    local n = vmath.normalize(go.get_position() - player_state.pos)
+    local ey = math.deg(math.atan2(n.x, n.z))
+
+    if ey < 0 then
+        ey = ey + 360
+    end
+
+    return ey
+end
+
+local function random_euler_y(self)
+    return math.random() * 360
+end
+
+local function follow_player(self)
+    go.animate(".", "euler.y", go.PLAYBACK_ONCE_FORWARD, random_euler_y(self), go.EASING_LINEAR, 5)
+end
+
+function init(self)
+    --go.animate(".", "euler.y", go.PLAYBACK_LOOP_FORWARD, 3600, go.EASING_LINEAR, 30)
+
+--     go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, go.get_position().y - 20, go.EASING_INOUTSINE, 10)
+-- 
+--     timer.delay(10, true, follow_player)
+--     go.set(".", "euler.y", random_euler_y(self))
+
+    for i = 1, 20 do
+        local obj_id = powerups.spawn_blue(vmath.vector3(math.random(-100, 100), math.random(-100, 100), math.random(-100, 100)), nil)
+        go.set_parent(obj_id, ".", false)
+    end
+    
+end
+
+function final(self)
+end
+
+function update(self, dt)
+end
+
+function on_message(self, message_id, message, sender)
+end
+
+function on_input(self, action_id, action)
+end
+
+function on_reload(self)
+end

@@ -2,7 +2,8 @@ local s = {}
 
 function s.reset()
     -- Variables
-    s.pos = vmath.vector3(0, 70, 0)
+    s.pos = vmath.vector3(0, 100, 0)
+    s.eye_pos = vmath.vector3(0, 70, 0)
     s.yaw = 270
     s.pitch = 0
     s.prev_yaw = s.yaw

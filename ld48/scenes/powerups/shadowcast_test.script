@@ -1,6 +1,10 @@
 local RAYCAST_GROUPS = { hash("wall") }
 local CLOSEST = { all = false }
 
+go.property("color", vmath.vector4(0, 1, 1, 1))
+go.property("max_distance", -300)
+go.property("radius", 10)
+
 function init(self)
     self.shadow = factory.create("/powerup_shadows#blue")
     msg.post(self.shadow, "disable")
@@ -11,7 +15,8 @@ function final(self)
 end
 
 function update(self, dt)
-    local results = physics.raycast(go.get_position(), go.get_position() + vmath.vector3(0, -100, 0), RAYCAST_GROUPS, CLOSEST)
+    local wpos = go.get_world_position()
+    local results = physics.raycast(wpos, wpos + vmath.vector3(0, self.max_distance, 0), RAYCAST_GROUPS, CLOSEST)
     if results ~= nil then
         for _,result in ipairs(results) do
             -- { --[[0000027FBDAC0410]]

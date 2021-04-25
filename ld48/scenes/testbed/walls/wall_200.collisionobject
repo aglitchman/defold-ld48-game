@@ -6,6 +6,7 @@ restitution: 0.5
 group: "wall"
 mask: "wall"
 mask: "powerups"
+mask: "bodies"
 embedded_collision_shape {
   shapes {
     shape_type: TYPE_BOX

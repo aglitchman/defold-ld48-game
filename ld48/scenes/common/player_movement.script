@@ -36,7 +36,7 @@ local function handle_movement(dt)
     end
 
     s.pos = s.pos + v * 600 * dt
-    app_render.view_position = s.pos
+    app_render.view_position = s.pos + s.eye_pos
     go.set_position(s.pos)
 
     -- For bobbing
