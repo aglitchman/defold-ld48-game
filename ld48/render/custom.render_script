@@ -26,7 +26,11 @@ function update(self)
     app_render.update_holo()
 
     local global_consts = render.constant_buffer()
-    global_consts.ambient_color = app_render.ambient_color
+    global_consts.fog_color = app_render.fog_color
+
+    local global_ambient = render.constant_buffer()
+    global_ambient.ambient_color = app_render.ambient_color
+    global_ambient.fog_color = app_render.fog_color
 
     render.set_depth_mask(true)
     render.set_stencil_mask(0xff)
@@ -45,8 +49,8 @@ function update(self)
     render.enable_state(render.STATE_CULL_FACE)
     render.set_blend_func(render.BLEND_ONE, render.BLEND_ONE_MINUS_SRC_ALPHA)
     -- Opaque models
-    render.draw(self.model_pred)
-    render.draw(self.model_global_ambient_pred, global_consts)
+    render.draw(self.model_pred, global_consts)
+    render.draw(self.model_global_ambient_pred, global_ambient)
     render.disable_state(render.STATE_DEPTH_TEST)
 
     render.enable_state(render.STATE_DEPTH_TEST)
@@ -64,7 +68,7 @@ function update(self)
     render.disable_state(render.STATE_DEPTH_TEST)
     render.disable_state(render.STATE_BLEND)
     render.enable_state(render.STATE_CULL_FACE)
-    render.draw(self.model_no_depth_pred, global_consts)
+    render.draw(self.model_no_depth_pred, global_ambient)
     render.enable_state(render.STATE_BLEND)
     render.disable_state(render.STATE_CULL_FACE)
     render.draw(self.tile_no_depth_pred)

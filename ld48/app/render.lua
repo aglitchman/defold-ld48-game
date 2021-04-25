@@ -24,12 +24,16 @@ M.bobbing_mat4 = vmath.matrix4()
 -- Visuals
 M.holo_tint = false
 M.ambient_color = vmath.vector4(1, 0.5, 0, 0.5)
+M.fog_color = vmath.vector4(0, 0, 0, 1)
 
 function M.reset()
     M.view_position = vmath.vector3(0, 0, 0)
     M.view_front = vmath.vector3(0, 0, -1)
     M.view_world_up = vmath.vector3(0, 1, 0)
     M.bobbing_mat4 = vmath.matrix4()
+
+    M.ambient_color = vmath.vector4(1, 0.5, 0, 0.5)
+    M.fog_color = vmath.vector4(0, 0, 0, 1)
 end
 
 function M.update_holo()
