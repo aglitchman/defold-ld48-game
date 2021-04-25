@@ -1,37 +1,50 @@
-local M = {}
+local s = {}
 
-function M.reset()
+function s.reset()
     -- Variables
-    M.pos = vmath.vector3(0, 70, 0)
-    M.yaw = 270
-    M.pitch = 0
-    M.prev_yaw = M.yaw
-    M.prev_pitch = M.pitch
+    s.pos = vmath.vector3(0, 70, 0)
+    s.yaw = 270
+    s.pitch = 0
+    s.prev_yaw = s.yaw
+    s.prev_pitch = s.pitch
 
-    M.key_state = M.key_state or {}
-    M.key_state.forward = false
-    M.key_state.backward = false
-    M.key_state.step_left = false
-    M.key_state.step_right = false
-    M.key_state.fire = false -- NOT USED
+    s.key_state = s.key_state or {}
+    s.key_state.forward = false
+    s.key_state.backward = false
+    s.key_state.step_left = false
+    s.key_state.step_right = false
+    s.key_state.fire = false -- NOT USED
 
     -- Bobbing
-    M.dist_walked = 0
-    M.prev_dist_walked = 0
+    s.dist_walked = 0
+    s.prev_dist_walked = 0
 
-    -- M.cursor_locked = false
+    -- s.cursor_locked = false
 
     -- Config
-    M.mouse_sensitivity = 0.3
+    s.mouse_sensitivity = 0.3
 
     -- Weapon
     -- NOT USED YET
-    M.weapon_state = M.weapon_state or {}
-    M.weapon_state.energy = 99
-    M.weapon_state.fire_rate = 4
-    M.weapon_state.power_usage = 1
+    s.weapon_state = s.weapon_state or {}
+    s.weapon_state.energy = 99
+    s.weapon_state.fire_rate = 4
+    s.weapon_state.power_usage = 1
+    s.weapon_state.aim_penalty = 0
+    s.weapon_state.aim_penalty_upper = 100
 end
 
-M.reset()
+function s.update_aim(dt)
+    local ws = s.weapon_state
 
-return M
+    local dist = math.abs(s.dist_walked - s.prev_dist_walked)
+    ws.aim_penalty = ws.aim_penalty + dist * 50 * dt
+
+    ws.aim_penalty = math.max(0, ws.aim_penalty - math.min(20 * (dt * 60), ws.aim_penalty / 5 * (dt * 60)))
+
+    ws.aim_penalty = math.min(ws.aim_penalty, ws.aim_penalty_upper)
+end
+
+s.reset()
+
+return s

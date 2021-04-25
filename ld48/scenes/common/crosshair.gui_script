@@ -1,19 +1,46 @@
+local player_state = require("ld48.scenes.common.player_state")
+
+local function gui_set_alpha(node, alpha)
+    gui.cancel_animation(node, "color.w")
+    local color = gui.get_color(node)
+    gui.set_color(node, vmath.vector4(color.x, color.y, color.z, alpha))
+end
+
 function init(self)
+    self.ext = gui.get_node("crosshair_ext")
 end
 
 function final(self)
 end
 
 function update(self, dt)
+    local s = player_state
+    local ws = s.weapon_state
+
+    local lower_size = 78
+    local upper_size = 300
+    local lower_alpha = 1
+    local upper_alpha = 0.6
+
+    local v = lower_size + (upper_size - lower_size) * (ws.aim_penalty / ws.aim_penalty_upper)
+    gui.set_size(self.ext, vmath.vector3(v, v, 0))
+
+    v = lower_alpha + (upper_alpha - lower_alpha) * (ws.aim_penalty / ws.aim_penalty_upper)
+    gui_set_alpha(self.ext, v)
+
+    -- gui.set_size(self.ext, vmath.vector3(300, 300, 0))
+    -- gui.animate(self.ext, gui.PROP_SIZE, vmath.vector3(78, 78, 0), gui.EASING_OUTQUAD, 0.4)
+
+    -- gui.set_color(self.ext, vmath.vector4(1, 1, 1, 0.3))
+    -- gui.animate(self.ext, gui.PROP_COLOR, vmath.vector4(1, 1, 1, 1), gui.EASING_OUTQUAD, 0.4)
 end
 
 function on_message(self, message_id, message, sender)
     if message_id == hash("shoot") then
-        local ext = gui.get_node("crosshair_ext")
-        gui.set_size(ext, vmath.vector3(300, 300, 0))
-        gui.animate(ext, gui.PROP_SIZE, vmath.vector3(78, 78, 0), gui.EASING_OUTQUAD, 0.4)
+        -- gui.set_size(self.ext, vmath.vector3(300, 300, 0))
+        -- gui.animate(self.ext, gui.PROP_SIZE, vmath.vector3(78, 78, 0), gui.EASING_OUTQUAD, 0.4)
 
-        gui.set_color(ext, vmath.vector4(1, 1, 1, 0.3))
-        gui.animate(ext, gui.PROP_COLOR, vmath.vector4(1, 1, 1, 1), gui.EASING_OUTQUAD, 0.4)
+        -- gui.set_color(self.ext, vmath.vector4(1, 1, 1, 0.3))
+        -- gui.animate(self.ext, gui.PROP_COLOR, vmath.vector4(1, 1, 1, 1), gui.EASING_OUTQUAD, 0.4)
     end
 end

@@ -25,6 +25,12 @@ function final(self)
 end
 
 function update(self, dt)
+    local s = player_state
+    local ws = s.weapon_state
+
+    s.update_aim(dt)
+
+    -- Holo stuff
     label.set_text("/weapon_ui#label", string.format("%02d", self.count))
 
     go.set("/weapon_ui#holo", "tint.w", app_render.holo_tint and 0.5 or 0.75)
@@ -36,7 +42,10 @@ function on_message(self, message_id, message, sender)
 end
 
 function on_input(self, action_id, action)
-   if action_id == hash("touch") and action.pressed then
+    if action_id == hash("touch") and action.pressed then
+        local s = player_state
+        local ws = s.weapon_state
+
         self.count = self.count - 1
         if self.count < 0 then
             self.count = 99
@@ -49,7 +58,8 @@ function on_input(self, action_id, action)
         -- -- table.insert(powerups, obj_id)
 
         msg.post("/player_weapon#weapon_anim", "shoot")
-        msg.post("/ui#crosshair", "shoot")
+
+        ws.aim_penalty = ws.aim_penalty + 70
     end
 end
 
