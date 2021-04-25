@@ -22,7 +22,7 @@ function update(self, dt)
             --     id = hash: [/walls/grey0]
             -- }
             msg.post(self.shadow, "enable")
-            go.set_position(result.position + result.normal * 0.1, self.shadow)
+            go.set_position(result.position + result.normal * 0.05, self.shadow)
             go.set_rotation(vmath.quat_axis_angle(result.normal, 0) * vmath.quat_rotation_x(math.pi / 2), self.shadow)
         end
     else
