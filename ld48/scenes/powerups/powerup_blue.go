@@ -57,7 +57,7 @@ embedded_components {
   "group: \"pickup_blue\"\n"
   "mask: \"pickup_blue\"\n"
   "mask: \"pickup_red\"\n"
-  "mask: \"wall\"\n"
+  "mask: \"floor\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
   "    shape_type: TYPE_BOX\n"

@@ -31,6 +31,7 @@ embedded_components {
   "restitution: 0.5\n"
   "group: \"floor\"\n"
   "mask: \"body\"\n"
+  "mask: \"pickup_blue\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
   "    shape_type: TYPE_BOX\n"

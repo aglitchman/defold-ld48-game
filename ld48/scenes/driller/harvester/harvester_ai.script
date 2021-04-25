@@ -23,7 +23,7 @@ end
 function init(self)
     --go.animate(".", "euler.y", go.PLAYBACK_LOOP_FORWARD, 3600, go.EASING_LINEAR, 30)
 
-    go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, go.get_position().y - 20, go.EASING_INOUTSINE, 10)
+    -- go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, go.get_position().y + 20, go.EASING_INOUTSINE, 10)
 
     -- timer.delay(10, true, follow_player)
     -- go.set(".", "euler.y", random_euler_y(self))
