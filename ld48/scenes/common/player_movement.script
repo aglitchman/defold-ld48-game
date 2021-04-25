@@ -1,5 +1,5 @@
 local app_render = require("ld48.app.render")
-local player_state = require("ld48.screens.common.player_state")
+local player_state = require("ld48.scenes.common.player_state")
 
 local function update_view_bobbing(s, dt)
     local v = -(s.dist_walked + (s.dist_walked - s.prev_dist_walked) * dt) / 200 * math.pi

@@ -1,7 +1,7 @@
 name: "default"
 instances {
   id: "grey0"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
     y: 0.0
@@ -21,7 +21,7 @@ instances {
 }
 instances {
   id: "grey1"
-  prototype: "/ld48/screens/testbed/walls/blue.go"
+  prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: 200.0
     y: 0.0
@@ -41,7 +41,7 @@ instances {
 }
 instances {
   id: "grey2"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 400.0
     y: 0.0
@@ -61,7 +61,7 @@ instances {
 }
 instances {
   id: "grey3"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
     y: 0.0
@@ -81,7 +81,7 @@ instances {
 }
 instances {
   id: "grey4"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
     y: 0.0
@@ -101,7 +101,7 @@ instances {
 }
 instances {
   id: "grey5"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
     y: 0.0
@@ -121,7 +121,7 @@ instances {
 }
 instances {
   id: "grey6"
-  prototype: "/ld48/screens/testbed/walls/magenta.go"
+  prototype: "/ld48/scenes/testbed/walls/magenta.go"
   position {
     x: -400.0
     y: 0.0
@@ -141,7 +141,7 @@ instances {
 }
 instances {
   id: "grey7"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
     y: 0.0
@@ -161,7 +161,7 @@ instances {
 }
 instances {
   id: "grey8"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
     y: 0.0
@@ -181,7 +181,7 @@ instances {
 }
 instances {
   id: "grey"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
     y: 0.0
@@ -201,7 +201,7 @@ instances {
 }
 instances {
   id: "grey9"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
     y: 0.0
@@ -221,7 +221,7 @@ instances {
 }
 instances {
   id: "grey10"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
     y: 0.0
@@ -241,7 +241,7 @@ instances {
 }
 instances {
   id: "grey11"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -400.0
     y: 0.0
@@ -261,7 +261,7 @@ instances {
 }
 instances {
   id: "grey12"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
     y: 0.0
@@ -281,7 +281,7 @@ instances {
 }
 instances {
   id: "grey13"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
     y: 0.0
@@ -301,7 +301,7 @@ instances {
 }
 instances {
   id: "grey14"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
     y: 0.0
@@ -321,7 +321,7 @@ instances {
 }
 instances {
   id: "grey15"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
     y: 0.0
@@ -341,7 +341,7 @@ instances {
 }
 instances {
   id: "grey16"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
     y: 0.0
@@ -361,7 +361,7 @@ instances {
 }
 instances {
   id: "floor1"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 0.0
     y: -200.0
@@ -381,7 +381,7 @@ instances {
 }
 instances {
   id: "floor2"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
     y: -200.0
@@ -401,7 +401,7 @@ instances {
 }
 instances {
   id: "floor3"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
     y: -200.0
@@ -421,7 +421,7 @@ instances {
 }
 instances {
   id: "floor4"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
     y: -200.0
@@ -441,7 +441,7 @@ instances {
 }
 instances {
   id: "floor5"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -400.0
     y: -200.0
@@ -461,7 +461,7 @@ instances {
 }
 instances {
   id: "floor6"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
     y: -200.0
@@ -481,7 +481,7 @@ instances {
 }
 instances {
   id: "floor7"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
     y: -200.0
@@ -501,7 +501,7 @@ instances {
 }
 instances {
   id: "floor8"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -800.0
     y: -200.0
@@ -521,7 +521,7 @@ instances {
 }
 instances {
   id: "floor9"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 800.0
     y: -200.0
@@ -541,7 +541,7 @@ instances {
 }
 instances {
   id: "floor10"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
     y: -200.0
@@ -561,7 +561,7 @@ instances {
 }
 instances {
   id: "floor11"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 800.0
     y: -200.0
@@ -581,7 +581,7 @@ instances {
 }
 instances {
   id: "floor12"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 0.0
     y: -200.0
@@ -601,7 +601,7 @@ instances {
 }
 instances {
   id: "floor13"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
     y: -200.0
@@ -621,7 +621,7 @@ instances {
 }
 instances {
   id: "floor14"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
     y: -200.0
@@ -641,7 +641,7 @@ instances {
 }
 instances {
   id: "floor15"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -800.0
     y: -200.0
@@ -661,7 +661,7 @@ instances {
 }
 instances {
   id: "floor16"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -400.0
     y: -200.0
@@ -681,7 +681,7 @@ instances {
 }
 instances {
   id: "floor17"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
     y: -200.0
@@ -701,7 +701,7 @@ instances {
 }
 instances {
   id: "floor18"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
     y: -200.0
@@ -721,7 +721,7 @@ instances {
 }
 instances {
   id: "floor19"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 0.0
     y: -200.0
@@ -741,7 +741,7 @@ instances {
 }
 instances {
   id: "floor20"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
     y: -200.0
@@ -761,7 +761,7 @@ instances {
 }
 instances {
   id: "floor21"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
     y: -200.0
@@ -781,7 +781,7 @@ instances {
 }
 instances {
   id: "floor22"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
     y: -200.0
@@ -801,7 +801,7 @@ instances {
 }
 instances {
   id: "floor23"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -800.0
     y: -200.0
@@ -821,7 +821,7 @@ instances {
 }
 instances {
   id: "floor24"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
     y: -200.0
@@ -841,7 +841,7 @@ instances {
 }
 instances {
   id: "floor25"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 800.0
     y: -200.0
@@ -861,7 +861,7 @@ instances {
 }
 instances {
   id: "floor26"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -400.0
     y: -200.0
@@ -881,7 +881,7 @@ instances {
 }
 instances {
   id: "floor27"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
     y: -200.0
@@ -901,7 +901,7 @@ instances {
 }
 instances {
   id: "floor28"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 0.0
     y: -200.0
@@ -921,7 +921,7 @@ instances {
 }
 instances {
   id: "floor29"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
     y: -200.0
@@ -941,7 +941,7 @@ instances {
 }
 instances {
   id: "floor30"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
     y: -200.0
@@ -961,7 +961,7 @@ instances {
 }
 instances {
   id: "floor31"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
     y: -200.0
@@ -981,7 +981,7 @@ instances {
 }
 instances {
   id: "floor32"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -800.0
     y: -200.0
@@ -1001,7 +1001,7 @@ instances {
 }
 instances {
   id: "floor33"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
     y: -200.0
@@ -1021,7 +1021,7 @@ instances {
 }
 instances {
   id: "floor34"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 800.0
     y: -200.0
@@ -1041,7 +1041,7 @@ instances {
 }
 instances {
   id: "floor35"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -400.0
     y: -200.0
@@ -1061,7 +1061,7 @@ instances {
 }
 instances {
   id: "floor36"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
     y: -200.0
@@ -1081,7 +1081,7 @@ instances {
 }
 instances {
   id: "floor37"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 600.0
     y: -200.0
@@ -1101,7 +1101,7 @@ instances {
 }
 instances {
   id: "floor38"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -800.0
     y: -200.0
@@ -1121,7 +1121,7 @@ instances {
 }
 instances {
   id: "floor39"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 400.0
     y: -200.0
@@ -1141,7 +1141,7 @@ instances {
 }
 instances {
   id: "floor40"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 200.0
     y: -200.0
@@ -1161,7 +1161,7 @@ instances {
 }
 instances {
   id: "floor41"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 0.0
     y: -200.0
@@ -1181,7 +1181,7 @@ instances {
 }
 instances {
   id: "floor42"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -200.0
     y: -200.0
@@ -1201,7 +1201,7 @@ instances {
 }
 instances {
   id: "floor43"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -600.0
     y: -200.0
@@ -1221,7 +1221,7 @@ instances {
 }
 instances {
   id: "floor44"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 800.0
     y: -200.0
@@ -1241,7 +1241,7 @@ instances {
 }
 instances {
   id: "floor45"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -400.0
     y: -200.0
@@ -1261,7 +1261,7 @@ instances {
 }
 instances {
   id: "floor46"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 600.0
     y: -200.0
@@ -1281,7 +1281,7 @@ instances {
 }
 instances {
   id: "floor47"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
     y: -200.0
@@ -1301,7 +1301,7 @@ instances {
 }
 instances {
   id: "floor48"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 400.0
     y: -200.0
@@ -1321,7 +1321,7 @@ instances {
 }
 instances {
   id: "floor49"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 200.0
     y: -200.0
@@ -1341,7 +1341,7 @@ instances {
 }
 instances {
   id: "floor50"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
     y: -200.0
@@ -1361,7 +1361,7 @@ instances {
 }
 instances {
   id: "floor51"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -200.0
     y: -200.0
@@ -1381,7 +1381,7 @@ instances {
 }
 instances {
   id: "floor52"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -600.0
     y: -200.0
@@ -1401,7 +1401,7 @@ instances {
 }
 instances {
   id: "floor53"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
     y: -200.0
@@ -1421,7 +1421,7 @@ instances {
 }
 instances {
   id: "floor54"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -400.0
     y: -200.0
@@ -1441,7 +1441,7 @@ instances {
 }
 instances {
   id: "floor55"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 600.0
     y: -200.0
@@ -1461,7 +1461,7 @@ instances {
 }
 instances {
   id: "floor56"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
     y: -200.0
@@ -1481,7 +1481,7 @@ instances {
 }
 instances {
   id: "floor57"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
     y: -200.0
@@ -1501,7 +1501,7 @@ instances {
 }
 instances {
   id: "floor58"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -600.0
     y: -200.0
@@ -1521,7 +1521,7 @@ instances {
 }
 instances {
   id: "floor59"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 200.0
     y: -200.0
@@ -1541,7 +1541,7 @@ instances {
 }
 instances {
   id: "floor60"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
     y: -200.0
@@ -1561,7 +1561,7 @@ instances {
 }
 instances {
   id: "floor61"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -200.0
     y: -200.0
@@ -1581,7 +1581,7 @@ instances {
 }
 instances {
   id: "floor62"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -400.0
     y: -200.0
@@ -1601,7 +1601,7 @@ instances {
 }
 instances {
   id: "floor63"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 400.0
     y: -200.0
@@ -1621,7 +1621,7 @@ instances {
 }
 instances {
   id: "floor64"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -200.0
     y: -200.0
@@ -1641,7 +1641,7 @@ instances {
 }
 instances {
   id: "floor65"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 400.0
     y: -200.0
@@ -1661,7 +1661,7 @@ instances {
 }
 instances {
   id: "floor66"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 200.0
     y: -200.0
@@ -1681,7 +1681,7 @@ instances {
 }
 instances {
   id: "floor67"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -400.0
     y: -200.0
@@ -1701,7 +1701,7 @@ instances {
 }
 instances {
   id: "floor68"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
     y: -200.0
@@ -1721,7 +1721,7 @@ instances {
 }
 instances {
   id: "floor69"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -600.0
     y: -200.0
@@ -1741,7 +1741,7 @@ instances {
 }
 instances {
   id: "floor70"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 600.0
     y: -200.0
@@ -1761,7 +1761,7 @@ instances {
 }
 instances {
   id: "floor71"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
     y: -200.0
@@ -1781,7 +1781,7 @@ instances {
 }
 instances {
   id: "floor72"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
     y: -200.0
@@ -1801,7 +1801,7 @@ instances {
 }
 instances {
   id: "floor73"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -400.0
     y: -200.0
@@ -1821,7 +1821,7 @@ instances {
 }
 instances {
   id: "floor74"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -200.0
     y: -200.0
@@ -1841,7 +1841,7 @@ instances {
 }
 instances {
   id: "floor75"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 800.0
     y: -200.0
@@ -1861,7 +1861,7 @@ instances {
 }
 instances {
   id: "floor76"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -800.0
     y: -200.0
@@ -1881,7 +1881,7 @@ instances {
 }
 instances {
   id: "floor77"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 600.0
     y: -200.0
@@ -1901,7 +1901,7 @@ instances {
 }
 instances {
   id: "floor78"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: -600.0
     y: -200.0
@@ -1921,7 +1921,7 @@ instances {
 }
 instances {
   id: "floor79"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 0.0
     y: -200.0
@@ -1941,7 +1941,7 @@ instances {
 }
 instances {
   id: "floor80"
-  prototype: "/ld48/screens/testbed/walls/green.go"
+  prototype: "/ld48/scenes/testbed/walls/green.go"
   position {
     x: 200.0
     y: -200.0
@@ -1961,7 +1961,7 @@ instances {
 }
 instances {
   id: "floor81"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 400.0
     y: -200.0
@@ -1981,7 +1981,7 @@ instances {
 }
 instances {
   id: "grey17"
-  prototype: "/ld48/screens/testbed/walls/blue.go"
+  prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2001,7 +2001,7 @@ instances {
 }
 instances {
   id: "grey18"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2021,7 +2021,7 @@ instances {
 }
 instances {
   id: "grey19"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2041,7 +2041,7 @@ instances {
 }
 instances {
   id: "grey20"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2061,7 +2061,7 @@ instances {
 }
 instances {
   id: "grey21"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2081,7 +2081,7 @@ instances {
 }
 instances {
   id: "grey22"
-  prototype: "/ld48/screens/testbed/walls/magenta.go"
+  prototype: "/ld48/scenes/testbed/walls/magenta.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2101,7 +2101,7 @@ instances {
 }
 instances {
   id: "grey23"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2121,7 +2121,7 @@ instances {
 }
 instances {
   id: "grey24"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2141,7 +2141,7 @@ instances {
 }
 instances {
   id: "grey25"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2161,7 +2161,7 @@ instances {
 }
 instances {
   id: "grey26"
-  prototype: "/ld48/screens/testbed/walls/blue.go"
+  prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2181,7 +2181,7 @@ instances {
 }
 instances {
   id: "grey27"
-  prototype: "/ld48/screens/testbed/walls/blue.go"
+  prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: 1000.0
     y: 0.0
@@ -2201,7 +2201,7 @@ instances {
 }
 instances {
   id: "grey28"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2221,7 +2221,7 @@ instances {
 }
 instances {
   id: "grey29"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2241,7 +2241,7 @@ instances {
 }
 instances {
   id: "grey30"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2261,7 +2261,7 @@ instances {
 }
 instances {
   id: "grey31"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2281,7 +2281,7 @@ instances {
 }
 instances {
   id: "grey32"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2301,7 +2301,7 @@ instances {
 }
 instances {
   id: "grey33"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2321,7 +2321,7 @@ instances {
 }
 instances {
   id: "grey34"
-  prototype: "/ld48/screens/testbed/walls/blue.go"
+  prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2341,7 +2341,7 @@ instances {
 }
 instances {
   id: "grey35"
-  prototype: "/ld48/screens/testbed/walls/magenta.go"
+  prototype: "/ld48/scenes/testbed/walls/magenta.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2361,7 +2361,7 @@ instances {
 }
 instances {
   id: "grey36"
-  prototype: "/ld48/screens/testbed/walls/grey.go"
+  prototype: "/ld48/scenes/testbed/walls/grey.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2381,7 +2381,7 @@ instances {
 }
 instances {
   id: "grey37"
-  prototype: "/ld48/screens/testbed/walls/blue.go"
+  prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2401,7 +2401,7 @@ instances {
 }
 instances {
   id: "grey38"
-  prototype: "/ld48/screens/testbed/walls/blue.go"
+  prototype: "/ld48/scenes/testbed/walls/blue.go"
   position {
     x: -1000.0
     y: 0.0
@@ -2425,7 +2425,7 @@ embedded_instances {
   data: "embedded_components {\n"
   "  id: \"green\"\n"
   "  type: \"factory\"\n"
-  "  data: \"prototype: \\\"/ld48/screens/testbed/walls/green.go\\\"\\n"
+  "  data: \"prototype: \\\"/ld48/scenes/testbed/walls/green.go\\\"\\n"
   "load_dynamically: false\\n"
   "\"\n"
   "  position {\n"
@@ -2443,7 +2443,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"red\"\n"
   "  type: \"factory\"\n"
-  "  data: \"prototype: \\\"/ld48/screens/testbed/walls/red.go\\\"\\n"
+  "  data: \"prototype: \\\"/ld48/scenes/testbed/walls/red.go\\\"\\n"
   "load_dynamically: false\\n"
   "\"\n"
   "  position {\n"
@@ -2461,7 +2461,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"magenta\"\n"
   "  type: \"factory\"\n"
-  "  data: \"prototype: \\\"/ld48/screens/testbed/walls/magenta.go\\\"\\n"
+  "  data: \"prototype: \\\"/ld48/scenes/testbed/walls/magenta.go\\\"\\n"
   "load_dynamically: false\\n"
   "\"\n"
   "  position {\n"
@@ -2479,7 +2479,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"grey\"\n"
   "  type: \"factory\"\n"
-  "  data: \"prototype: \\\"/ld48/screens/testbed/walls/grey.go\\\"\\n"
+  "  data: \"prototype: \\\"/ld48/scenes/testbed/walls/grey.go\\\"\\n"
   "load_dynamically: false\\n"
   "\"\n"
   "  position {\n"
@@ -2497,7 +2497,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"blue\"\n"
   "  type: \"factory\"\n"
-  "  data: \"prototype: \\\"/ld48/screens/testbed/walls/blue.go\\\"\\n"
+  "  data: \"prototype: \\\"/ld48/scenes/testbed/walls/blue.go\\\"\\n"
   "load_dynamically: false\\n"
   "\"\n"
   "  position {\n"

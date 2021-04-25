@@ -1,6 +1,6 @@
 components {
   id: "shadowcast_test"
-  component: "/ld48/screens/powerups/shadowcast_test.script"
+  component: "/ld48/scenes/powerups/shadowcast_test.script"
   position {
     x: 0.0
     y: 0.0

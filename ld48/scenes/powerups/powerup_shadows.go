@@ -1,7 +1,7 @@
 embedded_components {
   id: "blue"
   type: "factory"
-  data: "prototype: \"/ld48/screens/powerups/powerup_shadow_blue.go\"\n"
+  data: "prototype: \"/ld48/scenes/powerups/powerup_shadow_blue.go\"\n"
   "load_dynamically: false\n"
   ""
   position {

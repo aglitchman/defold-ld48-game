@@ -1,4 +1,4 @@
-local player_state = require("ld48.screens.common.player_state")
+local player_state = require("ld48.scenes.common.player_state")
 
 function init(self)
     local pos = go.get_position()

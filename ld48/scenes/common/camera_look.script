@@ -1,6 +1,6 @@
 local app_render = require("ld48.app.render")
 local lume = require("ld48.app.lume")
-local player_state = require("ld48.screens.common.player_state")
+local player_state = require("ld48.scenes.common.player_state")
 
 local function set_eulers(self)
     app_render.update_camera(player_state.yaw, player_state.pitch)

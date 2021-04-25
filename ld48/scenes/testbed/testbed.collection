@@ -1,7 +1,7 @@
 name: "testbed"
 instances {
   id: "powerup_shadows"
-  prototype: "/ld48/screens/powerups/powerup_shadows.go"
+  prototype: "/ld48/scenes/powerups/powerup_shadows.go"
   position {
     x: 0.0
     y: 0.0
@@ -21,7 +21,7 @@ instances {
 }
 collection_instances {
   id: "walls"
-  collection: "/ld48/screens/testbed/testbed_walls.collection"
+  collection: "/ld48/scenes/testbed/testbed_walls.collection"
   position {
     x: 0.0
     y: 0.0
@@ -44,7 +44,7 @@ embedded_instances {
   id: "main"
   data: "components {\n"
   "  id: \"script\"\n"
-  "  component: \"/ld48/screens/testbed/testbed_main.script\"\n"
+  "  component: \"/ld48/scenes/testbed/testbed_main.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -79,7 +79,7 @@ embedded_instances {
   id: "ui"
   data: "components {\n"
   "  id: \"crosshair\"\n"
-  "  component: \"/ld48/screens/common/crosshair.gui\"\n"
+  "  component: \"/ld48/scenes/common/crosshair.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -136,7 +136,7 @@ embedded_instances {
   children: "player_weapon"
   data: "components {\n"
   "  id: \"camera_look\"\n"
-  "  component: \"/ld48/screens/common/camera_look.script\"\n"
+  "  component: \"/ld48/scenes/common/camera_look.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -151,7 +151,7 @@ embedded_instances {
   "}\n"
   "components {\n"
   "  id: \"player_movement\"\n"
-  "  component: \"/ld48/screens/common/player_movement.script\"\n"
+  "  component: \"/ld48/scenes/common/player_movement.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -187,7 +187,7 @@ embedded_instances {
   children: "count"
   data: "components {\n"
   "  id: \"weapon_anim\"\n"
-  "  component: \"/ld48/screens/common/weapon_anim.script\"\n"
+  "  component: \"/ld48/scenes/common/weapon_anim.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -226,7 +226,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"powerups_blue\"\n"
   "  type: \"factory\"\n"
-  "  data: \"prototype: \\\"/ld48/screens/powerups/powerup_blue.go\\\"\\n"
+  "  data: \"prototype: \\\"/ld48/scenes/powerups/powerup_blue.go\\\"\\n"
   "load_dynamically: false\\n"
   "\"\n"
   "  position {\n"

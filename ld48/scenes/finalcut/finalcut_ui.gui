@@ -1,4 +1,4 @@
-script: "/ld48/screens/finalcut/finalcut_ui.gui_script"
+script: "/ld48/scenes/finalcut/finalcut_ui.gui_script"
 fonts {
   name: "subtitle"
   font: "/ld48/assets/fonts/subtitle.font"

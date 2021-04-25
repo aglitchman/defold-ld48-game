@@ -1,4 +1,4 @@
-script: "/ld48/screens/common/crosshair.gui_script"
+script: "/ld48/scenes/common/crosshair.gui_script"
 textures {
   name: "ui"
   texture: "/ld48/assets/ui.atlas"
