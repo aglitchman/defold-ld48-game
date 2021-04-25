@@ -19,3 +19,10 @@ profiles {
     height: 1400
   }
 }
+profiles {
+  name: "Intro GUI"
+  qualifiers {
+    width: 1400
+    height: 1400
+  }
+}

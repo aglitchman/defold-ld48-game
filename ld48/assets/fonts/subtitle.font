@@ -1,6 +1,6 @@
 font: "/ld48/assets/fonts/Teko/Teko-SemiBold.ttf"
 material: "/ld48/materials/font.material"
-size: 144
+size: 100
 antialias: 1
 alpha: 1.0
 outline_alpha: 0.0

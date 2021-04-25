@@ -24,6 +24,13 @@ M.bobbing_mat4 = vmath.matrix4()
 -- Visuals
 M.holo_tint = false
 
+function M.reset()
+    M.view_position = vmath.vector3(0, 0, 0)
+    M.view_front = vmath.vector3(0, 0, -1)
+    M.view_world_up = vmath.vector3(0, 1, 0)
+    M.bobbing_mat4 = vmath.matrix4()
+end
+
 function M.update_holo()
     M.holo_tint = not M.holo_tint
 end

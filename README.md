@@ -61,3 +61,6 @@ This project is made with [the Defold game engine](https://www.defold.com/) and 
 - https://github.com/indiesoftby/defold-splitmix64
 - https://github.com/indiesoftby/defold-sharp-sprite
 - to be filled...
+
+Content generators:
+- Planet skin: https://donjon.bin.sh/scifi/world/

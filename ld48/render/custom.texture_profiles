@@ -3,6 +3,14 @@ path_settings {
   profile: "RGBA UASTC"
 }
 path_settings {
+  path: "/ld48/assets/intro.atlas"
+  profile: "RGBA UASTC"
+}
+path_settings {
+  path: "/ld48/assets/planet/**"
+  profile: "RGB UASTC MIPMAP"
+}
+path_settings {
   path: "**"
   profile: "RGBA UASTC MIPMAP"
 }
@@ -80,6 +88,30 @@ profiles {
     os: OS_ID_GENERIC
     formats {
       format: TEXTURE_FORMAT_RGBA
+      compression_level: BEST
+      compression_type: COMPRESSION_TYPE_BASIS_UASTC
+    }
+    mipmaps: true
+  }
+}
+profiles {
+  name: "RGB UASTC"
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGB
+      compression_level: BEST
+      compression_type: COMPRESSION_TYPE_BASIS_UASTC
+    }
+    mipmaps: false
+  }
+}
+profiles {
+  name: "RGB UASTC MIPMAP"
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGB
       compression_level: BEST
       compression_type: COMPRESSION_TYPE_BASIS_UASTC
     }

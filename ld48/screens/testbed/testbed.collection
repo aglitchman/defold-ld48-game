@@ -205,7 +205,7 @@ embedded_instances {
   "  type: \"model\"\n"
   "  data: \"mesh: \\\"/ld48/assets/weapon/gun.dae\\\"\\n"
   "material: \\\"/ld48/materials/dirlight/dirlight_model_no_depth.material\\\"\\n"
-  "textures: \\\"/ld48/assets/greyboxes/green_128.png\\\"\\n"
+  "textures: \\\"/ld48/assets/weapon/gun_skin.png\\\"\\n"
   "skeleton: \\\"\\\"\\n"
   "animations: \\\"\\\"\\n"
   "default_animation: \\\"\\\"\\n"
