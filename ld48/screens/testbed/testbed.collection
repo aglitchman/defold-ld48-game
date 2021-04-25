@@ -297,7 +297,7 @@ embedded_instances {
   "leading: 1.0\\n"
   "tracking: 0.0\\n"
   "pivot: PIVOT_CENTER\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "blend_mode: BLEND_MODE_SCREEN\\n"
   "line_break: false\\n"
   "text: \\\"89\\\"\\n"
   "font: \\\"/ld48/assets/fonts/digits.font\\\"\\n"

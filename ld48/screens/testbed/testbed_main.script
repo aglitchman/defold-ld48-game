@@ -5,6 +5,7 @@ local player_state = require("ld48.screens.common.player_state")
 local powerups = {}
 
 function init(self)
+    msg.post("@render:", "clear_color", {color = vmath.vector4(0, 0, 0, 1.0)})
     msg.post(".", hash("acquire_input_focus"))
 
     player_state.reset()
@@ -39,8 +40,8 @@ end
 function update(self, dt)
     label.set_text("/count#label", string.format("%02d", self.count))
 
-    go.set("/count#holo", "tint.w", app_render.holo_tint and 0.6 or 0.75)
-    go.set("/count#label", "color.w", app_render.holo_tint and 0.6 or 0.75)
+    go.set("/count#holo", "tint.w", app_render.holo_tint and 0.5 or 0.75)
+    go.set("/count#label", "color.w", app_render.holo_tint and 0.5 or 0.75)
 end
 
 function on_message(self, message_id, message, sender)

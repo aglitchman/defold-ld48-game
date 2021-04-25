@@ -6,6 +6,10 @@ images {
   image: "/ld48/assets/ui/crosshair_ext.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
+images {
+  image: "/ld48/assets/ui/holo_display.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 margin: 0
 extrude_borders: 0
 inner_padding: 2
