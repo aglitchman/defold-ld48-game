@@ -1,0 +1,19 @@
+local function flip(self)
+    self.flip = not self.flip
+    go.set(".", "scale.x", self.flip and -self.scale_x or self.scale_x)
+end
+
+function init(self)
+    timer.delay(0.5, true, flip)
+    self.scale_x = go.get(".", "scale.x")
+    self.flip = false
+end
+
+function final(self)
+end
+
+function update(self, dt)
+end
+
+function on_message(self, message_id, message, sender)
+end

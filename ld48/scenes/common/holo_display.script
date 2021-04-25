@@ -1,16 +1,19 @@
 local app_render = require("ld48.app.render")
 
 go.property("color", vmath.vector3(1, 1, 1))
+go.property("component", hash("holo"))
+go.property("property", hash("tint"))
 
 function init(self)
+    self.url = msg.url(nil, nil, self.component)
 end
 
 function final(self)
 end
 
 function update(self, dt)
-    local tint = vmath.vector4(self.color.x, self.color.y, self.color.z, app_render.holo_tint and 0.65 or 0.75)
-    go.set("#holo", "tint", tint)
+    local tint = vmath.vector4(self.color.x, self.color.y, self.color.z, app_render.holo_tint and 0.55 or 0.75)
+    go.set(self.url, self.property, tint)
     -- go.set("#label", "color.w", app_render.holo_tint and 0.5 or 0.75)
 end
 

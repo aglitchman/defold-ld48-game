@@ -36,6 +36,8 @@ gravity_y = -1000.0
 type = 3D
 max_collisions = 500
 max_contacts = 1000
+ray_cast_limit_3d = 1000
+trigger_overlap_capacity = 100
 
 [html5]
 scale_mode = fit
