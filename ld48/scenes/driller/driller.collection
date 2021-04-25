@@ -164,6 +164,7 @@ embedded_instances {
 }
 embedded_instances {
   id: "player_weapon"
+  children: "gun_shot_fx"
   children: "weapon_ui"
   data: "components {\n"
   "  id: \"weapon_anim\"\n"
@@ -331,5 +332,45 @@ embedded_instances {
     x: 0.15
     y: 0.15
     z: 0.15
+  }
+}
+embedded_instances {
+  id: "gun_shot_fx"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/ld48/assets/gun.atlas\\\"\\n"
+  "default_animation: \\\"gun_shot_fix\\\"\\n"
+  "material: \\\"/ld48/materials/sprite_no_write.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 7.0
+    z: -93.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.3
+    y: 0.15
+    z: 0.2
   }
 }

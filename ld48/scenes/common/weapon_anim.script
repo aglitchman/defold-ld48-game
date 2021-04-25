@@ -6,6 +6,8 @@ function init(self)
 
     self.last_pos = go.get_world_position()
     self.ey = 0
+
+    go.set("/gun_shot_fx#sprite", "tint.w", 0)
 end
 
 function final(self)
@@ -71,5 +73,9 @@ function on_message(self, message_id, message, sender)
         go.cancel_animations("#model", "tint")
         go.set("#model", "tint", vmath.vector4(1, 1, 0.66, 1.5))
         go.animate("#model", "tint", go.PLAYBACK_ONCE_FORWARD, vmath.vector4(1), go.EASING_OUTQUAD, 0.1)
+
+        go.set("/gun_shot_fx", "euler.z", math.random() * 360)
+        go.set("/gun_shot_fx#sprite", "tint.w", 0.7)
+        go.animate("/gun_shot_fx#sprite", "tint.w", go.PLAYBACK_ONCE_FORWARD, 0, go.EASING_LINEAR, 0.1)
     end
 end
