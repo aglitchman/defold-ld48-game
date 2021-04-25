@@ -1,0 +1,8 @@
+local app_render = require("ld48.app.render")
+
+function update(self, dt)
+    local p = go.get_position()
+    p.x = app_render.view_position.x
+    p.z = app_render.view_position.z
+    go.set_position(p)
+end
