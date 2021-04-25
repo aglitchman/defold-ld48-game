@@ -2,7 +2,7 @@ local player_state = require("ld48.scenes.common.player_state")
 
 function init(self)
     self.def_local_pos = go.get_position()
-    go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, self.def_local_pos.y - 4, go.EASING_INOUTSINE, 10)
+    -- go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, self.def_local_pos.y - 4, go.EASING_INOUTSINE, 10)
 
     self.last_pos = go.get_world_position()
     self.ey = 0
@@ -15,6 +15,19 @@ end
 
 function update(self, dt)
     local s = player_state
+    local ws = s.weapon_state
+
+    if self.prev_present ~= ws.present then
+        if not ws.present then
+            go.set_position(self.def_local_pos + vmath.vector3(0, -1000, 0))
+            go.cancel_animations(".", "position.y")
+        else
+            self.ey = 300
+            go.set_position(self.def_local_pos)
+            go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, self.def_local_pos.y - 4, go.EASING_INOUTSINE, 10)
+        end
+    end
+    self.prev_present = ws.present
 
     if type(self.prev_yaw) ~= "nil" then
         local dy = s.yaw - self.prev_yaw

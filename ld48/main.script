@@ -1,7 +1,7 @@
 local app_scenemanager = require("ld48.app.scenemanager")
 local app_misc = require("ld48.app.misc")
 local app_window = require("ld48.app.window")
--- local druid = require("druid.druid")
+local player_state = require("ld48.scenes.common.player_state")
 
 go.property("first_scene", hash("testbed"))
 
@@ -9,20 +9,15 @@ function init(self)
     app_misc.error_catching_init()
     app_misc.random_init()
 
-    -- druid.set_default_style({})
-    -- druid.set_text_function(lang.get_text)
-    -- druid.on_language_change()
-
     -- Note: for the development only
     app_window.resize()
     app_window.center()
-
-    if sys.get_sys_info().system_name == "Windows" then
-        -- Note: for the development only
+    player_state.DEBUG = sys.get_sys_info().system_name == "Windows"
+    if player_state.DEBUG then
         self.first_scene = "driller"
     end
-
     --
+
     app_scenemanager.receiver = msg.url("#")
     app_scenemanager.transition = msg.url("#transition")
 

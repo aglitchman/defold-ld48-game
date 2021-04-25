@@ -35,8 +35,9 @@ function update(self, dt)
     -- Blue res count
     gui.set_text(self.blue_count_text, string.format("%03d", inv.blue))
     if self.cur_blue ~= nil and self.cur_blue ~= inv.blue then
+        gui.cancel_animation(self.blue_count, gui.PROP_SCALE)
         gui.set_scale(self.blue_count, vmath.vector3(1.25))
-        gui.animate(self.blue_count, "scale", vmath.vector3(1.0), gui.EASING_OUTQUAD, 0.3)
+        gui.animate(self.blue_count, gui.PROP_SCALE, vmath.vector3(1.0), gui.EASING_OUTQUAD, 0.3)
     end
     self.cur_blue = inv.blue
 end

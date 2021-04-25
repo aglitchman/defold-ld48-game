@@ -5,6 +5,10 @@ local player_state = require("ld48.scenes.common.player_state")
 local flow = require("ludobits.m.flow")
 local powerups = require("ld48.scenes.powerups.powerups_helper")
 
+local RAYCAST_FIRE = { hash("harvester"), hash("target_blue"), hash("plant"), hash("floor") }
+local RAYCAST_HOLO = { hash("holo") }
+local RAYCAST_NEAREST = { all = false }
+
 local function add_ammo(self)
     local s = player_state
     local ws = s.weapon_state
@@ -97,13 +101,18 @@ function init(self)
 
         msg.post("/raycast_tester", "disable")
 
+        for i = 1, 5 do
+            powerups.spawn_blue(vmath.vector3(500 + i * 20 + math.random(10), 10, -500 + (i % 2) * 20 + math.random(20)), nil, false)
+        end
+
         for i = 1, 10 do
             local a = math.random() * math.pi * 2
-            -- local r = math.random(4500, 6000)
-            local r = 1000
+            local r = math.random(4500, 6000)
+            -- local r = 1000
             factory.create("/enemies#harvester", vmath.vector3(math.cos(a) * r, 232, math.sin(a) * r))
         end
 
+        -- Wait for transition completion
         local _, _, sender = flow.until_message("fade_out_complete")
         msg.post(sender, "fade_out_complete_ok")
 
@@ -119,6 +128,19 @@ function final(self)
     flow.stop()
 end
 
+local function raycast_to_holo(self)
+    local s = player_state
+    local ws = s.weapon_state
+    local results = physics.raycast(s.pos + s.eye_pos, s.pos + s.eye_pos + app_render.view_front * 400, RAYCAST_HOLO, RAYCAST_NEAREST)
+    if results ~= nil then
+        for _,result in ipairs(results) do
+            
+            msg.post("/raycast_tester", "enable")
+            go.set_position(result.position + result.normal * 0.05, "/raycast_tester")
+        end
+    end
+end
+
 function update(self, dt)
     local s = player_state
     local ws = s.weapon_state
@@ -132,6 +154,8 @@ function update(self, dt)
     label.set_text("/weapon_ui#label", string.format("%02d", ws.ammo_count))
     go.set("/weapon_ui#holo", "tint.w", app_render.holo_tint and 0.5 or 0.75)
     go.set("/weapon_ui#label", "color.w", app_render.holo_tint and 0.5 or 0.75)
+
+    raycast_to_holo(self)
 end
 
 function on_message(self, message_id, message, sender)
@@ -140,10 +164,15 @@ end
 
 function on_input(self, action_id, action)
     if action_id == hash("touch") and action.pressed then
-        -- SHOOTING!
 
         local s = player_state
         local ws = s.weapon_state
+
+        if not s.weapon_state.present then
+            return
+        end
+
+        -- SHOOTING!
 
         if ws.ammo_count <= 0 then
             go.set("/weapon_ui#holo", "tint", vmath.vector4(0.9, 0, 0, 1))
@@ -158,8 +187,7 @@ function on_input(self, action_id, action)
 
         local s = player_state
         local ws = s.weapon_state
-        local results = physics.raycast(s.pos + s.eye_pos, s.pos + s.eye_pos + app_render.view_front * app_render.FAR, 
-            { hash("harvester"), hash("target_blue"), hash("plant"), hash("floor") }, { all = false })
+        local results = physics.raycast(s.pos + s.eye_pos, s.pos + s.eye_pos + app_render.view_front * 3000, RAYCAST_FIRE, RAYCAST_NEAREST)
         if results ~= nil then
             for _,result in ipairs(results) do
                 spawn_fx_contact(self, result.position, result.normal)
@@ -174,6 +202,21 @@ function on_input(self, action_id, action)
         msg.post("/player_weapon#weapon_anim", "shoot")
 
         ws.aim_penalty = ws.aim_penalty + 70
+
+    end
+
+    if player_state.DEBUG then
+        if action_id == hash("key_5") and action.pressed then
+            player_state.weapon_state.present = true
+        elseif action_id == hash("key_6") and action.pressed then
+            for i = 1, 100 do
+                player_state.add_blue()
+            end
+        elseif action_id == hash("key_8") and action.pressed then
+            app_scenemanager.load_scene("finalcut")
+        elseif action_id == hash("key_9") and action.pressed then
+            app_scenemanager.load_scene("intro")
+        end
     end
 end
 

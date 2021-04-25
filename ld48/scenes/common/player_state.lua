@@ -1,4 +1,6 @@
-local s = {}
+local s = {
+    DEBUG = false
+}
 
 function s.reset()
     -- Variables
@@ -26,6 +28,7 @@ function s.reset()
 
     -- Weapon
     s.weapon_state = s.weapon_state or {}
+    s.weapon_state.present = false
     s.weapon_state.ammo_count = 50
     s.weapon_state.max_ammo = 99
     s.weapon_state.aim_penalty = 0
@@ -33,7 +36,7 @@ function s.reset()
 
     -- Inventory
     s.inventory = s.inventory or {}
-    s.inventory.blue = 5
+    s.inventory.blue = 0
 
     --
     s.power_plant = s.power_state or {}
