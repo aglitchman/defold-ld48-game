@@ -87,6 +87,7 @@ function init(self)
     flow.start(function()
         app_render.reset()
         player_state.reset()
+        powerups.reset()
 
         app_render.fog_color = bg_color
         app_render.fog_color.w = 0.0 -- zero value enables it
@@ -98,8 +99,8 @@ function init(self)
 
         for i = 1, 10 do
             local a = math.random() * math.pi * 2
-            local r = math.random(4500, 7000)
-            -- local r = -1000
+            -- local r = math.random(4500, 6000)
+            local r = 1000
             factory.create("/enemies#harvester", vmath.vector3(math.cos(a) * r, 232, math.sin(a) * r))
         end
 

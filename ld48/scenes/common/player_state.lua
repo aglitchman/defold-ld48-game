@@ -2,10 +2,10 @@ local s = {}
 
 function s.reset()
     -- Variables
-    s.pos = vmath.vector3(0, 100, 0)
+    s.pos = vmath.vector3(0, 100, 200)
     s.eye_pos = vmath.vector3(0, 70, 0)
     s.yaw = 270
-    s.pitch = 0
+    s.pitch = -15
     s.prev_yaw = s.yaw
     s.prev_pitch = s.pitch
 
@@ -32,8 +32,12 @@ function s.reset()
     s.weapon_state.aim_penalty_upper = 100
 
     -- Inventory
-    s.inv_state = s.inv_state or {}
-    s.inv_state.blue = 5
+    s.inventory = s.inventory or {}
+    s.inventory.blue = 5
+
+    --
+    s.power_plant = s.power_state or {}
+    s.power_plant.energy = 1
 end
 
 function s.update_aim(dt)
@@ -45,6 +49,10 @@ function s.update_aim(dt)
     ws.aim_penalty = math.max(0, ws.aim_penalty - math.min(20 * (dt * 60), ws.aim_penalty / 5 * (dt * 60)))
 
     ws.aim_penalty = math.min(ws.aim_penalty, ws.aim_penalty_upper)
+end
+
+function s.add_blue()
+    s.inventory.blue = s.inventory.blue + 1
 end
 
 s.reset()

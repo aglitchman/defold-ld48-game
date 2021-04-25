@@ -20,19 +20,27 @@ local function follow_player(self)
     go.animate(".", "euler.y", go.PLAYBACK_ONCE_FORWARD, random_euler_y(self), go.EASING_LINEAR, 5)
 end
 
-function init(self)
-    -- go.animate(".", "euler.y", go.PLAYBACK_LOOP_FORWARD, 3600, go.EASING_LINEAR, 30)
-    -- go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, go.get_position().y + 20, go.EASING_INOUTSINE, 10)
-    -- timer.delay(10, true, follow_player)
-    -- go.set(".", "euler.y", random_euler_y(self))
-
-    for i = 1, 20 do
+local function spawn_blue(self)
+    if powerups.can_spawn() then
         local obj_id = powerups.spawn_blue(
             vmath.vector3(math.random(-100, 100), math.random(-100, 100), math.random(-100, 100)), 
             vmath.quat_rotation_x(math.random()*10),
             true)
         go.set_parent(obj_id, ".", false)
     end
+end
+
+function init(self)
+    -- go.animate(".", "euler.y", go.PLAYBACK_LOOP_FORWARD, 3600, go.EASING_LINEAR, 30)
+    -- go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, go.get_position().y + 20, go.EASING_INOUTSINE, 10)
+    -- timer.delay(10, true, follow_player)
+    -- go.set(".", "euler.y", random_euler_y(self))
+
+    for i = 1, powerups.PER_HARVESTER do
+        spawn_blue(self)
+    end
+
+    timer.delay(10, true, spawn_blue)
 end
 
 function final(self)

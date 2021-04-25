@@ -1,5 +1,6 @@
 local app_render = require("ld48.app.render")
 local player_state = require("ld48.scenes.common.player_state")
+local powerups = require("ld48.scenes.powerups.powerups_helper")
 
 function init(self)
 end
@@ -20,5 +21,21 @@ function on_message(self, message_id, message, sender)
         local s = player_state
         s.pos = newpos
         app_render.view_position = s.pos + s.eye_pos
+    elseif message_id == hash("trigger_response") then
+        -- { --[[000001B0CB4FF670]]
+        --     enter = false,
+        --     other_group = hash: [pickup_blue],
+        --     group = hash: [pickup_blue],
+        --     own_group = hash: [player],
+        --     other_id = hash: [/instance74]
+        -- }
+        if message.enter and message.other_group == hash("pickup_blue") then
+            msg.post(msg.url(nil, message.other_id, "pickup_colobj"), "disable")
+            go.animate(message.other_id, "position", go.PLAYBACK_ONCE_FORWARD, player_state.pos, go.EASING_OUTQUAD, 0.5, 0, function (self)
+                powerups.destroy(message.other_id)
+                player_state.add_blue()
+                --msg.post("/ui#crosshair", "add_blue")
+            end)
+        end
     end
 end
