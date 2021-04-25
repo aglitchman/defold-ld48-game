@@ -23,7 +23,7 @@ void main()
 
     // Fog
     float dist = abs(var_position.z);
-    float fog_max = 5000.0;
+    float fog_max = 3000.0;
     float fog_min = 1000.0;
     float fog_factor = clamp((fog_max - dist) / (fog_max - fog_min) + fog_color.a, 0.0, 1.0 );
 

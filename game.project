@@ -51,13 +51,17 @@ game_binding = /builtins/input/all.input_bindingc
 
 [graphics]
 texture_profiles = /ld48/render/custom.texture_profiles
+max_draw_calls = 5000
 
 [sprite]
 max_count = 1000
 
 [model]
-max_count = 1000
+max_count = 5000
 
 [mesh]
 max_count = 1000
+
+[resource]
+max_resources = 5000
 

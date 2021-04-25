@@ -39,9 +39,9 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 0.0
+    x: 1922.0
     y: 4000.0
-    z: 0.0
+    z: -736.0
   }
   rotation {
     x: -0.70710677
