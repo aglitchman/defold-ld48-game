@@ -19,7 +19,7 @@ function init(self)
 
     if sys.get_sys_info().system_name == "Windows" then
         -- Note: for the development only
-        -- self.first_scene = "driller"
+        self.first_scene = "driller"
     end
 
     --

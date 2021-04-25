@@ -14,7 +14,6 @@ function s.reset()
     s.key_state.backward = false
     s.key_state.step_left = false
     s.key_state.step_right = false
-    s.key_state.fire = false -- NOT USED
 
     -- Bobbing
     s.dist_walked = 0
@@ -26,13 +25,14 @@ function s.reset()
     s.mouse_sensitivity = 0.3
 
     -- Weapon
-    -- NOT USED YET
     s.weapon_state = s.weapon_state or {}
-    s.weapon_state.energy = 99
-    s.weapon_state.fire_rate = 4
-    s.weapon_state.power_usage = 1
+    s.weapon_state.ammo_count = 99
     s.weapon_state.aim_penalty = 0
     s.weapon_state.aim_penalty_upper = 100
+
+    -- Inventory
+    s.inv_state = s.inv_state or {}
+    s.inv_state.blue = 5
 end
 
 function s.update_aim(dt)
