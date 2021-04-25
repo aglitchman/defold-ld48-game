@@ -1,0 +1,23 @@
+local app_render = require("ld48.app.render")
+local player_state = require("ld48.scenes.common.player_state")
+
+function init(self)
+end
+
+function final(self)
+end
+
+function update(self, dt)
+end
+
+function on_message(self, message_id, message, sender)
+    -- Handle collision
+    if message_id == hash("contact_point_response") then
+        local newpos = go.get_position() + message.normal * message.distance
+        go.set_position(newpos)
+
+        local s = player_state
+        s.pos = newpos
+        app_render.view_position = s.pos + s.eye_pos
+    end
+end

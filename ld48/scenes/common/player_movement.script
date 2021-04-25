@@ -36,6 +36,21 @@ local function handle_movement(dt)
     end
 
     s.pos = s.pos + v * 600 * dt
+
+    --local results = physics.raycast(s.pos, s.pos + app_render.FORWARD * 200,  { hash("wall"), hash("plant") }, { all = false })
+    --if results ~= nil then
+    --    for _,result in ipairs(results) do
+    --        go.set_position(result.position + result.normal * 0.05, "/raycast_tester")
+    --        -- { --[[0000027FBDAC0410]]
+    --        --     normal = vmath.vector3(1.1586089385673e-06, 1.1586089385673e-06, 1),
+    --        --     fraction = 0.61937010288239,
+    --        --     position = vmath.vector3(87.545631408691, -90.113975524902, -899.99969482422),
+    --        --     group = hash: [wall],
+    --        --     id = hash: [/walls/grey0]
+    --        -- }
+    --    end
+    --end
+
     app_render.view_position = s.pos + s.eye_pos
     go.set_position(s.pos, "/player_body")
 
