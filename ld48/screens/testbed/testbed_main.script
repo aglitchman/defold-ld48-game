@@ -5,7 +5,7 @@ local player_state = require("ld48.screens.common.player_state")
 local powerups = {}
 
 function init(self)
-    msg.post("@render:", "clear_color", {color = vmath.vector4(0, 0, 0, 1.0)})
+    msg.post("@render:", "clear_color", {color = vmath.vector4(0.9, 0.9, 0.9, 1.0)})
     msg.post(".", hash("acquire_input_focus"))
 
     player_state.reset()

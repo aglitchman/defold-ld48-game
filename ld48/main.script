@@ -17,6 +17,11 @@ function init(self)
     app_window.resize()
     app_window.center()
 
+    if sys.get_sys_info().system_name == "Windows" then
+        -- Note: for the development only
+        self.first_scene = "testbed"
+    end
+
     --
     app_scenemanager.receiver = msg.url("#")
     app_scenemanager.transition = msg.url("#transition")
