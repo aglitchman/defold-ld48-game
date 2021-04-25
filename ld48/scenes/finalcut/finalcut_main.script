@@ -17,7 +17,7 @@ function init(self)
         -- go.set("/planet#model", "tint.w", 1)
 
         go.set("/explosion#model", "ambient_color", vmath.vector4(1, 1, 1, 0))
-        go.set("/explosion#model", "diffuse_light", vmath.vector4(0, 0, 0, 1))
+        go.set("/explosion#model", "diffuse_light", vmath.vector4(0, 0, 0, 10))
         go.set("/light#sprite", "tint.w", 0)
 
         local _, _, sender = flow.until_message("fade_out_complete")
