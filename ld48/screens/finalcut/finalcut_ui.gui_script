@@ -1,0 +1,31 @@
+local function gui_set_alpha(node, alpha)
+    gui.cancel_animation(node, "color.w")
+    local color = gui.get_color(node)
+    gui.set_color(node, vmath.vector4(color.x, color.y, color.z, alpha))
+end
+
+function init(self)
+    self.alpha_anim = gui.get_node("alpha_anim")
+    self.bg = gui.get_node("bg")
+
+    gui_set_alpha(self.alpha_anim, 0)
+    gui_set_alpha(self.bg, 0)
+end
+
+function final(self)
+end
+
+function update(self, dt)
+end
+
+function on_message(self, message_id, message, sender)
+    if message_id == hash("reveal") then
+        gui.animate(self.bg, "color.w", 1, gui.EASING_LINEAR, 4, 0)
+        gui.animate(self.alpha_anim, "color.w", 1, gui.EASING_LINEAR, 0.6, 4, function(self)
+            msg.post(sender, "reveal_complete")
+        end)
+    end
+end
+
+function on_input(self, action_id, action)
+end

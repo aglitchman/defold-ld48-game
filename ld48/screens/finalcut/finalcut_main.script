@@ -1,0 +1,54 @@
+local app_scenemanager = require("ld48.app.scenemanager")
+local app_render = require("ld48.app.render")
+local flow = require("ludobits.m.flow")
+
+function init(self)
+    msg.post("@render:", "clear_color", {color = vmath.vector4(0, 0, 0, 1.0)})
+    msg.post(".", hash("acquire_input_focus"))
+
+    flow.start(function()
+        app_render.reset()
+        app_render.view_position = vmath.vector3(0, 0, 350)
+
+        go.set("/planet", "euler.y", 200)
+        go.animate("/planet", "euler.y", go.PLAYBACK_LOOP_FORWARD, 3600 + 200, go.EASING_LINEAR, 600)
+        go.set("/planet#model", "ambient_color.w", 0)
+        -- go.set("/planet#model", "tint.w", 1)
+
+        go.set("/explosion#model", "ambient_color.w", 1)
+        go.set("/light#sprite", "tint.w", 0)
+
+        local _, _, sender = flow.until_message("fade_out_complete")
+        msg.post(sender, "fade_out_complete_ok")
+
+        flow.delay(2)
+        go.set("/light#sprite", "tint.w", 1)
+        go.animate("/light", "scale.x", go.PLAYBACK_ONCE_FORWARD, 0.02, go.EASING_OUTQUAD, 1)
+        go.animate("/planet#model", "ambient_color.w", go.PLAYBACK_ONCE_FORWARD, 0.1, go.EASING_OUTQUAD, 1)
+        flow.delay(2)
+        go.animate("/light", "scale.x", go.PLAYBACK_ONCE_FORWARD, 0.08, go.EASING_OUTQUAD, 1)
+        go.animate("/planet#model", "ambient_color.w", go.PLAYBACK_ONCE_FORWARD, 0.2, go.EASING_OUTQUAD, 1)
+        flow.delay(2)
+        go.animate("/light", "scale.x", go.PLAYBACK_ONCE_FORWARD, 0.2, go.EASING_OUTQUAD, 1)
+        go.animate("/planet#model", "ambient_color.w", go.PLAYBACK_ONCE_FORWARD, 0.4, go.EASING_OUTQUAD, 1)
+        flow.delay(2)
+        go.animate("/explosion", "scale", go.PLAYBACK_ONCE_FORWARD, vmath.vector3(3), go.EASING_OUTQUAD, 1)
+
+        flow.delay(2)
+        msg.post("#ui", "reveal")
+    end, nil, error)
+end
+
+function final(self)
+    flow.stop()
+end
+
+function update(self, dt)
+end
+
+function on_message(self, message_id, message, sender)
+    flow.on_message(message_id, message, sender)
+end
+
+function on_input(self, action_id, action)
+end

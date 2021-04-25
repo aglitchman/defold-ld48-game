@@ -51,7 +51,8 @@ function on_input(self, action_id, action)
     if action_id == hash("key_1") and action.pressed then
         app_scenemanager.load_scene("testbed")
     elseif action_id == hash("key_2") and action.pressed then
-        msg.post("@system:", "toggle_profile")
+        app_scenemanager.load_scene("finalcut")
+        --msg.post("@system:", "toggle_profile")
     elseif action_id == hash("touch") and action.pressed then
         self.count = self.count - 1
         if self.count < 0 then
