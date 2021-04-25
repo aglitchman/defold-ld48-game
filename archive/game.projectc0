@@ -49,7 +49,7 @@ render = /ld48/render/custom.renderc
 [graphics]
 default_texture_min_filter = linear
 default_texture_mag_filter = linear
-max_draw_calls = 1024
+max_draw_calls = 5000
 max_characters = 8192
 max_debug_vertices = 10000
 texture_profiles = /ld48/render/custom.texture_profiles
@@ -70,7 +70,7 @@ use_thread = 1
 
 [resource]
 http_cache = 0
-max_resources = 1024
+max_resources = 5000
 
 [input]
 repeat_delay = 0.5
@@ -87,7 +87,7 @@ subpixels = 1
 max_count = 128
 
 [model]
-max_count = 1000
+max_count = 5000
 
 [mesh]
 max_count = 1000
