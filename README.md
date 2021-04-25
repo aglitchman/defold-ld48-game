@@ -65,3 +65,4 @@ This project is made with [the Defold game engine](https://www.defold.com/) and 
 
 Plus used these content generators:
 - Intro/outro planet texture: https://donjon.bin.sh/scifi/world/
+- Make it seamless: https://www.imgonline.com.ua/eng/make-seamless-texture.php

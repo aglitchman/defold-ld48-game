@@ -1,4 +1,4 @@
-local RAYCAST_GROUPS = { hash("wall") }
+local RAYCAST_GROUPS = { hash("floor") }
 local CLOSEST = { all = false }
 
 go.property("color", vmath.vector4(0, 0, 0, 1))

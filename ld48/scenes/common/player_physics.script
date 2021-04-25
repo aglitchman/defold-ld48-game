@@ -14,6 +14,7 @@ function on_message(self, message_id, message, sender)
     -- Handle collision
     if message_id == hash("contact_point_response") then
         local newpos = go.get_position() + message.normal * message.distance
+        newpos.y = 100 -- always the same in this game
         go.set_position(newpos)
 
         local s = player_state

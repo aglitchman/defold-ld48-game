@@ -19,6 +19,406 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "floor"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor1"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor2"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 2000.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor3"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor4"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: -2000.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor5"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor6"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor7"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 2000.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor8"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor9"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: -2000.0
+    y: 0.0
+    z: 1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor10"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 2000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor11"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: 2000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor12"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 2000.0
+    y: 0.0
+    z: 2000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor13"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: 2000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor14"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: -2000.0
+    y: 0.0
+    z: 2000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor15"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor16"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 1000.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor17"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: 2000.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor18"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: -1000.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "floor19"
+  prototype: "/ld48/scenes/common/floor.go"
+  position {
+    x: -2000.0
+    y: 0.0
+    z: -1000.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "main"
