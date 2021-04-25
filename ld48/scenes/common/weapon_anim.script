@@ -66,5 +66,10 @@ function on_message(self, message_id, message, sender)
         go.cancel_animations(".", "position.z")
         go.set(".", "position.z", self.def_local_pos.z + 20)
         go.animate(".", "position.z", go.PLAYBACK_ONCE_FORWARD, self.def_local_pos.z, go.EASING_OUTQUAD, 0.5)
+
+        -- Fake lighting
+        go.cancel_animations("#model", "tint")
+        go.set("#model", "tint", vmath.vector4(1, 1, 0.66, 1.5))
+        go.animate("#model", "tint", go.PLAYBACK_ONCE_FORWARD, vmath.vector4(1), go.EASING_OUTQUAD, 0.1)
     end
 end
