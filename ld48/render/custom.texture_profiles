@@ -11,6 +11,10 @@ path_settings {
   profile: "RGB UASTC MIPMAP"
 }
 path_settings {
+  path: "/ld48/assets/holo.atlas"
+  profile: "RGBA UASTC"
+}
+path_settings {
   path: "**"
   profile: "RGBA UASTC MIPMAP"
 }
