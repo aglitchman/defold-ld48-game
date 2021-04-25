@@ -18,8 +18,8 @@ local function chunked(x)
     return math.floor(x / CHUNK_SIZE) * CHUNK_SIZE
 end
 
-local function update_floor_pos(self)
-
+local function generate_floor(self)
+    self.floor_map = self.floor_map or {}
     local RADIUS = chunked(app_render.FAR + CHUNK_SIZE) / CHUNK_SIZE
 
     local MY_X = chunked(player_state.pos.x)
@@ -33,31 +33,31 @@ local function update_floor_pos(self)
             local z = iz * CHUNK_SIZE + MY_Z
             local id = x .. "_" .. z
 
-            -- if self.floor_map[id] then
-            --     self.floor_map[id].used = CHUNK_UPDATE
-            -- else
-            --     
-            -- end
-
-            local obj_id = factory.create("#floor")
-            go.set_position(vmath.vector3(x, 0, z), obj_id)
+            if self.floor_map[id] then
+                self.floor_map[id].used = CHUNK_UPDATE
+            else
+                local obj_id = factory.create("#floor")
+                local pos = vmath.vector3(x, 0, z)
+                go.set_position(pos, obj_id)
+                self.floor_map[id] = {
+                    obj_id = obj_id,
+                    pos = pos,
+                    used = CHUNK_UPDATE
+                }
+            end
         end
     end
-end
 
-local function generate_floor(self)
-    self.floor = {}
-    self.floor_map = {}
-
-    -- for i = 1, 10 do
-    --     table.insert(self.floor, {
-    --         obj_id = factory.create("#floor"),
-    --         pos = nil,
-    --         used = 0
-    --     })
-    -- end
-
-    update_floor_pos(self)
+    local d = {}
+    for id, v in pairs(self.floor_map) do
+        if v.used ~= CHUNK_UPDATE then
+            table.insert(d, id)
+            go.delete(v.obj_id)
+        end
+    end
+    for _, id in ipairs(d) do
+        self.floor_map[id] = nil
+    end
 end
 
 function init(self)
@@ -89,6 +89,8 @@ end
 function update(self, dt)
     local s = player_state
     local ws = s.weapon_state
+
+    generate_floor(self)
 
     s.update_aim(dt)
 
