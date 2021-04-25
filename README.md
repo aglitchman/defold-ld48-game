@@ -1,8 +1,10 @@
 ![Cover](ld48/res/web/loader_cover.png)
 
-# WIP - Ludum Dare 48 Game - Made With Defold
+# WIP - DRILLER
 
-This project was created from the "empty" project template. **This is a work-in-progress template for the future LD48.** It will contain a basic setup for camera, screens, preloader, etc.
+## Ludum Dare 48 Game - Made With Defold
+
+This project was created from the "empty" project template. **This is a work-in-progress game for the LD48.**
 
 Play the latest version online - [**Web build**](https://aglitchman.github.io/defold-ld48-game/).
 
