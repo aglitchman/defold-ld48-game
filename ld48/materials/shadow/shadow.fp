@@ -9,13 +9,6 @@ void main()
 
     mediump vec2 uvm = var_texcoord0.xy - 0.5;
     mediump float glow = clamp(1.0 - ((dot(uvm, uvm) * 4.0)), 0.0, 1.0);
-    // #if _CFXR_GLOW_POW_P2
-    // glow = pow(glow, 2);
-    // #elif _CFXR_GLOW_POW_P4
-    // glow = pow(glow, 4);
-    // #elif _CFXR_GLOW_POW_P8
-    // glow = pow(glow, 8);
-    // #endif
     glow = clamp(mix(0.0, 0.6, glow), 0.0, 10.0) * clamp(glow * 30.0, 0.0, 1.0);
 
     lowp vec4 color_pm = tint_pm * glow;

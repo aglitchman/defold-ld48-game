@@ -1,7 +1,7 @@
 embedded_components {
-  id: "blue"
+  id: "spot"
   type: "factory"
-  data: "prototype: \"/ld48/scenes/powerups/powerup_shadow_blue.go\"\n"
+  data: "prototype: \"/ld48/scenes/common/shadow_spot.go\"\n"
   "load_dynamically: false\n"
   ""
   position {

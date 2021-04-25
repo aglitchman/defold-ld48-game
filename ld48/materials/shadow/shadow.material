@@ -14,38 +14,8 @@ vertex_constants {
   }
 }
 vertex_constants {
-  name: "mtx_world"
-  type: CONSTANT_TYPE_WORLD
-  value {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-}
-vertex_constants {
-  name: "mtx_view"
-  type: CONSTANT_TYPE_VIEW
-  value {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-}
-vertex_constants {
   name: "mtx_proj"
   type: CONSTANT_TYPE_PROJECTION
-  value {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-}
-vertex_constants {
-  name: "mtx_normal"
-  type: CONSTANT_TYPE_NORMAL
   value {
     x: 0.0
     y: 0.0
@@ -57,8 +27,8 @@ fragment_constants {
   name: "tint"
   type: CONSTANT_TYPE_USER
   value {
-    x: 0.5
-    y: 0.8
+    x: 1.0
+    y: 1.0
     z: 1.0
     w: 1.0
   }

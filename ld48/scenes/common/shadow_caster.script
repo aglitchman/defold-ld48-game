@@ -1,12 +1,13 @@
 local RAYCAST_GROUPS = { hash("wall") }
 local CLOSEST = { all = false }
 
-go.property("color", vmath.vector4(0, 1, 1, 1))
+go.property("color", vmath.vector4(0, 0, 0, 1))
 go.property("max_distance", -300)
-go.property("radius", 10)
+go.property("radius", 100)
+go.property("enabled", true)
 
 function init(self)
-    self.shadow = factory.create("/powerup_shadows#blue")
+    self.shadow = factory.create("/shadows#spot")
     msg.post(self.shadow, "disable")
 end
 
@@ -15,9 +16,12 @@ function final(self)
 end
 
 function update(self, dt)
+    go.set(msg.url(nil, self.shadow, "model"), "tint", self.color)
+    go.set(self.shadow, "scale", vmath.vector3(self.radius / 100, self.radius / 100, 1))
+
     local wpos = go.get_world_position()
     local results = physics.raycast(wpos, wpos + vmath.vector3(0, self.max_distance, 0), RAYCAST_GROUPS, CLOSEST)
-    if results ~= nil then
+    if results ~= nil and self.enabled then
         for _,result in ipairs(results) do
             -- { --[[0000027FBDAC0410]]
             --     normal = vmath.vector3(1.1586089385673e-06, 1.1586089385673e-06, 1),

@@ -1,6 +1,6 @@
 components {
-  id: "shadowcast_test"
-  component: "/ld48/scenes/powerups/shadowcast_test.script"
+  id: "shadow_caster"
+  component: "/ld48/scenes/common/shadow_caster.script"
   position {
     x: 0.0
     y: 0.0
@@ -11,6 +11,16 @@ components {
     y: 0.0
     z: 0.0
     w: 1.0
+  }
+  properties {
+    id: "color"
+    value: "0.0, 1.0, 1.0, 1.0"
+    type: PROPERTY_TYPE_VECTOR4
+  }
+  properties {
+    id: "radius"
+    value: "30.0"
+    type: PROPERTY_TYPE_NUMBER
   }
 }
 embedded_components {

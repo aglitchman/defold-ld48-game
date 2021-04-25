@@ -1,7 +1,7 @@
 name: "testbed"
 instances {
   id: "powerup_shadows"
-  prototype: "/ld48/scenes/powerups/powerup_shadows.go"
+  prototype: "/ld48/scenes/common/shadows.go"
   position {
     x: 0.0
     y: 0.0
