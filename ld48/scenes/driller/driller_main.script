@@ -1,5 +1,6 @@
 local app_scenemanager = require("ld48.app.scenemanager")
 local app_render = require("ld48.app.render")
+local lume = require("ld48.app.lume")
 local player_state = require("ld48.scenes.common.player_state")
 local flow = require("ludobits.m.flow")
 
@@ -61,7 +62,7 @@ local function generate_floor(self)
 end
 
 function init(self)
-    msg.post("@render:", "clear_color", {color = vmath.vector4(0.9, 0.9, 0.9, 1.0)})
+    msg.post("@render:", "clear_color", {color = vmath.vector4(lume.color("#EFAC68"))})
 
     flow.start(function()
         app_render.reset()
