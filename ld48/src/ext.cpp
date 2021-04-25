@@ -1,4 +1,3 @@
-#include "camera.h"
 
 #include <dmsdk/sdk.h>
 #ifdef EMSCRIPTEN
@@ -112,7 +111,6 @@ static void LuaInit(lua_State* L)
 static dmExtension::Result InitializeExt(dmExtension::Params* params)
 {
     LuaInit(params->m_L);
-    Ld48Camera::LuaInit(params->m_L);
 
 #ifdef EMSCRIPTEN
     Html5PointerLockInit();
