@@ -146,8 +146,10 @@ embedded_instances {
   "mass: 0.0\\n"
   "friction: 0.1\\n"
   "restitution: 0.5\\n"
-  "group: \\\"player\\\"\\n"
+  "group: \\\"body\\\"\\n"
   "mask: \\\"plant\\\"\\n"
+  "mask: \\\"body\\\"\\n"
+  "mask: \\\"floor\\\"\\n"
   "embedded_collision_shape {\\n"
   "  shapes {\\n"
   "    shape_type: TYPE_CAPSULE\\n"
@@ -187,7 +189,7 @@ embedded_instances {
   ""
   position {
     x: 0.0
-    y: 0.0
+    y: 100.0
     z: 0.0
   }
   rotation {
@@ -674,13 +676,14 @@ embedded_instances {
   "  id: \"phys_colobj\"\n"
   "  type: \"collisionobject\"\n"
   "  data: \"collision_shape: \\\"\\\"\\n"
-  "type: COLLISION_OBJECT_TYPE_DYNAMIC\\n"
-  "mass: 100.0\\n"
+  "type: COLLISION_OBJECT_TYPE_KINEMATIC\\n"
+  "mass: 0.0\\n"
   "friction: 0.1\\n"
   "restitution: 0.1\\n"
-  "group: \\\"bodies\\\"\\n"
-  "mask: \\\"wall\\\"\\n"
-  "mask: \\\"bodies\\\"\\n"
+  "group: \\\"body\\\"\\n"
+  "mask: \\\"plant\\\"\\n"
+  "mask: \\\"body\\\"\\n"
+  "mask: \\\"floor\\\"\\n"
   "embedded_collision_shape {\\n"
   "  shapes {\\n"
   "    shape_type: TYPE_BOX\\n"
