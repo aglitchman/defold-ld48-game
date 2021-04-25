@@ -17,7 +17,7 @@ void main()
     //
     float ambient_strength = ambient_color.w;
     vec3 ambient = ambient_strength * ambient_color.rgb;
-    float diff_light = max(dot(var_normal, normalize(-light_direction.xyz)), 0.0) * 1.0;
+    float diff_light = max(dot(var_normal, normalize(-light_direction.xyz)), 0.0) * 0.5;
 
     gl_FragColor = vec4(color.rgb * min(diff_light + ambient, vec3(1.0)), 1.0);
 }

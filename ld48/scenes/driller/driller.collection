@@ -19,26 +19,6 @@ instances {
     z: 1.0
   }
 }
-collection_instances {
-  id: "testbed_walls"
-  collection: "/ld48/scenes/testbed/testbed_walls.collection"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
 scale_along_z: 0
 embedded_instances {
   id: "main"
@@ -1171,6 +1151,7 @@ embedded_instances {
 embedded_instances {
   id: "power_plant"
   children: "power_plant_body"
+  children: "power_plant_cog"
   data: ""
   position {
     x: 0.0
@@ -1897,6 +1878,49 @@ embedded_instances {
   scale3 {
     x: 0.1
     y: 0.1
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "power_plant_cog"
+  data: "embedded_components {\n"
+  "  id: \"model\"\n"
+  "  type: \"model\"\n"
+  "  data: \"mesh: \\\"/ld48/assets/objects/plant_cog.dae\\\"\\n"
+  "material: \\\"/ld48/materials/dirlight/dirlight_model.material\\\"\\n"
+  "textures: \\\"/ld48/assets/greyboxes/grey_128.png\\\"\\n"
+  "skeleton: \\\"\\\"\\n"
+  "animations: \\\"\\\"\\n"
+  "default_animation: \\\"\\\"\\n"
+  "name: \\\"unnamed\\\"\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 222.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
     z: 1.0
   }
 }

@@ -12,6 +12,8 @@ function init(self)
         app_render.reset()
         player_state.reset()
 
+        go.animate("/power_plant_cog", "euler.z", go.PLAYBACK_LOOP_FORWARD, -3600, go.EASING_LINEAR, 100)
+
         local _, _, sender = flow.until_message("fade_out_complete")
         msg.post(sender, "fade_out_complete_ok")
 
