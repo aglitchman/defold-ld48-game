@@ -44,6 +44,7 @@ scale_mode = fit
 engine_arguments = --verify-graphics-calls=false
 splash_image = /ld48/res/web/loader_cover.png
 heap_size = 300
+cssfile = /builtins/manifests/web/dark_theme.css
 
 [input]
 game_binding = /builtins/input/all.input_bindingc

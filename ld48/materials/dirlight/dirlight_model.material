@@ -63,6 +63,16 @@ vertex_constants {
     w: 0.5
   }
 }
+vertex_constants {
+  name: "diffuse_light"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.5
+  }
+}
 fragment_constants {
   name: "tint"
   type: CONSTANT_TYPE_USER

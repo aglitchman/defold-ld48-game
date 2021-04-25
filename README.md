@@ -8,13 +8,14 @@ This project was created from the "empty" project template. **This is a work-in-
 
 Play the latest version online - [**Web build**](https://aglitchman.github.io/defold-ld48-game/).
 
-## Structure (WIP)
+## Dev Notes
+
+### Structure (WIP)
 
 ```yaml
 /ld48: # Main folder
 
-  # C++ sources
-  /include:
+  # C++ and HTML5 sources
   /manifests:
   /res:
   /src:
@@ -29,13 +30,15 @@ Play the latest version online - [**Web build**](https://aglitchman.github.io/de
 
   /main.collection: # Bootstrap collection. It has links to all game collections and content
   /main.script: # Main script of the game.
+
+  # ...
 ```
 
 ### World
 
 1 unit = 1 centimeter (models) = 1 pixels (sprites), and `cube_100.dae` is a 100x100x100cm cube.
 
-### Dev Notes
+### Misc
 
 Debug build for HTML5 using `bob.jar`:
 ```bash
@@ -52,8 +55,6 @@ Download [the latest HTML5 bundle in .zip](https://github.com/aglitchman/defold-
 Copyright (c) 2021 Artsiom Trubchyk. Licensed under the Apache License, Version 2.0. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
 This project is made with [the Defold game engine](https://www.defold.com/) and includes/uses the following deps:
-- *NOT USED:* OpenGL Mathematics (GLM), a header only C++ mathematics library: https://github.com/g-truc/glm
-- *NOT USED:* LearnOpenGL.com Camera class: https://learnopengl.com/code_viewer_gh.php?code=includes/learnopengl/camera.h
 - https://github.com/kikito/tween.lua
 - https://github.com/rxi/lume
 - https://github.com/britzl/ludobits
