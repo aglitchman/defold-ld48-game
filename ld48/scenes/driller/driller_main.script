@@ -12,6 +12,49 @@ local function add_ammo(self)
     end
 end
 
+local CHUNK_UPDATE = 1
+local CHUNK_SIZE = 1000
+local function chunked(x)
+    return math.floor(x / CHUNK_SIZE) * CHUNK_SIZE
+end
+
+local function update_floor_pos(self)
+
+    local RADIUS = chunked(app_render.FAR + CHUNK_SIZE) / CHUNK_SIZE
+
+    local MY_X = chunked(player_state.pos.x)
+    local MY_Z = chunked(player_state.pos.z)
+
+    CHUNK_UPDATE = CHUNK_UPDATE + 1
+
+    for ix = -RADIUS, RADIUS do
+        for iz = -RADIUS, RADIUS do
+            local x = ix * CHUNK_SIZE + MY_X
+            local y = iz * CHUNK_SIZE + MY_Z
+            local id = x .. "_" .. y
+
+            if self.floor_map[id] then
+                self.floor_map[id].used = CHUNK_UPDATE
+            else
+                
+            end
+        end
+    end
+end
+
+local function generate_floor(self)
+    self.floor = {}
+    self.floor_map = {}
+
+    for i = 1, 10 do
+        table.insert(self.floor, {
+            obj_id = factory.create("#floor"),
+            pos = nil,
+            used = 0
+        })
+    end
+end
+
 function init(self)
     msg.post("@render:", "clear_color", {color = vmath.vector4(0.9, 0.9, 0.9, 1.0)})
 

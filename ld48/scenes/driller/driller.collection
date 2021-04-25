@@ -19,412 +19,30 @@ instances {
     z: 1.0
   }
 }
-instances {
-  id: "floor"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor1"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 1000.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor2"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 2000.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor3"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: -1000.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor4"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: -2000.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor5"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 1000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor6"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 1000.0
-    y: 0.0
-    z: 1000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor7"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 2000.0
-    y: 0.0
-    z: 1000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor8"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: -1000.0
-    y: 0.0
-    z: 1000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor9"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: -2000.0
-    y: 0.0
-    z: 1000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor10"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 2000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor11"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 1000.0
-    y: 0.0
-    z: 2000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor12"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 2000.0
-    y: 0.0
-    z: 2000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor13"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: -1000.0
-    y: 0.0
-    z: 2000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor14"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: -2000.0
-    y: 0.0
-    z: 2000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor15"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: -1000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor16"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 1000.0
-    y: 0.0
-    z: -1000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor17"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: 2000.0
-    y: 0.0
-    z: -1000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor18"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: -1000.0
-    y: 0.0
-    z: -1000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "floor19"
-  prototype: "/ld48/scenes/common/floor.go"
-  position {
-    x: -2000.0
-    y: 0.0
-    z: -1000.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
 scale_along_z: 0
 embedded_instances {
   id: "main"
   data: "components {\n"
   "  id: \"script\"\n"
   "  component: \"/ld48/scenes/driller/driller_main.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"floor\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/ld48/scenes/common/floor.go\\\"\\n"
+  "load_dynamically: false\\n"
+  "\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -905,7 +523,7 @@ embedded_instances {
   "  }\n"
   "  properties {\n"
   "    id: \"max_distance\"\n"
-  "    value: \"-300.0\"\n"
+  "    value: \"-500.0\"\n"
   "    type: PROPERTY_TYPE_NUMBER\n"
   "  }\n"
   "  properties {\n"
@@ -1583,7 +1201,7 @@ embedded_instances {
   "  type: \"model\"\n"
   "  data: \"mesh: \\\"/ld48/assets/objects/plant_body.dae\\\"\\n"
   "material: \\\"/ld48/materials/dirlight/dirlight_model_global_ambient.material\\\"\\n"
-  "textures: \\\"/ld48/assets/greyboxes/grey_128.png\\\"\\n"
+  "textures: \\\"/ld48/assets/objects/plant_body_skin.png\\\"\\n"
   "skeleton: \\\"\\\"\\n"
   "animations: \\\"\\\"\\n"
   "default_animation: \\\"\\\"\\n"
