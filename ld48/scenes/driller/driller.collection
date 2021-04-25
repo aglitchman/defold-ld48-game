@@ -1243,7 +1243,7 @@ embedded_instances {
   "friction: 1.0\\n"
   "restitution: 0.5\\n"
   "group: \\\"plant\\\"\\n"
-  "mask: \\\"player\\\"\\n"
+  "mask: \\\"body\\\"\\n"
   "embedded_collision_shape {\\n"
   "  shapes {\\n"
   "    shape_type: TYPE_SPHERE\\n"
