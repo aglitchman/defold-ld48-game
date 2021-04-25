@@ -22,6 +22,7 @@ developer = Artsiom Trubchyk
 dependencies#0 = https://github.com/subsoap/defos/archive/v2.5.0.zip
 dependencies#1 = https://github.com/indiesoftby/defold-splitmix64/archive/refs/tags/1.0.1.zip
 dependencies#2 = https://github.com/indiesoftby/defold-sharp-sprite/archive/refs/tags/0.1.2.zip
+dependencies#3 = https://github.com/britzl/ludobits/archive/refs/tags/6.9.1.zip
 
 [render]
 clear_color_alpha = 1.0

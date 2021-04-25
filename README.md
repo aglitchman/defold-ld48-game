@@ -56,6 +56,7 @@ This project is made with [the Defold game engine](https://www.defold.com/) and 
 - *NOT USED:* LearnOpenGL.com Camera class: https://learnopengl.com/code_viewer_gh.php?code=includes/learnopengl/camera.h
 - https://github.com/kikito/tween.lua
 - https://github.com/rxi/lume
+- https://github.com/britzl/ludobits
 - https://github.com/subsoap/defos
 - https://github.com/indiesoftby/defold-splitmix64
 - https://github.com/indiesoftby/defold-sharp-sprite
