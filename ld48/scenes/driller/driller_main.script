@@ -3,10 +3,17 @@ local app_render = require("ld48.app.render")
 local player_state = require("ld48.scenes.common.player_state")
 local flow = require("ludobits.m.flow")
 
+local function add_ammo(self)
+    local s = player_state
+    local ws = s.weapon_state
+
+    if ws.ammo_count < 10 then
+        ws.ammo_count = math.min(ws.max_ammo, ws.ammo_count + 1)
+    end
+end
+
 function init(self)
     msg.post("@render:", "clear_color", {color = vmath.vector4(0.9, 0.9, 0.9, 1.0)})
-
-    self.count = 77
 
     flow.start(function()
         app_render.reset()
@@ -18,9 +25,10 @@ function init(self)
         msg.post(sender, "fade_out_complete_ok")
 
         msg.post(".", hash("acquire_input_focus"))
+
+        timer.delay(1, true, add_ammo)
     end, nil, error)
 end
-
 
 function final(self)
     flow.stop()
@@ -36,7 +44,7 @@ function update(self, dt)
     s.update_aim(dt)
 
     -- Holo stuff
-    label.set_text("/weapon_ui#label", string.format("%02d", self.count))
+    label.set_text("/weapon_ui#label", string.format("%02d", ws.ammo_count))
 
     go.set("/weapon_ui#holo", "tint.w", app_render.holo_tint and 0.5 or 0.75)
     go.set("/weapon_ui#label", "color.w", app_render.holo_tint and 0.5 or 0.75)
@@ -57,26 +65,26 @@ function on_message(self, message_id, message, sender)
     flow.on_message(message_id, message, sender)
 end
 
-
 function on_input(self, action_id, action)
     if action_id == hash("touch") and action.pressed then
         local s = player_state
         local ws = s.weapon_state
 
-        self.count = self.count - 1
-        if self.count < 0 then
-            self.count = 99
+        if ws.ammo_count <= 0 then
+            go.set("/weapon_ui#holo", "tint", vmath.vector4(0.9, 0, 0, 1))
+            go.animate("/weapon_ui#holo", "tint", go.PLAYBACK_ONCE_FORWARD, vmath.vector4(1, 1, 1, 0.75), go.EASING_LINEAR, 0.2)
+            return
         end
 
-        -- local obj_id = factory.create("/player_weapon#powerups_blue", go.get_world_position("/player_weapon"), vmath.quat_rotation_x(math.random()*10))
-        -- msg.post(obj_id, "apply_force", {force = vmath.vector3(0, 0, -1000), position = go.get_world_position(obj_id)})
-        -- go.animate(msg.url(nil, obj_id, "model"), "tint", go.PLAYBACK_LOOP_PINGPONG, vmath.vector4(1.5), go.EASING_INQUAD, 3)
-        -- -- table.insert(powerups, obj_id)
+        ws.ammo_count = ws.ammo_count - 1
+        if ws.ammo_count < 0 then
+            ws.ammo_count = 0
+        end
 
         local s = player_state
         local ws = s.weapon_state
         local results = physics.raycast(s.pos + s.eye_pos, s.pos + s.eye_pos + app_render.view_front * app_render.FAR, 
-            { hash("harvester"), hash("target_blue") }, { all = false })
+            { hash("harvester"), hash("target_blue"), hash("plant") }, { all = false })
         if results ~= nil then
             for _,result in ipairs(results) do
                 go.set_position(result.position + result.normal * 0.05, "/raycast_tester")

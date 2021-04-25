@@ -26,7 +26,8 @@ function s.reset()
 
     -- Weapon
     s.weapon_state = s.weapon_state or {}
-    s.weapon_state.ammo_count = 99
+    s.weapon_state.ammo_count = 50
+    s.weapon_state.max_ammo = 99
     s.weapon_state.aim_penalty = 0
     s.weapon_state.aim_penalty_upper = 100
 
