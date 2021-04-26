@@ -2,13 +2,19 @@
 
 # DRILLER
 
-## Ludum Dare 48 Game - Made With Defold
+## Ludum Dare 48
 
-This project was created from the "empty" project template. **This is a work-in-progress game for the LD48.**
+The game is for LD48 the **COMPO** category. It's built using the [Defold game engine](https://defold.com/).
 
 Play the latest version online:
 - [**Github**](https://aglitchman.github.io/defold-ld48-game/) or [**Itch.io**](https://glitchman.itch.io/driller).
 - [**LD48 page**](https://ldjam.com/events/ludum-dare/48/driller) - vote for it and leave comments! 😊
+
+### Controls
+
+* **WASD** - to move around.
+* **Mouse** - to look around.
+* **Mouse LEFT button** - to shoot and interact.
 
 ## Dev Notes
 
