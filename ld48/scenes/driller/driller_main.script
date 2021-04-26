@@ -207,7 +207,7 @@ function on_input(self, action_id, action)
             msg.post("/display1_bg#holo_display", "highlight")
             if ws.present then
                 if s.remove_blue(1) then
-                    pp.energy = math.min(pp.max_energy, pp.energy + 100)
+                    pp.energy = math.min(pp.max_energy, pp.energy + 1)
                 end
             end
             return

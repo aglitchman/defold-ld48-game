@@ -22,8 +22,10 @@ end
 
 local function spawn_blue(self)
     if powerups.can_spawn() then
+        local a = math.random() * math.pi * 2
+        local r = math.random(60, 100)
         local obj_id = powerups.spawn_blue(
-            vmath.vector3(math.random(-100, 100), math.random(-100, 100), math.random(-100, 100)), 
+            vmath.vector3(math.cos(a) * r, math.random(-150, 150), math.sin(a) * r), 
             vmath.quat_rotation_x(math.random()*10),
             true)
         go.set_parent(obj_id, ".", false)

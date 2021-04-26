@@ -42,7 +42,7 @@ function s.reset()
     --
     s.power_plant = s.power_state or {}
     s.power_plant.energy = 1
-    s.power_plant.max_energy = 400
+    s.power_plant.max_energy = 500
     s.power_plant.timeout = 3
 end
 
