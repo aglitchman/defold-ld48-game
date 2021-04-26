@@ -19,8 +19,8 @@ function update(self, dt)
 
     local alpha = (app_render.holo_tint or self.static) and 0.55 or 0.75
     local dist = vmath.length(app_render.view_position - go.get_position())
-    if dist > 500 then
-        alpha = math.max(0, alpha - ((dist - 500) / 300))
+    if dist > 550 then
+        alpha = math.max(0, alpha - ((dist - 550) / 300))
     end
     self.cur_alpha = alpha
     local tint = vmath.vector4(self.color.x, self.color.y, self.color.z, alpha)

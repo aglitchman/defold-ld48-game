@@ -775,7 +775,7 @@ embedded_instances {
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/ld48/assets/ui.atlas\\\"\\n"
   "default_animation: \\\"holo_display\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "material: \\\"/ld48/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
@@ -855,7 +855,7 @@ embedded_instances {
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/ld48/assets/ui.atlas\\\"\\n"
   "default_animation: \\\"drill_icon\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "material: \\\"/ld48/materials/sprite_pass2.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
@@ -874,7 +874,7 @@ embedded_instances {
   position {
     x: 17.0
     y: 11.0
-    z: 2.85
+    z: 2.88
   }
   rotation {
     x: 0.0
@@ -960,7 +960,7 @@ embedded_instances {
   "line_break: false\\n"
   "text: \\\"0.00%\\\"\\n"
   "font: \\\"/ld48/assets/fonts/subtitle.font\\\"\\n"
-  "material: \\\"/ld48/materials/label.material\\\"\\n"
+  "material: \\\"/ld48/materials/label_pass2.material\\\"\\n"
   "\"\n"
   "  position {\n"
   "    x: 10.0\n"
@@ -978,7 +978,7 @@ embedded_instances {
   position {
     x: 0.0
     y: -6.0
-    z: 2.85
+    z: 2.88
   }
   rotation {
     x: 0.0
@@ -1227,7 +1227,7 @@ embedded_instances {
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/ld48/assets/ui.atlas\\\"\\n"
   "default_animation: \\\"holo_display\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "material: \\\"/ld48/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
@@ -1262,7 +1262,37 @@ embedded_instances {
 }
 embedded_instances {
   id: "display2_gun_text"
-  data: "embedded_components {\n"
+  data: "components {\n"
+  "  id: \"holo_display\"\n"
+  "  component: \"/ld48/scenes/common/holo_display.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"color\"\n"
+  "    value: \"0.7019607843137254, 0.95, 0.7019607843137254\"\n"
+  "    type: PROPERTY_TYPE_VECTOR3\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"property\"\n"
+  "    value: \"color\"\n"
+  "    type: PROPERTY_TYPE_HASH\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"static\"\n"
+  "    value: \"true\"\n"
+  "    type: PROPERTY_TYPE_BOOLEAN\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
   "  id: \"holo\"\n"
   "  type: \"label\"\n"
   "  data: \"size {\\n"
@@ -1302,7 +1332,7 @@ embedded_instances {
   "line_break: false\\n"
   "text: \\\"5 = GAUSS GUN\\\"\\n"
   "font: \\\"/ld48/assets/fonts/subtitle.font\\\"\\n"
-  "material: \\\"/ld48/materials/label.material\\\"\\n"
+  "material: \\\"/ld48/materials/label_pass2.material\\\"\\n"
   "\"\n"
   "  position {\n"
   "    x: -1.157\n"
@@ -1320,7 +1350,7 @@ embedded_instances {
   position {
     x: 0.0
     y: 2.0
-    z: 2.85
+    z: 2.88
   }
   rotation {
     x: 0.0
@@ -1458,7 +1488,7 @@ embedded_instances {
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/ld48/assets/ui.atlas\\\"\\n"
   "default_animation: \\\"holo_display\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "material: \\\"/ld48/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
@@ -1493,7 +1523,37 @@ embedded_instances {
 }
 embedded_instances {
   id: "display3_text"
-  data: "embedded_components {\n"
+  data: "components {\n"
+  "  id: \"holo_display\"\n"
+  "  component: \"/ld48/scenes/common/holo_display.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"color\"\n"
+  "    value: \"1.0, 0.5, 0.5\"\n"
+  "    type: PROPERTY_TYPE_VECTOR3\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"property\"\n"
+  "    value: \"color\"\n"
+  "    type: PROPERTY_TYPE_HASH\n"
+  "  }\n"
+  "  properties {\n"
+  "    id: \"static\"\n"
+  "    value: \"true\"\n"
+  "    type: PROPERTY_TYPE_BOOLEAN\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
   "  id: \"holo\"\n"
   "  type: \"label\"\n"
   "  data: \"size {\\n"
@@ -1529,11 +1589,11 @@ embedded_instances {
   "leading: 1.0\\n"
   "tracking: 0.0\\n"
   "pivot: PIVOT_CENTER\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "blend_mode: BLEND_MODE_SCREEN\\n"
   "line_break: false\\n"
   "text: \\\"SYSTEM ERROR\\\"\\n"
   "font: \\\"/ld48/assets/fonts/subtitle.font\\\"\\n"
-  "material: \\\"/ld48/materials/label.material\\\"\\n"
+  "material: \\\"/ld48/materials/label_pass2.material\\\"\\n"
   "\"\n"
   "  position {\n"
   "    x: -140.0\n"
@@ -1551,7 +1611,7 @@ embedded_instances {
   position {
     x: 15.0
     y: 2.0
-    z: 2.85
+    z: 2.88
   }
   rotation {
     x: 0.0
@@ -1713,7 +1773,7 @@ embedded_instances {
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/ld48/assets/ui.atlas\\\"\\n"
   "default_animation: \\\"box_icon\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "material: \\\"/ld48/materials/sprite_no_depth.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
@@ -1733,7 +1793,7 @@ embedded_instances {
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/ld48/assets/ui.atlas\\\"\\n"
   "default_animation: \\\"triangle_icon\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "material: \\\"/ld48/materials/sprite_no_depth.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
@@ -1752,7 +1812,7 @@ embedded_instances {
   position {
     x: 17.0
     y: 11.0
-    z: 2.85
+    z: 2.88
   }
   rotation {
     x: 0.0
@@ -1833,7 +1893,7 @@ embedded_instances {
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/ld48/assets/ui.atlas\\\"\\n"
   "default_animation: \\\"box_icon\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "material: \\\"/ld48/materials/sprite_pass2.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
@@ -1853,7 +1913,7 @@ embedded_instances {
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/ld48/assets/ui.atlas\\\"\\n"
   "default_animation: \\\"triangle_icon\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "material: \\\"/ld48/materials/sprite_pass2.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
@@ -1872,7 +1932,7 @@ embedded_instances {
   position {
     x: 0.0
     y: 0.0
-    z: 2.85
+    z: 2.88
   }
   rotation {
     x: 0.0

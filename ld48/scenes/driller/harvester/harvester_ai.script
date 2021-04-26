@@ -42,7 +42,7 @@ function init(self)
         spawn_blue(self)
     end
 
-    timer.delay(10, true, spawn_blue)
+    timer.delay(10 + math.random() * 5, true, spawn_blue)
 end
 
 function final(self)
