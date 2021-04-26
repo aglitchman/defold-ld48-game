@@ -7,6 +7,8 @@ local function gui_set_alpha(node, alpha)
 end
 
 function init(self)
+    self.arrow = gui.get_node("arrow")
+    self.crosshair = gui.get_node("crosshair")
     self.ext = gui.get_node("crosshair_ext")
     self.blue_count = gui.get_node("blue_count")
     self.blue_count_text = gui.get_node("blue_count_text")
@@ -40,6 +42,15 @@ function update(self, dt)
         gui.animate(self.blue_count, gui.PROP_SCALE, vmath.vector3(1.0), gui.EASING_OUTQUAD, 0.3)
     end
     self.cur_blue = inv.blue
+
+    -- Arrow
+    -- if ws.holo then
+        gui.set_enabled(self.arrow, ws.holo)
+        gui.set_enabled(self.crosshair, not ws.holo)
+        gui.set_enabled(self.ext, not ws.holo)
+    -- else
+
+    -- end
 end
 
 function on_message(self, message_id, message, sender)

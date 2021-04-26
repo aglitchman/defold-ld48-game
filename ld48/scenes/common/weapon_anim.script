@@ -17,7 +17,8 @@ function update(self, dt)
     local s = player_state
     local ws = s.weapon_state
 
-    if self.prev_present ~= ws.present then
+    local present = ws.present
+    if self.prev_present ~= present then
         if not ws.present then
             go.set_position(self.def_local_pos + vmath.vector3(0, -1000, 0))
             go.cancel_animations(".", "position.y")
@@ -27,7 +28,7 @@ function update(self, dt)
             go.animate(".", "position.y", go.PLAYBACK_LOOP_PINGPONG, self.def_local_pos.y - 4, go.EASING_INOUTSINE, 10)
         end
     end
-    self.prev_present = ws.present
+    self.prev_present = present
 
     if type(self.prev_yaw) ~= "nil" then
         local dy = s.yaw - self.prev_yaw

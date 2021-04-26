@@ -9,6 +9,10 @@ local RAYCAST_FIRE = { hash("harvester"), hash("target_blue"), hash("plant"), ha
 local RAYCAST_HOLO = { hash("holo") }
 local RAYCAST_NEAREST = { all = false }
 
+local DISPLAY1_ID = hash("/display1")
+local DISPLAY2_ID = hash("/display2")
+local DISPLAY3_ID = hash("/display3")
+
 local function add_ammo(self)
     local s = player_state
     local ws = s.weapon_state
@@ -102,7 +106,7 @@ function init(self)
         msg.post("/raycast_tester", "disable")
 
         for i = 1, 5 do
-            powerups.spawn_blue(vmath.vector3(500 + i * 20 + math.random(10), 10, -500 + (i % 2) * 20 + math.random(20)), nil, false)
+            powerups.spawn_blue(vmath.vector3(200 + i * 20 + math.random(10), 10, -350 + (i % 2) * 20 + math.random(20)), nil, false)
         end
 
         for i = 1, 10 do
@@ -131,12 +135,16 @@ end
 local function raycast_to_holo(self)
     local s = player_state
     local ws = s.weapon_state
+    ws.holo = false
+    self.cur_holo = nil
     local results = physics.raycast(s.pos + s.eye_pos, s.pos + s.eye_pos + app_render.view_front * 400, RAYCAST_HOLO, RAYCAST_NEAREST)
     if results ~= nil then
         for _,result in ipairs(results) do
-            
-            msg.post("/raycast_tester", "enable")
-            go.set_position(result.position + result.normal * 0.05, "/raycast_tester")
+            -- msg.post("/raycast_tester", "enable")
+            -- go.set_position(result.position + result.normal * 0.05, "/raycast_tester")
+
+            ws.holo = true
+            self.cur_holo = result.id
         end
     end
 end
@@ -144,6 +152,7 @@ end
 function update(self, dt)
     local s = player_state
     local ws = s.weapon_state
+    local pp = s.power_plant
 
     generate_floor(self)
 
@@ -156,6 +165,17 @@ function update(self, dt)
     go.set("/weapon_ui#label", "color.w", app_render.holo_tint and 0.5 or 0.75)
 
     raycast_to_holo(self)
+
+    -- Display 1
+    label.set_text("/display1_drill_value#holo", string.format("%.2f%%", pp.energy / pp.max_energy * 100))
+
+    if pp.energy >= pp.max_energy then
+        pp.timeout = pp.timeout - dt
+        if pp.timeout < 0 then
+            pp.timeout = 10
+            app_scenemanager.load_scene("finalcut")
+        end
+    end
 end
 
 function on_message(self, message_id, message, sender)
@@ -167,6 +187,36 @@ function on_input(self, action_id, action)
 
         local s = player_state
         local ws = s.weapon_state
+        local pp = s.power_plant
+
+        if self.cur_holo == DISPLAY2_ID then
+            msg.post("/display2_bg#holo_display", "highlight")
+            if not ws.present then
+                if s.remove_blue(5) then
+                    ws.present = true
+                end
+            else
+                if s.remove_blue(1) then
+                    ws.ammo_count = math.min(ws.max_ammo, ws.ammo_count + 10)
+                end
+            end
+            return
+        end
+
+        if self.cur_holo == DISPLAY1_ID then
+            msg.post("/display1_bg#holo_display", "highlight")
+            if ws.present then
+                if s.remove_blue(1) then
+                    pp.energy = math.min(pp.max_energy, pp.energy + 100)
+                end
+            end
+            return
+        end
+
+        if self.cur_holo == DISPLAY3_ID then
+            msg.post("/display3_bg#holo_display", "highlight")
+            return
+        end
 
         if not s.weapon_state.present then
             return

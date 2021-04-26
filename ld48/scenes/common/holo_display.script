@@ -13,15 +13,30 @@ function final(self)
 end
 
 function update(self, dt)
+    if self.animated then
+        return
+    end
+
     local alpha = (app_render.holo_tint or self.static) and 0.55 or 0.75
     local dist = vmath.length(app_render.view_position - go.get_position())
     if dist > 500 then
         alpha = math.max(0, alpha - ((dist - 500) / 300))
     end
+    self.cur_alpha = alpha
     local tint = vmath.vector4(self.color.x, self.color.y, self.color.z, alpha)
     go.set(self.url, self.property, tint)
     -- go.set("#label", "color.w", app_render.holo_tint and 0.5 or 0.75)
 end
 
 function on_message(self, message_id, message, sender)
+    if message_id == hash("highlight") then
+        self.animated = true
+        local tint1 = vmath.vector4(self.color.x, self.color.y, self.color.z, 1)
+        local tint2 = vmath.vector4(self.color.x, self.color.y, self.color.z, self.cur_alpha)
+        go.cancel_animations(self.url, self.property)
+        go.set(self.url, self.property, tint1)
+        go.animate(self.url, self.property, go.PLAYBACK_ONCE_FORWARD, tint2, go.EASING_OUTQUAD, 0.3, 0, function (self)
+            self.animated = false
+        end)
+    end
 end

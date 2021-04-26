@@ -29,6 +29,7 @@ function s.reset()
     -- Weapon
     s.weapon_state = s.weapon_state or {}
     s.weapon_state.present = false
+    s.weapon_state.holo = false
     s.weapon_state.ammo_count = 50
     s.weapon_state.max_ammo = 99
     s.weapon_state.aim_penalty = 0
@@ -41,6 +42,8 @@ function s.reset()
     --
     s.power_plant = s.power_state or {}
     s.power_plant.energy = 1
+    s.power_plant.max_energy = 400
+    s.power_plant.timeout = 3
 end
 
 function s.update_aim(dt)
@@ -55,7 +58,15 @@ function s.update_aim(dt)
 end
 
 function s.add_blue()
-    s.inventory.blue = s.inventory.blue + 1
+    s.inventory.blue = math.min(999, s.inventory.blue + 1)
+end
+
+function s.remove_blue(amount)
+    if s.inventory.blue >= amount then
+        s.inventory.blue = s.inventory.blue - amount
+        return true
+    end
+    return false
 end
 
 s.reset()
