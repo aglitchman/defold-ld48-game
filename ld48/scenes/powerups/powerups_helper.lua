@@ -34,7 +34,6 @@ function M.free_from_harvester(obj_id)
     local new_id = M.spawn_blue(go.get_world_position(obj_id), go.get_rotation(obj_id), false)
     go.delete(obj_id, true)
     lume.remove(M.list, obj_id)
-    table.insert(M.list, new_id)
     return new_id
 end
 
