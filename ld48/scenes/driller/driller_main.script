@@ -200,6 +200,7 @@ function on_input(self, action_id, action)
             if not ws.present then
                 if s.remove_blue(5) then
                     ws.present = true
+                    label.set_text("/display2_gun_text#holo", "1 = AMMO +10")
                 end
             else
                 if s.remove_blue(1) then

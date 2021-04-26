@@ -1300,7 +1300,7 @@ embedded_instances {
   "pivot: PIVOT_CENTER\\n"
   "blend_mode: BLEND_MODE_SCREEN\\n"
   "line_break: false\\n"
-  "text: \\\"GUN 5 / AMMO 1\\\"\\n"
+  "text: \\\"5 = GAUSS GUN\\\"\\n"
   "font: \\\"/ld48/assets/fonts/subtitle.font\\\"\\n"
   "material: \\\"/ld48/materials/label.material\\\"\\n"
   "\"\n"
