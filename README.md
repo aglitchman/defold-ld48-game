@@ -1,12 +1,14 @@
 ![Cover](ld48/res/web/loader_cover.png)
 
-# WIP - DRILLER
+# DRILLER
 
 ## Ludum Dare 48 Game - Made With Defold
 
 This project was created from the "empty" project template. **This is a work-in-progress game for the LD48.**
 
-Play the latest version online - [**Web build**](https://aglitchman.github.io/defold-ld48-game/).
+Play the latest version online:
+- [**Github**](https://aglitchman.github.io/defold-ld48-game/) or [**Itch.io**](https://glitchman.itch.io/driller).
+- [**LD48 page**](https://ldjam.com/events/ludum-dare/48/driller) - vote for it and leave comments! 😊
 
 ## Dev Notes
 
@@ -20,13 +22,15 @@ Play the latest version online - [**Web build**](https://aglitchman.github.io/de
   /res:
   /src:
 
-  # Assets
+  # All ssets
   /assets:
 
   # Lua sources
   /app: # Tools
-  /screens: # Screens, i.e. collections used as proxies
-    /testbed:
+  /scenes: # Scenes, i.e. collections used as proxies
+    /intro: # Intro scene
+    /driller: # Main Game
+    /finalcut: # Final scene
 
   /main.collection: # Bootstrap collection. It has links to all game collections and content
   /main.script: # Main script of the game.
