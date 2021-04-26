@@ -101,7 +101,9 @@ function init(self)
         app_render.fog_color.w = 0.0 -- zero value enables it
 
         generate_floor(self)
-        go.animate("/power_plant_cog", "euler.z", go.PLAYBACK_LOOP_FORWARD, -3600, go.EASING_LINEAR, 100)
+
+        self.cog_ez = 0
+        -- go.animate("/power_plant_cog", "euler.z", go.PLAYBACK_LOOP_FORWARD, -3600, go.EASING_LINEAR, 100)
 
         msg.post("/raycast_tester", "disable")
 
@@ -176,6 +178,10 @@ function update(self, dt)
             app_scenemanager.load_scene("finalcut")
         end
     end
+
+    --
+    self.cog_ez = self.cog_ez - (5 + pp.energy / 7) * dt
+    go.set("/power_plant_cog", "euler.z", self.cog_ez)
 end
 
 function on_message(self, message_id, message, sender)
@@ -262,6 +268,8 @@ function on_input(self, action_id, action)
             for i = 1, 100 do
                 player_state.add_blue()
             end
+        elseif action_id == hash("key_7") and action.pressed then
+            player_state.power_plant.energy = player_state.power_plant.energy + 10
         elseif action_id == hash("key_8") and action.pressed then
             app_scenemanager.load_scene("finalcut")
         elseif action_id == hash("key_9") and action.pressed then
