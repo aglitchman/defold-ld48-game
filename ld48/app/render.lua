@@ -55,8 +55,8 @@ function M.update_camera(yaw, pitch)
 end
 
 function M.update_window(w, h)
-    M.window_width = w
-    M.window_height = h
+    M.window_width = math.max(1, w)
+    M.window_height = math.max(1, h)
     M.aspect_ratio = w / h
 end
 
