@@ -16,6 +16,8 @@ Play the latest version online:
 * **Mouse** - to look around.
 * **Mouse LEFT button** - to shoot and interact.
 
+![GIF](https://forum.defold.com/uploads/default/original/3X/f/1/f1e54956511d91f454f9f23938e25dff7d985e56.gif)
+
 ## Dev Notes
 
 ### Structure (WIP)
