@@ -187,15 +187,16 @@ function update(self, dt)
     --
     self.cog_ez = self.cog_ez - (5 + pp.energy / 7) * dt
     go.set("/power_plant_cog", "euler.z", self.cog_ez)
+
+    --
+    if player_state.tutorial_step == 1 and player_state.cursor_locked then
+        player_state.tutorial_step = 2
+        msg.post("/ui#crosshair", "tutorial2")
+    end
 end
 
 function on_message(self, message_id, message, sender)
     flow.on_message(message_id, message, sender)
-
-    if player_state.tutorial_step == 1 and message_id == hash("mouse_locked") then
-        player_state.tutorial_step = 2
-        msg.post("/ui#crosshair", "tutorial2")
-    end
 end
 
 function on_input(self, action_id, action)
