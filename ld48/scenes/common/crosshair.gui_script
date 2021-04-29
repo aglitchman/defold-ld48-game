@@ -6,12 +6,23 @@ local function gui_set_alpha(node, alpha)
     gui.set_color(node, vmath.vector4(color.x, color.y, color.z, alpha))
 end
 
+local function gui_anim_alpha(node, alpha, time, delay)
+    gui.cancel_animation(node, "color.w")
+    gui.animate(node, "color.w", alpha, gui.EASING_OUTQUAD, time, delay or 0)
+end
+
 function init(self)
     self.arrow = gui.get_node("arrow")
     self.crosshair = gui.get_node("crosshair")
     self.ext = gui.get_node("crosshair_ext")
     self.blue_count = gui.get_node("blue_count")
     self.blue_count_text = gui.get_node("blue_count_text")
+
+    self.tutorial1 = gui.get_node("tutorial1")
+    self.tutorial2 = gui.get_node("tutorial2")
+
+    gui_set_alpha(self.tutorial1, 0)
+    gui_set_alpha(self.tutorial2, 0)
 end
 
 function final(self)
@@ -54,6 +65,12 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-    if message_id == hash("shoot") then
+    if message_id == hash("tutorial1") then
+        gui_anim_alpha(self.tutorial1, 1, 0.3)
+    elseif message_id == hash("tutorial2") then
+        gui_anim_alpha(self.tutorial1, 0, 0.3)
+        gui_anim_alpha(self.tutorial2, 1, 0.3)
+    elseif message_id == hash("tutorial3") then
+        gui_anim_alpha(self.tutorial2, 0, 0.3)
     end
 end

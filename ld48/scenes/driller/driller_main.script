@@ -126,6 +126,11 @@ function init(self)
 
         -- msg.post("@system:", "toggle_profile")
 
+        if player_state.tutorial_step == 0 then
+            player_state.tutorial_step = 1
+            msg.post("/ui#crosshair", "tutorial1")
+        end
+
         timer.delay(1, true, add_ammo)
     end, nil, error)
 end
@@ -186,6 +191,11 @@ end
 
 function on_message(self, message_id, message, sender)
     flow.on_message(message_id, message, sender)
+
+    if player_state.tutorial_step == 1 and message_id == hash("mouse_locked") then
+        player_state.tutorial_step = 2
+        msg.post("/ui#crosshair", "tutorial2")
+    end
 end
 
 function on_input(self, action_id, action)
@@ -259,6 +269,16 @@ function on_input(self, action_id, action)
         msg.post("/player_weapon#weapon_anim", "shoot")
 
         ws.aim_penalty = ws.aim_penalty + 70
+
+    elseif player_state.tutorial_step == 2 and 
+            action.pressed and
+            (action_id == hash("key_w") or 
+            action_id == hash("key_s") or 
+            action_id == hash("key_a") or 
+            action_id == hash("key_d")) then
+
+        player_state.tutorial_step = 3
+        msg.post("/ui#crosshair", "tutorial3")
 
     end
 

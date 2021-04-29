@@ -36,6 +36,8 @@ function init(self)
 end
 
 function final(self)
+    player_state.cursor_locked = false
+    ld48.glfw_mouse_unlock()
 end
 
 function update(self, dt)
@@ -47,6 +49,11 @@ function update(self, dt)
         local locked = ld48.html5_pointer_locked()
         if locked ~= player_state.cursor_locked then
             print("html5_pointer_locked, new state - locked = ", locked)
+            if locked then
+                msg.post("/main#script", "mouse_locked")
+            else
+                msg.post("/main#script", "mouse_unlocked")
+            end
         end
         player_state.cursor_locked = locked
     end
@@ -74,12 +81,16 @@ function on_input(self, action_id, action)
         s.cursor_locked = false
         ld48.glfw_mouse_unlock()
 
+        msg.post("/main#script", "mouse_unlocked")
+
         return skip_events
     elseif not html5 and action_id == hash("touch") and action.released then
         if not s.cursor_locked then
             s.cursor_locked = true
             self.skip_first_dxdy = true
             ld48.glfw_mouse_lock()
+
+            msg.post("/main#script", "mouse_locked")
 
             return true
         end

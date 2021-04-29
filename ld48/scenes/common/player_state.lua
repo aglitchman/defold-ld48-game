@@ -24,7 +24,7 @@ function s.reset()
     -- s.cursor_locked = false
 
     -- Config
-    s.mouse_sensitivity = 0.3
+    s.mouse_sensitivity = 0.25
 
     -- Weapon
     s.weapon_state = s.weapon_state or {}
@@ -44,6 +44,9 @@ function s.reset()
     s.power_plant.energy = 1
     s.power_plant.max_energy = 500
     s.power_plant.timeout = 3
+
+    -- Tutorial
+    s.tutorial_step = 0
 end
 
 function s.update_aim(dt)
