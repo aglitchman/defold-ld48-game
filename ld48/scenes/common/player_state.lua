@@ -24,7 +24,7 @@ function s.reset()
     -- s.cursor_locked = false
 
     -- Config
-    s.mouse_sensitivity = 0.25
+    s.mouse_sensitivity = 0.21
 
     -- Weapon
     s.weapon_state = s.weapon_state or {}
