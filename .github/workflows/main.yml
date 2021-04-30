@@ -72,4 +72,4 @@ jobs:
           unzip butler.zip
           chmod +x butler
           ./butler -V
-          butler push public glitchman/driller:html5-release
+          ./butler push public glitchman/driller:html5-release
