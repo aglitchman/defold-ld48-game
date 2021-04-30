@@ -9,8 +9,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    env:
-      DEFOLD_BOB_SHA1: f1a22801ed92da4ab069d6fd7ddc9618aa9b7e3d
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
@@ -18,14 +16,14 @@ jobs:
       - name: Install Java ♨️
         uses: actions/setup-java@v2
         with:
-          distribution: 'adopt'
-          java-version: '11'
-          
+          distribution: "adopt"
+          java-version: "11"
+
       - name: Install Node ✨
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
-          
+          node-version: "14"
+
       - name: Setup Cache 🦐
         uses: actions/cache@v2.1.5
         with:
@@ -33,26 +31,45 @@ jobs:
             .internal/lib
             build/npm-cache
             build/bundle/bob.jar
+            build/bundle/butler
           key: ${{ runner.os }}-defold-${{ hashFiles('game.project') }}
           restore-keys: |
             ${{ runner.os }}-defold-
 
       - name: Build 🔧
+        env:
+          DEFOLD_BOB_SHA1: ${{ secrets.DEFOLD_BOB_SHA1 }}
         run: |
           mkdir -p build/bundle build/npm-cache
+
           npm config set cache build/npm-cache -g
           npm install -g html-minifier@4.0.0 uglify-js@3.12.8 node-jq@1.12.0 --unsafe-perm
+
           BOB_SHA1=${DEFOLD_BOB_SHA1:-$(curl -s 'https://d.defold.com/stable/info.json' | jq -r .sha1)}
           BOB_LOCAL_SHA1=$((java -jar build/bundle/bob.jar --version | cut -d' ' -f6) || true)
           if [ "${BOB_LOCAL_SHA1}" != "${BOB_SHA1}" ]; then wget --progress=dot:mega -O build/bundle/bob.jar "https://d.defold.com/archive/${BOB_SHA1}/bob/bob.jar"; fi
+
           java -jar build/bundle/bob.jar --email foo@bar.com --auth 12345 --texture-compression true --bundle-output build/bundle/js-web --build-report-html build/bundle/report.html --platform js-web --archive --variant release resolve build bundle
           mv build/bundle/js-web/* build/bundle/public
+
           html-minifier --case-sensitive --remove-comments --collapse-whitespace --preserve-line-breaks --minify-css true --minify-js true "build/bundle/public/index.html" -o "build/bundle/public/index.html"
           uglifyjs "build/bundle/public/dmloader.js" --compress --mangle --webkit --source-map url=dmloader.js.map,includeSources=true --output "build/bundle/public/dmloader.js"
+
           mv build/bundle/report.html build/bundle/public/
 
-      - name: Deploy 🚀
+      - name: Deploy to Pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: build/bundle/public
+
+      - name: Deploy to Itch 🚀
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+        run: |
+          cd build/bundle/
+          curl -L -o butler.zip https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
+          unzip butler.zip
+          chmod +x butler
+          ./butler -V
+          butler push public glitchman/driller:html5-release
