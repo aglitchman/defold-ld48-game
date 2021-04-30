@@ -48,6 +48,7 @@ jobs:
           BOB_SHA1=${DEFOLD_BOB_SHA1:-$(curl -s 'https://d.defold.com/stable/info.json' | jq -r .sha1)}
           BOB_LOCAL_SHA1=$((java -jar build/bundle/bob.jar --version | cut -d' ' -f6) || true)
           if [ "${BOB_LOCAL_SHA1}" != "${BOB_SHA1}" ]; then wget --progress=dot:mega -O build/bundle/bob.jar "https://d.defold.com/archive/${BOB_SHA1}/bob/bob.jar"; fi
+          java -jar build/bundle/bob.jar --version
 
           java -jar build/bundle/bob.jar --email foo@bar.com --auth 12345 --texture-compression true --bundle-output build/bundle/js-web --build-report-html build/bundle/report.html --platform js-web --archive --variant release resolve build bundle
           mv build/bundle/js-web/* build/bundle/public
