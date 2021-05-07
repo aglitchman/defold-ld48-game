@@ -49,15 +49,20 @@ function s.reset()
     s.tutorial_step = 0
 end
 
-function s.update_aim(dt)
+function s.update_aim(frame_dt)
     local ws = s.weapon_state
+    local frame_dist = math.abs(s.dist_walked - s.prev_dist_walked)
 
-    local dist = math.abs(s.dist_walked - s.prev_dist_walked)
-    ws.aim_penalty = ws.aim_penalty + dist * 50 * dt
-
-    ws.aim_penalty = math.max(0, ws.aim_penalty - math.min(20 * (dt * 60), ws.aim_penalty / 5 * (dt * 60)))
-
-    ws.aim_penalty = math.min(ws.aim_penalty, ws.aim_penalty_upper)
+    local dt = math.min(frame_dt, 0.0166666)
+    local dd = frame_dt
+    while dd > 0.00001 do
+        dt = math.min(dt, dd)
+        dd = dd - dt
+        local dist = frame_dist / frame_dt * dt
+        ws.aim_penalty = ws.aim_penalty + dist * 50 * dt
+        ws.aim_penalty = math.max(0, ws.aim_penalty - math.min(20 * (dt * 60), ws.aim_penalty / 5 * (dt * 60)))
+        ws.aim_penalty = math.min(ws.aim_penalty, ws.aim_penalty_upper)
+    end
 end
 
 function s.add_blue()
