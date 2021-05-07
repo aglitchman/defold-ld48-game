@@ -168,8 +168,13 @@ function update(self, dt)
 
     -- Holo stuff + Weapon
     label.set_text("/weapon_ui#label", string.format("%02d", ws.ammo_count))
-    go.set("/weapon_ui#holo", "tint.w", app_render.holo_tint and 0.5 or 0.75)
-    go.set("/weapon_ui#label", "color.w", app_render.holo_tint and 0.5 or 0.75)
+    go.set("/weapon_ui#holo", "tint.w", app_render.holo_tint and 0.6 or 0.75)
+    go.set("/weapon_ui#signal", "tint.w", app_render.holo_tint and 0.6 or 0.75)
+    go.set("/weapon_ui#label", "color.w", app_render.holo_tint and 0.6 or 0.75)
+
+    local power_plant_pos = go.get_world_position("/power_plant_body")
+    local signal_strength = lume.round(lume.clamp(1 - vmath.length(power_plant_pos - s.pos) / 15000, 0, 1) * 4 + 1)
+    sprite.play_flipbook("/weapon_ui#signal", "weap_signal_" .. signal_strength)
 
     raycast_to_holo(self)
 

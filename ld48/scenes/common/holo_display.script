@@ -17,7 +17,7 @@ function update(self, dt)
         return
     end
 
-    local alpha = (app_render.holo_tint or self.static) and 0.55 or 0.75
+    local alpha = (app_render.holo_tint or self.static) and 0.6 or 0.75
     local dist = vmath.length(app_render.view_position - go.get_position())
     if dist > 550 then
         alpha = math.max(0, alpha - ((dist - 550) / 300))
