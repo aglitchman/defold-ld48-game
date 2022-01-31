@@ -1,6 +1,6 @@
 ![Cover](ld48/res/web/loader_cover.png)
 
-# DRILLER
+# DRILLER - 3D first-person shooter made with Defold
 
 ## Ludum Dare 48
 
