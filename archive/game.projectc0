@@ -41,6 +41,7 @@ contact_impulse_limit = 0
 ray_cast_limit_2d = 64
 ray_cast_limit_3d = 1000
 trigger_overlap_capacity = 100
+velocity_threshold = 1
 
 [bootstrap]
 main_collection = /ld48/main.collectionc
@@ -121,7 +122,7 @@ localizations = en
 [android]
 version_code = 1
 minimum_sdk_version = 16
-target_sdk_version = 29
+target_sdk_version = 30
 package = com.example.todo
 manifest = /builtins/manifests/android/AndroidManifest.xml
 iap_provider = GooglePlay
@@ -147,12 +148,14 @@ cssfile = /builtins/manifests/web/dark_theme.css
 archive_location_prefix = archive
 show_fullscreen_button = 1
 show_made_with_defold = 1
+show_console_banner = 1
 scale_mode = fit
 engine_arguments = --verify-graphics-calls=false
 splash_image = /ld48/res/web/loader_cover.png
 
 [particle_fx]
 max_count = 64
+max_emitter_count = 64
 max_particle_count = 1024
 
 [iap]

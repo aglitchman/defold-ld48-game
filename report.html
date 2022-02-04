@@ -6,13 +6,14 @@
       var report_data = {
   "report_version" : "1.0.0",
   "project_name" : "ld48_game",
-  "build_timestamp" : 1620396809,
+  "build_timestamp" : 1643965035,
   "build_options" : {
-    "defoldsdk" : "1a2776dac6a868eed1a35e41acb0c71a7e17948f",
+    "defoldsdk" : "84a9c89dfd5a2c3818c01e7c6777169272d9390b",
     "architectures" : "wasm-web,js-web",
     "bundle-output" : "build/bundle/js-web",
     "build-report-html" : "build/bundle/report.html",
     "auth" : "12345",
+    "build-server" : "https://build-stage.defold.com",
     "texture-compression" : "true",
     "variant" : "release",
     "liveupdate" : "false",
@@ -28,7 +29,7 @@
       "compress_archive" : "1",
       "publisher" : "unnamed",
       "developer" : "Artsiom Trubchyk",
-      "dependencies" : "https://github.com/subsoap/defos/archive/v2.5.0.zip,https://github.com/indiesoftby/defold-splitmix64/archive/refs/tags/1.0.1.zip,https://github.com/indiesoftby/defold-sharp-sprite/archive/refs/tags/0.1.2.zip,https://github.com/britzl/ludobits/archive/refs/tags/6.9.1.zip"
+      "dependencies" : "https://github.com/subsoap/defos/archive/v2.5.0.zip,https://github.com/indiesoftby/defold-splitmix64/archive/refs/tags/1.0.1.zip,https://github.com/indiesoftby/defold-sharp-sprite/archive/refs/tags/0.2.3.zip,https://github.com/britzl/ludobits/archive/refs/tags/6.9.1.zip"
     },
     "display" : {
       "width" : "2500",
@@ -64,7 +65,8 @@
       "contact_impulse_limit" : "0",
       "ray_cast_limit_2d" : "64",
       "ray_cast_limit_3d" : "1000",
-      "trigger_overlap_capacity" : "100"
+      "trigger_overlap_capacity" : "100",
+      "velocity_threshold" : "1"
     },
     "bootstrap" : {
       "main_collection" : "/ld48/main.collectionc",
@@ -145,7 +147,7 @@
     "android" : {
       "version_code" : "1",
       "minimum_sdk_version" : "16",
-      "target_sdk_version" : "29",
+      "target_sdk_version" : "30",
       "package" : "com.example.todo",
       "manifest" : "/builtins/manifests/android/AndroidManifest.xml",
       "iap_provider" : "GooglePlay",
@@ -171,12 +173,14 @@
       "archive_location_prefix" : "archive",
       "show_fullscreen_button" : "1",
       "show_made_with_defold" : "1",
+      "show_console_banner" : "1",
       "scale_mode" : "fit",
       "engine_arguments" : "--verify-graphics-calls=false",
       "splash_image" : "/ld48/res/web/loader_cover.png"
     },
     "particle_fx" : {
       "max_count" : "64",
+      "max_emitter_count" : "64",
       "max_particle_count" : "1024"
     },
     "iap" : {
@@ -212,464 +216,9 @@
     }
   },
   "resources" : [ {
-    "file" : "/ld48/scenes/driller/driller_generated_0_generated_1.factoryc",
-    "size" : 38,
-    "compressed_size" : 38,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/common/shadows_generated_0.factoryc",
-    "size" : 39,
-    "compressed_size" : 39,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_17_generated_0.labelc",
-    "size" : 215,
-    "compressed_size" : 183,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_21_generated_0.rigscenec",
-    "size" : 43,
-    "compressed_size" : 43,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/weapon/gun_skin.texturec",
-    "size" : 5592823,
-    "compressed_size" : 150818,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/main.scriptc",
-    "size" : 1831,
-    "compressed_size" : 764,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/main_generated_4.goc",
-    "size" : 313,
-    "compressed_size" : 228,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/common/drill_icon.scriptc",
-    "size" : 417,
-    "compressed_size" : 270,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/assets/clouds.texturesetc",
-    "size" : 253,
-    "compressed_size" : 163,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_11.goc",
-    "size" : 414,
-    "compressed_size" : 247,
-    "encrypted" : false
-  }, {
-    "file" : "/sharp_sprite/fonts/font.fpc",
-    "size" : 3081,
-    "compressed_size" : 900,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/ui/holo_display.meshsetc",
-    "size" : 1217,
-    "compressed_size" : 744,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/ui.texturec",
-    "size" : 2097290,
-    "compressed_size" : 27945,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/common/floor_generated_1.collisionobjectc",
-    "size" : 121,
-    "compressed_size" : 105,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/finalcut/finalcut_generated_2.goc",
-    "size" : 113,
-    "compressed_size" : 85,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_23.goc",
-    "size" : 759,
-    "compressed_size" : 354,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/common/shadow_spot_generated_0.modelc",
-    "size" : 98,
-    "compressed_size" : 87,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/materials/label_pass2.materialc",
-    "size" : 114,
-    "compressed_size" : 114,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/finalcut/finalcut_generated_1_generated_0.rigscenec",
-    "size" : 39,
-    "compressed_size" : 37,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/enemies/harvester.meshsetc",
-    "size" : 4232,
-    "compressed_size" : 2226,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/app/tween.luac",
-    "size" : 13803,
-    "compressed_size" : 4519,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_6.goc",
-    "size" : 113,
-    "compressed_size" : 85,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/app/scenemanager.luac",
-    "size" : 5490,
-    "compressed_size" : 1552,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_5_generated_0.labelc",
-    "size" : 205,
-    "compressed_size" : 157,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_2_generated_0.collisionobjectc",
-    "size" : 116,
-    "compressed_size" : 99,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/main.collectionc",
-    "size" : 512,
-    "compressed_size" : 180,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/main_generated_0.goc",
-    "size" : 210,
-    "compressed_size" : 147,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/finalcut/finalcut_ui.guic",
-    "size" : 1593,
-    "compressed_size" : 657,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/objects/plant_body_skin.texturec",
-    "size" : 5592823,
-    "compressed_size" : 254742,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_11_generated_0.spritec",
-    "size" : 83,
-    "compressed_size" : 83,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_19.goc",
-    "size" : 322,
-    "compressed_size" : 230,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_5_generated_2.spritec",
-    "size" : 91,
-    "compressed_size" : 91,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/gun.texturec",
-    "size" : 699454,
-    "compressed_size" : 15656,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/app/misc.luac",
-    "size" : 984,
-    "compressed_size" : 547,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_20_generated_0.labelc",
-    "size" : 214,
-    "compressed_size" : 180,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_15.goc",
-    "size" : 241,
-    "compressed_size" : 135,
-    "encrypted" : false
-  }, {
-    "file" : "/ludobits/m/flow.luac",
-    "size" : 13507,
-    "compressed_size" : 2972,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/scenes/common/shadow_spot.goc",
-    "size" : 102,
-    "compressed_size" : 88,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/harvester/harvester_ai.scriptc",
-    "size" : 2046,
-    "compressed_size" : 890,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/assets/planet/planet_skin.texturec",
-    "size" : 699454,
-    "compressed_size" : 534387,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_3.goc",
-    "size" : 202,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/common/shadow_caster.scriptc",
-    "size" : 1766,
-    "compressed_size" : 833,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/scenes/finalcut/finalcut_generated_2_generated_0.modelc",
-    "size" : 162,
-    "compressed_size" : 133,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/main_generated_3_generated_0.collectionproxyc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/powerups/powerups_helper.luac",
-    "size" : 1206,
-    "compressed_size" : 726,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_14_generated_1.collisionobjectc",
-    "size" : 98,
-    "compressed_size" : 86,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/finalcut/finalcut_generated_3.goc",
-    "size" : 115,
-    "compressed_size" : 86,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_2_generated_1.collisionobjectc",
-    "size" : 106,
-    "compressed_size" : 93,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/common/player_physics.scriptc",
-    "size" : 1713,
-    "compressed_size" : 758,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/assets/clouds.texturec",
-    "size" : 349895,
-    "compressed_size" : 95652,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/transition.texturec",
-    "size" : 87728,
-    "compressed_size" : 7407,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/harvester/harvester_generated_2.collisionobjectc",
-    "size" : 107,
-    "compressed_size" : 87,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/materials/font.materialc",
-    "size" : 106,
-    "compressed_size" : 106,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_22_generated_0.factoryc",
-    "size" : 48,
-    "compressed_size" : 41,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/materials/dirlight/dirlight_model_no_depth.materialc",
-    "size" : 475,
-    "compressed_size" : 286,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/common/weapon_anim.scriptc",
-    "size" : 2943,
-    "compressed_size" : 1091,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_4_generated_1.factoryc",
-    "size" : 42,
-    "compressed_size" : 38,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_7.goc",
-    "size" : 111,
-    "compressed_size" : 84,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_15_generated_0.rigscenec",
-    "size" : 41,
-    "compressed_size" : 41,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_7_generated_0.modelc",
-    "size" : 162,
-    "compressed_size" : 134,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/common/camera_look.scriptc",
-    "size" : 3680,
-    "compressed_size" : 1222,
-    "encrypted" : true
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_23_generated_1.spritec",
-    "size" : 89,
-    "compressed_size" : 89,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/materials/sprite.materialc",
-    "size" : 180,
-    "compressed_size" : 155,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/holo.texturesetc",
-    "size" : 1356,
-    "compressed_size" : 428,
-    "encrypted" : false
-  }, {
-    "file" : "/builtins/materials/sprite.vpc",
-    "size" : 560,
-    "compressed_size" : 282,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_14_generated_0.rigscenec",
-    "size" : 44,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/main_generated_4_generated_0.collectionproxyc",
-    "size" : 44,
-    "compressed_size" : 41,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/powerups/powerup_blue_generated_0.rigscenec",
-    "size" : 43,
-    "compressed_size" : 43,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_12_generated_0.labelc",
-    "size" : 207,
-    "compressed_size" : 171,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/main_generated_3.goc",
-    "size" : 311,
-    "compressed_size" : 226,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_12.goc",
-    "size" : 373,
-    "compressed_size" : 268,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_16_generated_0.spritec",
-    "size" : 79,
-    "compressed_size" : 79,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_6_generated_0.spritec",
-    "size" : 89,
-    "compressed_size" : 89,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/objects/floor.meshsetc",
-    "size" : 272,
-    "compressed_size" : 167,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/weapon/gun.meshsetc",
-    "size" : 2871,
-    "compressed_size" : 1819,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/intro.texturesetc",
-    "size" : 1116,
-    "compressed_size" : 481,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller.collectionc",
-    "size" : 3463,
-    "compressed_size" : 955,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/powerups/powerup_blue_generated_1.collisionobjectc",
-    "size" : 136,
-    "compressed_size" : 106,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/ui.texturesetc",
-    "size" : 1989,
-    "compressed_size" : 773,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/materials/label_no_depth.materialc",
-    "size" : 117,
-    "compressed_size" : 117,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_4_generated_0.rigscenec",
-    "size" : 36,
-    "compressed_size" : 36,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/greyboxes/grey_128.texturec",
-    "size" : 22169,
-    "compressed_size" : 308,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/powerups/powerup_blue.texturec",
-    "size" : 22169,
-    "compressed_size" : 308,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_2.goc",
-    "size" : 632,
-    "compressed_size" : 340,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/fonts/digits.fontc",
-    "size" : 13016,
-    "compressed_size" : 12189,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/assets/objects/plant_cog.meshsetc",
-    "size" : 241030,
-    "compressed_size" : 134189,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_22.goc",
-    "size" : 118,
-    "compressed_size" : 94,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_16.goc",
-    "size" : 322,
-    "compressed_size" : 231,
-    "encrypted" : false
-  }, {
-    "file" : "/builtins/input/all.input_bindingc",
-    "size" : 2899,
-    "compressed_size" : 1852,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_9_generated_1.collisionobjectc",
-    "size" : 112,
-    "compressed_size" : 99,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/materials/dirlight/dirlight_model.materialc",
-    "size" : 466,
-    "compressed_size" : 276,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/materials/gui.materialc",
-    "size" : 138,
-    "compressed_size" : 126,
+    "file" : "/sharp_sprite/rgss/materials/gui.fpc",
+    "size" : 1998,
+    "compressed_size" : 661,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/finalcut/finalcut_ui.gui_scriptc",
@@ -677,19 +226,54 @@
     "compressed_size" : 486,
     "encrypted" : true
   }, {
+    "file" : "/_generated_5dfb0e4e84d7350a.factoryc",
+    "size" : 48,
+    "compressed_size" : 41,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_f0f20f3e8e4b7382.goc",
+    "size" : 87,
+    "compressed_size" : 73,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_c867b2c3d484f687.modelc",
+    "size" : 83,
+    "compressed_size" : 83,
+    "encrypted" : false
+  }, {
     "file" : "/ld48/scenes/driller/harvester/harvester.goc",
-    "size" : 747,
-    "compressed_size" : 356,
+    "size" : 673,
+    "compressed_size" : 399,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_27758b639ab11f.spritec",
+    "size" : 89,
+    "compressed_size" : 89,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_59f95d0218d63a3d.factoryc",
+    "size" : 33,
+    "compressed_size" : 33,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/common/floor.goc",
-    "size" : 212,
-    "compressed_size" : 122,
+    "size" : 194,
+    "compressed_size" : 128,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_4.goc",
-    "size" : 329,
-    "compressed_size" : 168,
+    "file" : "/_generated_24a068f3de51b7b4.collectionproxyc",
+    "size" : 44,
+    "compressed_size" : 41,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_8786d76e380e719a.goc",
+    "size" : 202,
+    "compressed_size" : 116,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/weapon/gun_skin.texturec",
+    "size" : 5592823,
+    "compressed_size" : 109906,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/intro/intro_main.scriptc",
@@ -697,9 +281,29 @@
     "compressed_size" : 895,
     "encrypted" : true
   }, {
-    "file" : "/ld48/scenes/powerups/powerup_blue_generated_0.modelc",
-    "size" : 156,
-    "compressed_size" : 116,
+    "file" : "/ld48/main.scriptc",
+    "size" : 1831,
+    "compressed_size" : 764,
+    "encrypted" : true
+  }, {
+    "file" : "/ld48/scenes/common/drill_icon.scriptc",
+    "size" : 417,
+    "compressed_size" : 270,
+    "encrypted" : true
+  }, {
+    "file" : "/_generated_912023f61a5f9be.factoryc",
+    "size" : 38,
+    "compressed_size" : 38,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_611b33444ac0e8bd.goc",
+    "size" : 89,
+    "compressed_size" : 74,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/clouds.texturesetc",
+    "size" : 253,
+    "compressed_size" : 163,
     "encrypted" : false
   }, {
     "file" : "/ld48/transition.gui_scriptc",
@@ -712,14 +316,19 @@
     "compressed_size" : 286,
     "encrypted" : false
   }, {
-    "file" : "/sharp_sprite/materials/sprite.fpc",
-    "size" : 2123,
-    "compressed_size" : 733,
+    "file" : "/_generated_307079c2430e4b3a.goc",
+    "size" : 263,
+    "compressed_size" : 183,
     "encrypted" : false
   }, {
     "file" : "/ld48/assets/greyboxes/blue_128.texturec",
     "size" : 22169,
-    "compressed_size" : 309,
+    "compressed_size" : 313,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/ui/holo_display.meshsetc",
+    "size" : 1217,
+    "compressed_size" : 744,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/common/crosshair.gui_scriptc",
@@ -727,14 +336,29 @@
     "compressed_size" : 1026,
     "encrypted" : true
   }, {
-    "file" : "/ld48/materials/dirlight/dirlight_model.vpc",
-    "size" : 1415,
-    "compressed_size" : 546,
+    "file" : "/_generated_4d8af103966ef487.goc",
+    "size" : 173,
+    "compressed_size" : 123,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_5_generated_1.spritec",
-    "size" : 95,
-    "compressed_size" : 95,
+    "file" : "/_generated_b23165de727ceae4.labelc",
+    "size" : 215,
+    "compressed_size" : 183,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/materials/dirlight/dirlight_model.vpc",
+    "size" : 2881,
+    "compressed_size" : 928,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/ui.texturec",
+    "size" : 2097290,
+    "compressed_size" : 25508,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_b6df5dd0dd95ab73.spritec",
+    "size" : 86,
+    "compressed_size" : 86,
     "encrypted" : false
   }, {
     "file" : "/builtins/materials/gui.vpc",
@@ -742,19 +366,39 @@
     "compressed_size" : 346,
     "encrypted" : false
   }, {
-    "file" : "/ld48/main_generated_2.goc",
-    "size" : 314,
-    "compressed_size" : 229,
+    "file" : "/_generated_dc59a1cf39576906.collisionobjectc",
+    "size" : 138,
+    "compressed_size" : 107,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_9_generated_0.modelc",
-    "size" : 176,
-    "compressed_size" : 149,
+    "file" : "/ld48/materials/label_pass2.materialc",
+    "size" : 119,
+    "compressed_size" : 119,
     "encrypted" : false
   }, {
-    "file" : "/sharp_sprite/materials/gui.fpc",
-    "size" : 1998,
-    "compressed_size" : 661,
+    "file" : "/_generated_86a73fd2d7d05b22.collisionobjectc",
+    "size" : 121,
+    "compressed_size" : 97,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_2aeb69ae5494fcfc.goc",
+    "size" : 348,
+    "compressed_size" : 267,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/enemies/harvester.meshsetc",
+    "size" : 4232,
+    "compressed_size" : 2226,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/app/tween.luac",
+    "size" : 13803,
+    "compressed_size" : 4519,
+    "encrypted" : true
+  }, {
+    "file" : "/_generated_bbac5e8ec7a1e7e9.spritec",
+    "size" : 84,
+    "compressed_size" : 84,
     "encrypted" : false
   }, {
     "file" : "/ld48/materials/dirlight/dirlight_model.fpc",
@@ -762,30 +406,50 @@
     "compressed_size" : 760,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/finalcut/finalcut_generated_0.goc",
-    "size" : 183,
-    "compressed_size" : 103,
+    "file" : "/_generated_865e26a7f0aaa0ae.goc",
+    "size" : 379,
+    "compressed_size" : 298,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/powerups/powerup_blue.goc",
-    "size" : 571,
-    "compressed_size" : 288,
+    "size" : 517,
+    "compressed_size" : 316,
     "encrypted" : false
   }, {
-    "file" : "/ld48/main_generated_2_generated_0.collectionproxyc",
-    "size" : 46,
-    "compressed_size" : 42,
+    "file" : "/_generated_9050559b8d1d56f6.spritec",
+    "size" : 91,
+    "compressed_size" : 91,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_a7fca9bb12854a1e.spritec",
+    "size" : 83,
+    "compressed_size" : 83,
     "encrypted" : false
   }, {
     "file" : "/ld48/assets/intro.texturec",
     "size" : 1048712,
-    "compressed_size" : 137531,
+    "compressed_size" : 121525,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_25.goc",
-    "size" : 198,
-    "compressed_size" : 125,
+    "file" : "/_generated_9f0c709bb8b3538e.goc",
+    "size" : 348,
+    "compressed_size" : 274,
     "encrypted" : false
+  }, {
+    "file" : "/_generated_79f5d9c0dee15f61.spritec",
+    "size" : 95,
+    "compressed_size" : 95,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_0.goc",
+    "size" : 0,
+    "compressed_size" : 0,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/app/scenemanager.luac",
+    "size" : 5490,
+    "compressed_size" : 1552,
+    "encrypted" : true
   }, {
     "file" : "/ld48/scenes/common/holo_display.scriptc",
     "size" : 1678,
@@ -797,9 +461,29 @@
     "compressed_size" : 307,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_24_generated_1.spritec",
-    "size" : 86,
-    "compressed_size" : 86,
+    "file" : "/_generated_432b472442e6e5dd.modelc",
+    "size" : 141,
+    "compressed_size" : 131,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_4257c99e01ae472f.goc",
+    "size" : 185,
+    "compressed_size" : 131,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_fa7cef704c793c88.goc",
+    "size" : 276,
+    "compressed_size" : 170,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_b7292ed381ebe5a0.goc",
+    "size" : 90,
+    "compressed_size" : 72,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_5f203f99bf0681ff.goc",
+    "size" : 87,
+    "compressed_size" : 73,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/common/sun.scriptc",
@@ -807,14 +491,24 @@
     "compressed_size" : 252,
     "encrypted" : true
   }, {
+    "file" : "/_generated_c867b2c3d484f687.rigscenec",
+    "size" : 41,
+    "compressed_size" : 41,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/main.collectionc",
+    "size" : 571,
+    "compressed_size" : 275,
+    "encrypted" : false
+  }, {
     "file" : "/ld48/materials/dirlight/dirlight_model_global_ambient.materialc",
     "size" : 481,
     "compressed_size" : 288,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_17.goc",
-    "size" : 404,
-    "compressed_size" : 299,
+    "file" : "/sharp_sprite/rgss/fonts/font.fpc",
+    "size" : 3081,
+    "compressed_size" : 900,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/intro/intro_ui.guic",
@@ -822,14 +516,19 @@
     "compressed_size" : 571,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/harvester/harvester_generated_0.rigscenec",
-    "size" : 43,
-    "compressed_size" : 43,
+    "file" : "/_generated_f7cd332b728f1bf2.collectionproxyc",
+    "size" : 40,
+    "compressed_size" : 40,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/powerups/powerup_blue_generated_2.collisionobjectc",
-    "size" : 119,
-    "compressed_size" : 96,
+    "file" : "/ld48/scenes/finalcut/finalcut_ui.guic",
+    "size" : 1593,
+    "compressed_size" : 657,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/objects/plant_body_skin.texturec",
+    "size" : 5592823,
+    "compressed_size" : 165417,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/finalcut/finalcut_main.scriptc",
@@ -837,20 +536,15 @@
     "compressed_size" : 921,
     "encrypted" : true
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_8.goc",
-    "size" : 112,
-    "compressed_size" : 88,
+    "file" : "/_generated_ea7b71bd5d01d09a.goc",
+    "size" : 87,
+    "compressed_size" : 73,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/common/player_movement.scriptc",
     "size" : 2180,
     "compressed_size" : 1012,
     "encrypted" : true
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_1.goc",
-    "size" : 90,
-    "compressed_size" : 72,
-    "encrypted" : false
   }, {
     "file" : "/ld48/app/window.luac",
     "size" : 1428,
@@ -862,19 +556,39 @@
     "compressed_size" : 724,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_0_generated_0.factoryc",
-    "size" : 33,
-    "compressed_size" : 33,
+    "file" : "/_generated_48caabd19746116f.collectionproxyc",
+    "size" : 46,
+    "compressed_size" : 42,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_88d04cc09e2228e8.spritec",
+    "size" : 81,
+    "compressed_size" : 81,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_5a1721fe81cf5086.modelc",
+    "size" : 135,
+    "compressed_size" : 120,
     "encrypted" : false
   }, {
     "file" : "/builtins/input/default.gamepadsc",
-    "size" : 54699,
-    "compressed_size" : 4397,
+    "size" : 56460,
+    "compressed_size" : 4578,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_4_generated_0.modelc",
-    "size" : 165,
-    "compressed_size" : 138,
+    "file" : "/sharp_sprite/rgss/materials/sprite.fpc",
+    "size" : 2123,
+    "compressed_size" : 733,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_35c3287967f122bc.modelc",
+    "size" : 144,
+    "compressed_size" : 134,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_d55a5da67dd9fc24.labelc",
+    "size" : 214,
+    "compressed_size" : 180,
     "encrypted" : false
   }, {
     "file" : "/ld48/materials/shadow/shadow.materialc",
@@ -882,14 +596,19 @@
     "compressed_size" : 148,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/harvester/harvester_generated_0.modelc",
-    "size" : 174,
-    "compressed_size" : 152,
+    "file" : "/ld48/app/misc.luac",
+    "size" : 984,
+    "compressed_size" : 547,
+    "encrypted" : true
+  }, {
+    "file" : "/ld48/assets/gun.texturec",
+    "size" : 699454,
+    "compressed_size" : 15817,
     "encrypted" : false
   }, {
     "file" : "/ld48/assets/ui/holo_display_skin.texturec",
     "size" : 1398494,
-    "compressed_size" : 9816,
+    "compressed_size" : 9052,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/driller/driller_main.scriptc",
@@ -897,19 +616,49 @@
     "compressed_size" : 3565,
     "encrypted" : true
   }, {
-    "file" : "/ld48/scenes/intro/intro_generated_1_generated_0.modelc",
-    "size" : 155,
-    "compressed_size" : 125,
+    "file" : "/_generated_7dfcfc7ec4e30d3d.rigscenec",
+    "size" : 43,
+    "compressed_size" : 43,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/harvester/harvester_generated_1.collisionobjectc",
-    "size" : 121,
-    "compressed_size" : 109,
+    "file" : "/_generated_747906a42a268f29.rigscenec",
+    "size" : 43,
+    "compressed_size" : 43,
     "encrypted" : false
+  }, {
+    "file" : "/_generated_7d85e4e7f9f126f0.spritec",
+    "size" : 75,
+    "compressed_size" : 75,
+    "encrypted" : false
+  }, {
+    "file" : "/ludobits/m/flow.luac",
+    "size" : 13507,
+    "compressed_size" : 2972,
+    "encrypted" : true
+  }, {
+    "file" : "/ld48/scenes/common/shadow_spot.goc",
+    "size" : 87,
+    "compressed_size" : 73,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_3c9e86da20e4bdd0.collisionobjectc",
+    "size" : 100,
+    "compressed_size" : 86,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/scenes/driller/harvester/harvester_ai.scriptc",
+    "size" : 2046,
+    "compressed_size" : 890,
+    "encrypted" : true
   }, {
     "file" : "/ld48/render/custom.renderc",
     "size" : 36,
     "compressed_size" : 36,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_747906a42a268f29.modelc",
+    "size" : 150,
+    "compressed_size" : 140,
     "encrypted" : false
   }, {
     "file" : "/ld48/render/custom.render_scriptc",
@@ -917,14 +666,19 @@
     "compressed_size" : 1182,
     "encrypted" : true
   }, {
+    "file" : "/ld48/assets/planet/planet_skin.texturec",
+    "size" : 699454,
+    "compressed_size" : 258069,
+    "encrypted" : false
+  }, {
     "file" : "/ld48/assets/planet/planet.meshsetc",
     "size" : 437026,
     "compressed_size" : 255373,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/finalcut/finalcut_generated_1_generated_0.modelc",
-    "size" : 161,
-    "compressed_size" : 128,
+    "file" : "/_generated_dec850df7d203d29.collisionobjectc",
+    "size" : 114,
+    "compressed_size" : 100,
     "encrypted" : false
   }, {
     "file" : "/ld48/assets/transition.texturesetc",
@@ -932,19 +686,14 @@
     "compressed_size" : 259,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/finalcut/finalcut_generated_3_generated_0.spritec",
-    "size" : 75,
-    "compressed_size" : 75,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_21.goc",
-    "size" : 112,
-    "compressed_size" : 85,
-    "encrypted" : false
+    "file" : "/ld48/scenes/common/shadow_caster.scriptc",
+    "size" : 1766,
+    "compressed_size" : 833,
+    "encrypted" : true
   }, {
     "file" : "/ld48/scenes/common/shadows.goc",
-    "size" : 99,
-    "compressed_size" : 87,
+    "size" : 88,
+    "compressed_size" : 76,
     "encrypted" : false
   }, {
     "file" : "/ld48/app/scene.scriptc",
@@ -952,59 +701,119 @@
     "compressed_size" : 730,
     "encrypted" : true
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_24_generated_0.spritec",
-    "size" : 81,
+    "file" : "/_generated_81de6a7a399ba7be.collisionobjectc",
+    "size" : 118,
+    "compressed_size" : 100,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_318aa16a4b01471a.goc",
+    "size" : 297,
+    "compressed_size" : 229,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/scenes/powerups/powerups_helper.luac",
+    "size" : 1206,
+    "compressed_size" : 726,
+    "encrypted" : true
+  }, {
+    "file" : "/_generated_5109645bcc2e693c.goc",
+    "size" : 93,
     "compressed_size" : 81,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_5.goc",
-    "size" : 335,
-    "compressed_size" : 164,
+    "file" : "/_generated_46738d660f5b7239.collisionobjectc",
+    "size" : 123,
+    "compressed_size" : 110,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_20.goc",
-    "size" : 373,
-    "compressed_size" : 275,
+    "file" : "/_generated_735c6896f7680e17.collisionobjectc",
+    "size" : 108,
+    "compressed_size" : 94,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_15_generated_0.modelc",
-    "size" : 177,
-    "compressed_size" : 150,
+    "file" : "/_generated_5a1721fe81cf5086.rigscenec",
+    "size" : 39,
+    "compressed_size" : 37,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_9ac6ccedc1c9ef4b.labelc",
+    "size" : 207,
+    "compressed_size" : 171,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/scenes/common/player_physics.scriptc",
+    "size" : 1713,
+    "compressed_size" : 758,
+    "encrypted" : true
+  }, {
+    "file" : "/ld48/assets/clouds.texturec",
+    "size" : 349895,
+    "compressed_size" : 72105,
     "encrypted" : false
   }, {
     "file" : "/ld48/materials/sprite_no_write.materialc",
-    "size" : 189,
-    "compressed_size" : 164,
+    "size" : 194,
+    "compressed_size" : 169,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/transition.texturec",
+    "size" : 87728,
+    "compressed_size" : 6236,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_d0ec822221f0651c.goc",
+    "size" : 191,
+    "compressed_size" : 137,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_d2c08bba92c5d6f9.goc",
+    "size" : 171,
+    "compressed_size" : 100,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/materials/font.materialc",
+    "size" : 111,
+    "compressed_size" : 111,
     "encrypted" : false
   }, {
     "file" : "/ld48/assets/holo.texturec",
     "size" : 262280,
-    "compressed_size" : 2652,
+    "compressed_size" : 2532,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/intro/intro_generated_1.goc",
-    "size" : 107,
-    "compressed_size" : 82,
+    "file" : "/_generated_86ea3dc4ed30724e.goc",
+    "size" : 89,
+    "compressed_size" : 74,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_14.goc",
-    "size" : 235,
-    "compressed_size" : 129,
+    "file" : "/ld48/materials/dirlight/dirlight_model_no_depth.materialc",
+    "size" : 475,
+    "compressed_size" : 286,
     "encrypted" : false
+  }, {
+    "file" : "/_generated_c0b731ccc4d02201.goc",
+    "size" : 709,
+    "compressed_size" : 387,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_1d5d806f42f80dea.goc",
+    "size" : 87,
+    "compressed_size" : 73,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_64c00e5fc7909450.modelc",
+    "size" : 138,
+    "compressed_size" : 121,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/scenes/common/weapon_anim.scriptc",
+    "size" : 2943,
+    "compressed_size" : 1091,
+    "encrypted" : true
   }, {
     "file" : "/ld48/render/layouts.display_profilesc",
     "size" : 88,
     "compressed_size" : 88,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_25_generated_0.spritec",
-    "size" : 83,
-    "compressed_size" : 83,
-    "encrypted" : false
-  }, {
-    "file" : "/ld48/scenes/driller/driller_generated_10.goc",
-    "size" : 322,
-    "compressed_size" : 231,
     "encrypted" : false
   }, {
     "file" : "/ld48/materials/shadow/shadow.vpc",
@@ -1014,37 +823,67 @@
   }, {
     "file" : "/ld48/assets/greyboxes/white_128.texturec",
     "size" : 22169,
-    "compressed_size" : 308,
+    "compressed_size" : 313,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_21_generated_0.modelc",
-    "size" : 175,
-    "compressed_size" : 146,
+    "file" : "/_generated_e7751be663fa07a2.goc",
+    "size" : 297,
+    "compressed_size" : 230,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_18_generated_0.modelc",
-    "size" : 177,
-    "compressed_size" : 150,
+    "file" : "/_generated_432b472442e6e5dd.rigscenec",
+    "size" : 36,
+    "compressed_size" : 36,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/scenes/common/camera_look.scriptc",
+    "size" : 3680,
+    "compressed_size" : 1222,
+    "encrypted" : true
+  }, {
+    "file" : "/_generated_d0c9fef36b0e5d0f.goc",
+    "size" : 584,
+    "compressed_size" : 354,
     "encrypted" : false
   }, {
     "file" : "/ld48/materials/sprite_pass2.materialc",
-    "size" : 186,
-    "compressed_size" : 161,
+    "size" : 191,
+    "compressed_size" : 166,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_24.goc",
-    "size" : 759,
-    "compressed_size" : 373,
+    "file" : "/_generated_21f93ff274fe90b9.goc",
+    "size" : 210,
+    "compressed_size" : 147,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/finalcut/finalcut_generated_1.goc",
-    "size" : 113,
-    "compressed_size" : 85,
+    "file" : "/ld48/materials/sprite.materialc",
+    "size" : 185,
+    "compressed_size" : 160,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_cbff5187de17e38f.spritec",
+    "size" : 83,
+    "compressed_size" : 83,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_3838ea7342b4a489.factoryc",
+    "size" : 39,
+    "compressed_size" : 39,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/holo.texturesetc",
+    "size" : 1356,
+    "compressed_size" : 428,
     "encrypted" : false
   }, {
     "file" : "/ld48/materials/shadow/shadow.fpc",
     "size" : 1028,
     "compressed_size" : 425,
+    "encrypted" : false
+  }, {
+    "file" : "/builtins/materials/sprite.vpc",
+    "size" : 560,
+    "compressed_size" : 282,
     "encrypted" : false
   }, {
     "file" : "/ld48/app/render.luac",
@@ -1053,8 +892,8 @@
     "encrypted" : true
   }, {
     "file" : "/ld48/materials/sprite_no_depth.materialc",
-    "size" : 189,
-    "compressed_size" : 164,
+    "size" : 194,
+    "compressed_size" : 169,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/intro/intro_ui.gui_scriptc",
@@ -1063,13 +902,13 @@
     "encrypted" : true
   }, {
     "file" : "/ld48/scenes/finalcut/finalcut.collectionc",
-    "size" : 472,
-    "compressed_size" : 195,
+    "size" : 475,
+    "compressed_size" : 285,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/common/shadow_spot_generated_0.rigscenec",
-    "size" : 41,
-    "compressed_size" : 41,
+    "file" : "/_generated_7dfcfc7ec4e30d3d.modelc",
+    "size" : 150,
+    "compressed_size" : 138,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/common/player_state.luac",
@@ -1077,24 +916,89 @@
     "compressed_size" : 897,
     "encrypted" : true
   }, {
+    "file" : "/_generated_e4f81fd4395d8d.collisionobjectc",
+    "size" : 109,
+    "compressed_size" : 88,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_187fd84886e4d433.goc",
+    "size" : 305,
+    "compressed_size" : 232,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_f881c05fb31c43e.factoryc",
+    "size" : 42,
+    "compressed_size" : 38,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_6c61b0a8f4197a79.modelc",
+    "size" : 152,
+    "compressed_size" : 142,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_64c00e5fc7909450.rigscenec",
+    "size" : 43,
+    "compressed_size" : 43,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_81a4c51f91993e7d.spritec",
+    "size" : 79,
+    "compressed_size" : 79,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_f5595eca3ad0e037.goc",
+    "size" : 183,
+    "compressed_size" : 103,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_7193f8f695d1405c.collisionobjectc",
+    "size" : 123,
+    "compressed_size" : 106,
+    "encrypted" : false
+  }, {
     "file" : "/ld48/assets/objects/plant_body.meshsetc",
     "size" : 10001,
     "compressed_size" : 6118,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_14_generated_0.modelc",
-    "size" : 180,
-    "compressed_size" : 153,
+    "file" : "/ld48/assets/objects/floor.meshsetc",
+    "size" : 272,
+    "compressed_size" : 167,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/common/floor_generated_0.modelc",
-    "size" : 153,
-    "compressed_size" : 135,
+    "file" : "/_generated_306703ef45379bde.goc",
+    "size" : 307,
+    "compressed_size" : 234,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_626a9bf9f9ac886e.modelc",
+    "size" : 155,
+    "compressed_size" : 145,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/weapon/gun.meshsetc",
+    "size" : 2871,
+    "compressed_size" : 1819,
     "encrypted" : false
   }, {
     "file" : "/ld48/assets/planet/floor.texturec",
     "size" : 349895,
-    "compressed_size" : 298709,
+    "compressed_size" : 115255,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_3b96724cb500a98b.goc",
+    "size" : 308,
+    "compressed_size" : 235,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/intro.texturesetc",
+    "size" : 1116,
+    "compressed_size" : 481,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/scenes/driller/driller.collectionc",
+    "size" : 3236,
+    "compressed_size" : 1354,
     "encrypted" : false
   }, {
     "file" : "/ld48/app/lume.luac",
@@ -1102,19 +1006,29 @@
     "compressed_size" : 5121,
     "encrypted" : true
   }, {
+    "file" : "/_generated_e0dc8bd1dfc0e392.labelc",
+    "size" : 205,
+    "compressed_size" : 157,
+    "encrypted" : false
+  }, {
     "file" : "/ld48/assets/gun.texturesetc",
     "size" : 259,
     "compressed_size" : 173,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_18.goc",
-    "size" : 241,
-    "compressed_size" : 135,
+    "file" : "/ld48/materials/label_no_depth.materialc",
+    "size" : 122,
+    "compressed_size" : 122,
     "encrypted" : false
   }, {
-    "file" : "/ld48/main_generated_1.goc",
-    "size" : 0,
-    "compressed_size" : 0,
+    "file" : "/_generated_626a9bf9f9ac886e.rigscenec",
+    "size" : 44,
+    "compressed_size" : 44,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/ui.texturesetc",
+    "size" : 1989,
+    "compressed_size" : 773,
     "encrypted" : false
   }, {
     "file" : "/ld48/assets/greyboxes/cube_20.meshsetc",
@@ -1122,14 +1036,24 @@
     "compressed_size" : 637,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_0.goc",
-    "size" : 325,
-    "compressed_size" : 143,
+    "file" : "/_generated_434da9d9f89bc9f6.goc",
+    "size" : 87,
+    "compressed_size" : 75,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_9.goc",
-    "size" : 239,
-    "compressed_size" : 134,
+    "file" : "/ld48/assets/greyboxes/grey_128.texturec",
+    "size" : 22169,
+    "compressed_size" : 313,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/powerups/powerup_blue.texturec",
+    "size" : 22169,
+    "compressed_size" : 313,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_7ea3072dc8b1f502.modelc",
+    "size" : 138,
+    "compressed_size" : 127,
     "encrypted" : false
   }, {
     "file" : "/ld48/materials/font.vpc",
@@ -1144,17 +1068,32 @@
   }, {
     "file" : "/ld48/assets/greyboxes/magenta_128.texturec",
     "size" : 22169,
-    "compressed_size" : 308,
+    "compressed_size" : 312,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/common/floor_generated_0.rigscenec",
-    "size" : 39,
-    "compressed_size" : 39,
+    "file" : "/_generated_9a6dc8939b9abc86.goc",
+    "size" : 707,
+    "compressed_size" : 369,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/assets/fonts/digits.fontc",
+    "size" : 13016,
+    "compressed_size" : 12189,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_2c353ddfc40426f4.goc",
+    "size" : 389,
+    "compressed_size" : 248,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_7832d1c333d52f6d.spritec",
+    "size" : 89,
+    "compressed_size" : 89,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/common/fx_contact.goc",
-    "size" : 103,
-    "compressed_size" : 88,
+    "size" : 89,
+    "compressed_size" : 74,
     "encrypted" : false
   }, {
     "file" : "/ld48/assets/fonts/subtitle.fontc",
@@ -1162,24 +1101,54 @@
     "compressed_size" : 34372,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/intro/intro_generated_0.goc",
-    "size" : 171,
-    "compressed_size" : 100,
+    "file" : "/ld48/assets/objects/plant_cog.meshsetc",
+    "size" : 241030,
+    "compressed_size" : 134189,
     "encrypted" : false
   }, {
-    "file" : "/ld48/scenes/driller/driller_generated_23_generated_0.spritec",
-    "size" : 84,
-    "compressed_size" : 84,
+    "file" : "/_generated_35c3287967f122bc.rigscenec",
+    "size" : 39,
+    "compressed_size" : 39,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_2613b0eab8223f73.modelc",
+    "size" : 136,
+    "compressed_size" : 125,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_6c61b0a8f4197a79.rigscenec",
+    "size" : 41,
+    "compressed_size" : 41,
+    "encrypted" : false
+  }, {
+    "file" : "/builtins/input/all.input_bindingc",
+    "size" : 2899,
+    "compressed_size" : 1852,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_da57e87df157145b.goc",
+    "size" : 280,
+    "compressed_size" : 181,
     "encrypted" : false
   }, {
     "file" : "/ld48/scenes/intro/intro.collectionc",
-    "size" : 225,
-    "compressed_size" : 120,
+    "size" : 253,
+    "compressed_size" : 173,
     "encrypted" : false
   }, {
     "file" : "/builtins/materials/gui.materialc",
     "size" : 83,
     "compressed_size" : 64,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/materials/dirlight/dirlight_model.materialc",
+    "size" : 466,
+    "compressed_size" : 276,
+    "encrypted" : false
+  }, {
+    "file" : "/ld48/materials/gui.materialc",
+    "size" : 143,
+    "compressed_size" : 130,
     "encrypted" : false
   } ]
 };
